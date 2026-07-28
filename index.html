@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Complete trip plan for nine days in South Korea, 9-17 January 2027: entry requirements, flight routings, packing, day-by-day itinerary with backup plans, accommodation, budget and connectivity.">
+<meta name="theme-color" content="#0A0E14">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230A0E14'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23F5AC5F' font-family='sans-serif' font-weight='bold'%3E9%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230A0E14'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23F5AC5F' font-family='sans-serif' font-weight='bold'%3E9%3C/text%3E%3C/svg%3E">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Korea 2027">
+<meta property="og:title" content="Nine days in Korea - 9-17 January 2027">
+<meta property="og:description" content="Entry, flights, packing, day-by-day itinerary with backups, hotels, budget and connectivity.">
+<meta property="og:type" content="website">
+<title>Korea · 9–17 Jan 2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0A0E14; --panel:#111820; --panel2:#18222C; --edge:#22303C; --edge2:#31434F;
+  --tx:#EAF1F7; --mut:#93A7B8; --dim:#677D91;
+  --amber:#F5AC5F; --amber2:#C9822F; --ice:#5FC9E8; --mint:#63D2A0; --rose:#F0728A;
+  --sb:236px; --r:8px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--tx);font-family:'Public Sans',system-ui,sans-serif;font-size:15.5px;line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4,h5{font-family:'Bricolage Grotesque','Public Sans',sans-serif;font-weight:800;letter-spacing:-.02em;line-height:1.12}
+.mono{font-family:'IBM Plex Mono',monospace}
+a{color:var(--ice)}
+button{font-family:inherit}
+:focus-visible{outline:2px solid var(--ice);outline-offset:2px;border-radius:3px}
+
+/* ══ APP SHELL ══ */
+.app{display:flex;min-height:100vh}
+
+.side{width:var(--sb);flex-shrink:0;background:var(--panel);border-right:1px solid var(--edge);position:fixed;top:0;bottom:0;left:0;display:flex;flex-direction:column;z-index:50}
+.brand{padding:22px 20px 18px;border-bottom:1px solid var(--edge)}
+.brand .kr{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:var(--amber);margin-bottom:8px}
+.brand h1{font-size:20px;line-height:1.15}
+.brand .dt{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--dim);margin-top:7px}
+
+.snav{flex:1;overflow-y:auto;padding:12px 10px}
+.snav button{width:100%;display:flex;align-items:center;gap:11px;background:none;border:none;color:var(--mut);font-size:13.5px;font-weight:500;padding:10px 11px;border-radius:6px;cursor:pointer;text-align:left;transition:background .15s,color .15s}
+.snav button:hover{background:var(--panel2);color:var(--tx)}
+.snav button[aria-current="true"]{background:linear-gradient(90deg,rgba(245,172,95,.16),rgba(245,172,95,.04));color:var(--amber)}
+.snav button .ic{width:20px;flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--edge2)}
+.snav button[aria-current="true"] .ic{color:var(--amber)}
+.snav .grp{font-family:'IBM Plex Mono',monospace;font-size:8.5px;letter-spacing:.16em;color:var(--dim);padding:14px 11px 6px;text-transform:uppercase}
+
+.sfoot{padding:14px 16px;border-top:1px solid var(--edge);font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:var(--dim);line-height:1.6}
+.sfoot b{color:var(--amber);font-weight:500}
+
+.main{flex:1;margin-left:var(--sb);min-width:0}
+.topbar{position:sticky;top:0;z-index:40;background:rgba(10,14,20,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--edge);padding:14px 30px;display:flex;align-items:center;gap:14px}
+.topbar .crumb{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;color:var(--dim);text-transform:uppercase}
+.topbar .crumb b{color:var(--amber);font-weight:500}
+.topbar .sp{flex:1}
+.chipmini{font-family:'IBM Plex Mono',monospace;font-size:10px;padding:5px 10px;border:1px solid var(--edge2);border-radius:20px;color:var(--mut);white-space:nowrap}
+@media(max-width:900px){.topbar .chipmini{display:none}}
+
+.view{padding:30px 30px 90px;max-width:1080px;display:none;animation:fade .28s ease}
+.view.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+.vh{margin-bottom:22px}
+.vh .n{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.18em;color:var(--amber);display:block;margin-bottom:10px}
+.vh h2{font-size:clamp(26px,3.6vw,38px)}
+.vh p{color:var(--mut);max-width:74ch;margin-top:12px;font-size:15px}
+
+/* mobile */
+.mtop{display:none}
+.mbar{display:none}
+@media(max-width:860px){
+  .side{display:none}
+  .main{margin-left:0}
+  .view{padding:18px 16px 100px}
+  .topbar{padding:12px 16px}
+  .mtop{display:flex;align-items:center;gap:10px}
+  .mtop .kr{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.16em;color:var(--amber)}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:rgba(17,24,32,.97);backdrop-filter:blur(14px);border-top:1px solid var(--edge);overflow-x:auto;padding:0 4px}
+  .mbar button{flex:0 0 auto;background:none;border:none;color:var(--dim);font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.05em;padding:11px 13px 13px;cursor:pointer;border-top:2px solid transparent;white-space:nowrap}
+  .mbar button[aria-current="true"]{color:var(--amber);border-top-color:var(--amber)}
+}
+
+/* ══ COMPONENTS ══ */
+.card{background:var(--panel);border:1px solid var(--edge);border-radius:var(--r);padding:18px 19px}
+.grid{display:grid;gap:13px}
+.g2{grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.g3{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+@media(max-width:600px){.g2,.g3{grid-template-columns:1fr}}
+
+.note{border-radius:var(--r);padding:17px 19px;margin-bottom:18px;border:1px solid var(--edge2);border-left:3px solid var(--amber);background:linear-gradient(96deg,rgba(245,172,95,.08),transparent 70%)}
+.note.ice{border-left-color:var(--ice);background:linear-gradient(96deg,rgba(95,201,232,.08),transparent 70%)}
+.note.rose{border-left-color:var(--rose);background:linear-gradient(96deg,rgba(240,114,138,.08),transparent 70%)}
+.note.mint{border-left-color:var(--mint);background:linear-gradient(96deg,rgba(99,210,160,.08),transparent 70%)}
+.note .lb{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);margin-bottom:8px}
+.note.ice .lb{color:var(--ice)}.note.rose .lb{color:var(--rose)}.note.mint .lb{color:var(--mint)}
+.note h4{font-size:16.5px;margin-bottom:7px}
+.note p{font-size:14px;color:var(--mut)}
+.note p+p{margin-top:9px}
+.note b{color:var(--tx)}
+
+/* chips */
+.chips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:18px}
+.chip{background:var(--panel);border:1px solid var(--edge);color:var(--mut);font-family:'IBM Plex Mono',monospace;font-size:11px;padding:7px 13px;border-radius:20px;cursor:pointer;transition:all .15s;white-space:nowrap}
+.chip:hover{border-color:var(--edge2);color:var(--tx)}
+.chip[aria-pressed="true"]{background:var(--amber);border-color:var(--amber);color:#1B1206;font-weight:500}
+.chip.bz[aria-pressed="true"]{background:var(--ice);border-color:var(--ice);color:#04222B}
+
+/* day chips scroller */
+.dayrail{display:flex;gap:7px;overflow-x:auto;padding:4px 0 12px;margin-bottom:6px;scrollbar-width:thin}
+.dayrail::-webkit-scrollbar{height:4px}
+.dayrail::-webkit-scrollbar-thumb{background:var(--edge2);border-radius:4px}
+.dchip{flex:0 0 auto;background:var(--panel);border:1px solid var(--edge);border-radius:var(--r);padding:9px 14px;cursor:pointer;text-align:left;transition:all .15s;min-width:96px}
+.dchip:hover{border-color:var(--edge2)}
+.dchip .d{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--dim);letter-spacing:.1em}
+.dchip .t{font-size:13px;font-weight:700;color:var(--mut);margin-top:2px}
+.dchip[aria-pressed="true"]{background:linear-gradient(160deg,rgba(245,172,95,.2),rgba(245,172,95,.05));border-color:var(--amber)}
+.dchip[aria-pressed="true"] .t{color:var(--amber)}
+.dchip[aria-pressed="true"] .d{color:var(--amber2)}
+.dchip.bz[aria-pressed="true"]{background:linear-gradient(160deg,rgba(95,201,232,.2),rgba(95,201,232,.05));border-color:var(--ice)}
+.dchip.bz[aria-pressed="true"] .t{color:var(--ice)}
+.dchip.bz[aria-pressed="true"] .d{color:var(--ice)}
+
+/* tabs */
+.tabs{display:flex;background:var(--panel2);border:1px solid var(--edge);border-radius:var(--r);padding:3px;gap:3px;margin-bottom:16px}
+.tabs button{flex:1;background:none;border:none;color:var(--dim);font-family:'IBM Plex Mono',monospace;font-size:11px;padding:9px;border-radius:5px;cursor:pointer;transition:all .15s}
+.tabs button:hover{color:var(--mut)}
+.tabs button[aria-selected="true"]{background:var(--amber);color:#1B1206;font-weight:500}
+.tabs.alt button[aria-selected="true"]{background:var(--ice);color:#04222B}
+
+/* accordion */
+.acc{border:1px solid var(--edge);border-radius:var(--r);overflow:hidden;margin-bottom:9px;background:var(--panel)}
+.acc>button{width:100%;background:none;border:none;color:var(--tx);text-align:left;padding:15px 18px;cursor:pointer;display:flex;align-items:center;gap:13px;font-size:15px;font-weight:600}
+.acc>button:hover{background:var(--panel2)}
+.acc>button .num{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--amber);flex-shrink:0}
+.acc>button .ttl{flex:1}
+.acc>button .cost{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--dim);flex-shrink:0}
+.acc>button .arw{color:var(--edge2);transition:transform .2s;flex-shrink:0}
+.acc>button[aria-expanded="true"] .arw{transform:rotate(90deg);color:var(--amber)}
+.acc .body{padding:0 18px 17px;color:var(--mut);font-size:14px;border-top:1px solid var(--edge)}
+.acc .body[hidden]{display:none}
+.acc .body p{padding-top:14px}
+.acc .body b{color:var(--tx)}
+
+/* photo slot */
+.ph{display:block;position:relative;height:112px;border-radius:6px;overflow:hidden;text-decoration:none;border:1px solid var(--edge);background:linear-gradient(135deg,var(--panel2),var(--panel));margin-bottom:12px;transition:border-color .16s}
+.ph:hover{border-color:var(--amber)}
+.ph .lbl{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;padding:10px}
+.ph .lbl .ico{font-size:19px;opacity:.55}
+.ph .lbl .tx{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;color:var(--dim)}
+.ph:hover .lbl .tx{color:var(--amber)}
+.ph .kr2{position:absolute;bottom:7px;right:10px;font-size:15px;color:rgba(255,255,255,.07);font-weight:700}
+
+/* stop */
+.stop{display:flex;gap:13px;padding:13px 0;border-bottom:1px solid rgba(34,48,60,.6)}
+.stop:last-child{border-bottom:none}
+.stop .tm{font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:var(--dim);width:74px;flex-shrink:0;padding-top:3px}
+.stop .bd{flex:1;min-width:0}
+.stop h5{font-size:14.5px;font-weight:700;margin-bottom:3px}
+.stop h5 .kr{font-family:'Public Sans';font-weight:400;font-size:11.5px;color:var(--dim);margin-left:6px}
+.stop p{font-size:13px;color:var(--mut);line-height:1.55}
+.stop .pr{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--amber);margin-top:5px;display:inline-block}
+.stop .pr.free{color:var(--mint)}
+.stop .ph{height:74px;width:118px;flex-shrink:0;margin-bottom:0}
+@media(max-width:640px){.stop{flex-wrap:wrap}.stop .tm{width:100%}.stop .ph{width:100%;height:88px;order:-1}}
+
+/* table */
+.tw{overflow-x:auto;border:1px solid var(--edge);border-radius:var(--r)}
+table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:620px}
+th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);padding:12px 15px;background:var(--panel2);border-bottom:1px solid var(--edge);font-weight:500}
+td{padding:13px 15px;border-bottom:1px solid var(--edge);vertical-align:top;color:var(--mut);line-height:1.55}
+tr:last-child td{border-bottom:none}
+td b{color:var(--tx)}
+td .m{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--tx);white-space:nowrap}
+td .y{color:var(--mint)}td .n{color:var(--rose)}
+td .sm{font-size:11.5px;color:var(--dim);display:block;margin-top:3px}
+
+/* stat tiles */
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:11px;margin-bottom:22px}
+.tile{background:var(--panel);border:1px solid var(--edge);border-radius:var(--r);padding:15px 16px}
+.tile dt{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:7px}
+.tile dd{font-size:16px;font-weight:700}
+.tile dd.a{color:var(--amber)}
+.tile dd.i{color:var(--ice)}
+
+/* hotel */
+.hot .top{display:flex;justify-content:space-between;gap:11px;margin-bottom:7px}
+.hot h4{font-size:16px;line-height:1.2}
+.hot .rt{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--amber);text-align:right;white-space:nowrap}
+.hot .rt small{display:block;font-size:9px;color:var(--dim)}
+.hot .loc{font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:var(--ice);margin-bottom:10px}
+.hot p{font-size:13.5px;color:var(--mut);line-height:1.58}
+.hot .am{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px}
+.hot .am span{font-family:'IBM Plex Mono',monospace;font-size:9px;padding:4px 8px;border-radius:3px;border:1px solid var(--edge2);color:var(--mut)}
+.hot .am span.y{border-color:rgba(99,210,160,.4);color:var(--mint)}
+.hot .am span.n{border-color:rgba(240,114,138,.35);color:var(--rose)}
+.hot .pf{margin-top:13px;padding-top:12px;border-top:1px solid var(--edge);display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
+.hot .pf .v{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--tx)}
+.hot .pf a{font-family:'IBM Plex Mono',monospace;font-size:10px;text-decoration:none;border-bottom:1px solid rgba(95,201,232,.35)}
+
+/* ledger */
+.led{border:1px solid var(--edge);border-radius:var(--r);overflow:hidden;margin-bottom:14px;font-family:'IBM Plex Mono',monospace}
+.led .lh{background:var(--panel2);padding:12px 17px;display:flex;justify-content:space-between;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);border-bottom:1px solid var(--edge)}
+.led .r{display:flex;justify-content:space-between;gap:13px;padding:10px 17px;border-bottom:1px solid rgba(34,48,60,.55);font-size:12.5px;background:var(--panel)}
+.led .r:last-of-type{border-bottom:none}
+.led .r .l{color:var(--mut)}.led .r .l b{color:var(--tx);font-weight:500}
+.led .r .v{color:var(--tx);white-space:nowrap}
+.led .tot{display:flex;justify-content:space-between;padding:13px 17px;background:rgba(245,172,95,.1);border-top:1px solid var(--amber2);font-size:13px}
+.led .tot .v{color:var(--amber);font-weight:500}
+
+/* checklist */
+.chk{display:flex;align-items:flex-start;gap:12px;padding:13px 15px;border:1px solid var(--edge);border-radius:var(--r);background:var(--panel);margin-bottom:8px;cursor:pointer;transition:border-color .15s}
+.chk:hover{border-color:var(--edge2)}
+.chk input{margin-top:3px;accent-color:var(--amber);width:16px;height:16px;flex-shrink:0;cursor:pointer}
+.chk .t{flex:1}
+.chk .t b{display:block;font-size:14.5px;margin-bottom:2px}
+.chk .t span{font-size:13px;color:var(--mut)}
+.chk input:checked ~ .t b{text-decoration:line-through;color:var(--dim)}
+.chk input:checked ~ .t span{color:var(--dim);opacity:.65}
+
+.subh{font-size:19px;margin:28px 0 13px}
+.subh .k{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--amber);letter-spacing:.13em;display:block;margin-bottom:6px;font-weight:400}
+ul.arr{list-style:none;color:var(--mut);font-size:14.5px}
+ul.arr li{padding-left:19px;position:relative;margin-bottom:7px}
+ul.arr li::before{content:'→';position:absolute;left:0;color:var(--amber)}
+ul.arr li b{color:var(--tx)}
+.fine{font-size:12px;color:var(--dim);line-height:1.6;margin-top:20px}
+.k{font-family:'IBM Plex Mono',monospace}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="app">
+
+<aside class="side">
+  <div class="brand">
+    <div class="kr">한국 · 2027</div>
+    <h1>Nine days<br>in Korea</h1>
+    <div class="dt">9–17 JAN · KUL → ICN</div>
+  </div>
+  <nav class="snav" id="snav" aria-label="Sections">
+    <div class="grp">Before you go</div>
+    <button data-v="entry" aria-current="true"><span class="ic">01</span>Entry &amp; visa</button>
+    <button data-v="fly"><span class="ic">02</span>Flights</button>
+    <button data-v="pack"><span class="ic">03</span>Packing</button>
+    <button data-v="stay"><span class="ic">04</span>Accommodation</button>
+    <div class="grp">On the ground</div>
+    <button data-v="plan"><span class="ic">05</span>Itinerary</button>
+    <button data-v="cost"><span class="ic">06</span>Budget</button>
+    <button data-v="sim"><span class="ic">07</span>Connectivity</button>
+    <button data-v="apps"><span class="ic">08</span>Apps</button>
+    <div class="grp">Action</div>
+    <button data-v="todo"><span class="ic">09</span>Checklist</button>
+  </nav>
+  <div class="sfoot">Base: <b>Hongdae</b><br>Split: <b>5 Seoul · 4 Busan</b><br>Entry: <b>K-ETA required</b></div>
+</aside>
+
+<div class="main">
+  <div class="topbar">
+    <div class="mtop"><span class="kr">한국</span></div>
+    <div class="crumb">Korea 2027 · <b id="crumb">Entry &amp; visa</b></div>
+    <div class="sp"></div>
+    <span class="chipmini">9–17 Jan 2027</span>
+    <span class="chipmini">−9 °C</span>
+  </div>
+
+<!-- ══ VIEW: ENTRY ══ -->
+<section class="view on" id="v-entry">
+  <div class="vh"><span class="n">01 / ENTRY</span><h2>The paperwork that can stop you boarding</h2>
+    <p>Get this wrong and nothing else matters. Malaysia's position differs from what most travel content says, and the rules shift again nine days before you fly.</p></div>
+
+  <div class="note rose">
+    <div class="lb">Read this first</div>
+    <h4>You need a K-ETA — for two independent reasons</h4>
+    <p><b>One:</b> Korea suspended the K-ETA for 67 countries, but <b>Malaysia was never on that exemption list</b>. Singapore, Brunei, Japan, Taiwan, Hong Kong and most Western countries are exempt. Malaysia, Indonesia, the Philippines, Thailand and Vietnam are not.</p>
+    <p><b>Two:</b> that exemption <b>expires 31 December 2026</b> — nine days before you land. Unless Korea extends again, everyone needs one in January 2027. A 2026 blog saying "no K-ETA needed" was never about Malaysia and lapses before your trip.</p>
+  </div>
+
+  <div class="tiles">
+    <div class="tile"><dt>Cost</dt><dd class="a">₩10,000</dd></div>
+    <div class="tile"><dt>Apply by</dt><dd>72h before</dd></div>
+    <div class="tile"><dt>Valid</dt><dd>Multi-entry</dd></div>
+    <div class="tile"><dt>Only at</dt><dd class="i">k-eta.go.kr</dd></div>
+  </div>
+
+  <h3 class="subh"><span class="k">STEP BY STEP</span>Applying, start to finish</h3>
+
+  <div class="acc"><button aria-expanded="true"><span class="num">01</span><span class="ttl">Use the official site only</span><span class="cost">₩10,000</span><span class="arw">›</span></button>
+    <div class="body"><p>Apply at <b>k-eta.go.kr</b> or the official K-ETA app. This matters more than it sounds: third-party sites charge <b>USD 50–100</b> for what officially costs about ₩10,000 (roughly RM32). If the domain isn't <b>.go.kr</b>, you're on a reseller. Approval is often quick, but the official guidance is 72 hours before departure — treat that as a hard deadline, not a suggestion.</p></div></div>
+
+  <div class="acc"><button aria-expanded="false"><span class="num">02</span><span class="ttl">Prepare a passport-style photo</span><span class="cost">free</span><span class="arw">›</span></button>
+    <div class="body" hidden><p>White background, no glasses, shoulders visible, no head covering unless religious. JPG or PNG, around <b>700×700 px</b>. A phone photo against a plain wall is fine if the lighting is even and there are no shadows behind you.</p></div></div>
+
+  <div class="acc"><button aria-expanded="false"><span class="num">03</span><span class="ttl">Have your trip details ready</span><span class="cost">—</span><span class="arw">›</span></button>
+    <div class="body" hidden><p>You'll need your <b>Korean accommodation address</b> — your first hotel is fine even though you move to Busan later — plus <b>flight numbers and dates</b> for both entry and exit. Have these to hand before you start, because the form times out.</p></div></div>
+
+  <div class="acc"><button aria-expanded="false"><span class="num">04</span><span class="ttl">Check passport validity</span><span class="cost">check now</span><span class="arw">›</span></button>
+    <div class="body" hidden><p>Six months beyond travel is the standard expectation. For a January 2027 trip, a passport expiring before roughly <b>July 2027</b> should be renewed first — and Malaysian passport renewal takes time, so this is the item to check today rather than later.</p></div></div>
+
+  <div class="acc"><button aria-expanded="false"><span class="num">05</span><span class="ttl">Save the approval offline</span><span class="cost">—</span><span class="arw">›</span></button>
+    <div class="body" hidden><p>Screenshot it rather than relying on email loading at immigration after a red-eye. Approval covers multiple entries and stays valid for years, so it will outlast this trip.</p></div></div>
+
+  <div class="grid g2" style="margin-top:20px">
+    <div class="card"><h4 style="font-size:15.5px;margin-bottom:8px">e-Arrival Card — you can skip it</h4><p style="font-size:13.5px;color:var(--mut)">Korea requires an arrival card from most visitors. A quiet benefit of holding an approved K-ETA is that <b style="color:var(--tx)">it exempts you from the arrival card</b> — genuinely useful landing at 7am on no sleep. Without one you'd complete the e-Arrival Card online instead.</p></div>
+    <div class="card"><h4 style="font-size:15.5px;margin-bottom:8px">Length of stay</h4><p style="font-size:13.5px;color:var(--mut)">Malaysians enter visa-free for tourism; the K-ETA replaces a visa rather than adding to one. Nine days sits well inside the short-stay window. Covers tourism, visiting people and events — not paid work.</p></div>
+  </div>
+
+  <div class="note" style="margin-top:18px"><div class="lb">Recheck before you commit</div>
+    <p>Entry policy moves faster than anything else here. Korea has extended the exemption several times and may again. <b>Re-check k-eta.go.kr around 2–3 months out</b> — late enough to be accurate, early enough to fix problems.</p></div>
+</section>
+
+<!-- ══ VIEW: FLIGHTS ══ -->
+<section class="view" id="v-fly">
+  <div class="vh"><span class="n">02 / FLIGHTS</span><h2>Four ways to route this trip</h2>
+    <p>Your trip starts in Seoul and ends in Busan, which opens routings most people never price. The news that changes things: <b style="color:var(--tx)">AirAsia X resumed direct Kuala Lumpur–Busan flights in June 2026</b> — four weekly, Mon/Wed/Fri/Sun, and the only Malaysian carrier flying it nonstop. Your departure, 17 January, is a Sunday.</p></div>
+
+  <div class="chips" role="group" aria-label="Filter routings">
+    <button class="chip" aria-pressed="true" data-f="all">All 4 options</button>
+    <button class="chip" aria-pressed="false" data-f="best">Best fit</button>
+    <button class="chip" aria-pressed="false" data-f="cheap">Cheapest</button>
+    <button class="chip" aria-pressed="false" data-f="simple">Simplest</button>
+  </div>
+
+  <div id="routes">
+    <div class="card" data-tags="best" style="border-color:var(--amber2);margin-bottom:13px">
+      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px">
+        <span style="font-family:'IBM Plex Mono';font-size:10px;background:var(--amber);color:#1B1206;padding:5px 10px;border-radius:3px;font-weight:500">OPTION 1 · BEST FIT</span>
+        <h4 style="font-size:17px;flex:1;min-width:180px">Open-jaw: into Seoul, home from Busan</h4>
+        <span class="k" style="font-size:11.5px;color:var(--ice)">KUL→ICN · PUS→KUL</span></div>
+      <p style="font-size:14px;color:var(--mut);margin-bottom:14px">Fly into Incheon on the overnight, fly home directly from Busan Gimhae. No backtracking — your itinerary ends where your flight leaves. Book as multi-city, or as two one-ways if that prices better.</p>
+      <div class="grid g2">
+        <div><div class="k" style="font-size:9px;letter-spacing:.12em;color:var(--mint);margin-bottom:6px">WORKS BECAUSE</div><ul class="arr" style="font-size:13px"><li>Zero backtracking — saves a half-day</li><li>AirAsia X flies PUS→KUL Sundays, matching 17 Jan</li><li>Gimhae is ~30 min from central Busan</li></ul></div>
+        <div><div class="k" style="font-size:9px;letter-spacing:.12em;color:var(--rose);margin-bottom:6px">WATCH OUT</div><ul class="arr" style="font-size:13px"><li>Only 4 weekly frequencies — date is fixed</li><li>Low-cost carrier: add bags to compare fairly</li><li>Multi-city can price oddly; check two one-ways</li></ul></div>
+      </div>
+    </div>
+
+    <div class="card" data-tags="simple" style="margin-bottom:13px">
+      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px">
+        <span style="font-family:'IBM Plex Mono';font-size:10px;background:var(--edge);color:var(--mut);padding:5px 10px;border-radius:3px">OPTION 2 · SIMPLEST</span>
+        <h4 style="font-size:17px;flex:1;min-width:180px">Plain return through Seoul</h4>
+        <span class="k" style="font-size:11.5px;color:var(--ice)">KUL ⇄ ICN</span></div>
+      <p style="font-size:14px;color:var(--mut);margin-bottom:14px">Standard return into and out of Incheon, with the KTX back up from Busan on your last day — about 2h45m plus the airport transfer, so most of Day 9 becomes travel.</p>
+      <div class="grid g2">
+        <div><div class="k" style="font-size:9px;letter-spacing:.12em;color:var(--mint);margin-bottom:6px">WORKS BECAUSE</div><ul class="arr" style="font-size:13px"><li>Four carriers, ~29 weekly flights</li><li>Easiest to find a cheap fare or use miles</li><li>Full-service options with real baggage</li></ul></div>
+        <div><div class="k" style="font-size:9px;letter-spacing:.12em;color:var(--rose);margin-bottom:6px">WATCH OUT</div><ul class="arr" style="font-size:13px"><li>Costs the last day plus ~₩60,000 KTX</li><li>Hauling luggage north after going south</li></ul></div>
+      </div>
+    </div>
+
+    <div class="card" data-tags="other" style="margin-bottom:13px">
+      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px">
+        <span style="font-family:'IBM Plex Mono';font-size:10px;background:var(--edge);color:var(--mut);padding:5px 10px;border-radius:3px">OPTION 3 · REVERSED</span>
+        <h4 style="font-size:17px;flex:1;min-width:180px">Into Busan first, home from Seoul</h4>
+        <span class="k" style="font-size:11.5px;color:var(--ice)">KUL→PUS · ICN→KUL</span></div>
+      <p style="font-size:14px;color:var(--mut);margin-bottom:14px">Flip the trip: land in Busan, do the coast first, KTX north, fly home from Incheon. Needs the itinerary reordered but it's genuinely viable now the direct route exists.</p>
+      <div class="grid g2">
+        <div><div class="k" style="font-size:9px;letter-spacing:.12em;color:var(--mint);margin-bottom:6px">WORKS BECAUSE</div><ul class="arr" style="font-size:13px"><li>Ends in Seoul where flight choice is widest</li><li>Busan's small airport is a gentler arrival</li><li>Saves the big city until you've acclimatised</li></ul></div>
+        <div><div class="k" style="font-size:9px;letter-spacing:.12em;color:var(--rose);margin-bottom:6px">WATCH OUT</div><ul class="arr" style="font-size:13px"><li>Every day needs reordering</li><li>KUL→PUS also runs limited frequencies</li><li>Chef bookings are Seoul-side, so they shift late</li></ul></div>
+      </div>
+    </div>
+
+    <div class="card" data-tags="cheap" style="margin-bottom:13px">
+      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px">
+        <span style="font-family:'IBM Plex Mono';font-size:10px;background:var(--edge);color:var(--mut);padding:5px 10px;border-radius:3px">OPTION 4 · CHEAPEST</span>
+        <h4 style="font-size:17px;flex:1;min-width:180px">Return with a connection</h4>
+        <span class="k" style="font-size:11.5px;color:var(--ice)">via HAN · SIN · HKG · TPE</span></div>
+      <p style="font-size:14px;color:var(--mut);margin-bottom:14px">One-stop through Hanoi, Singapore, Hong Kong, Taipei or mainland Chinese hubs. Frequently the lowest fare and often the only way to make an awkward date work. Expect 8h50m and up.</p>
+      <div class="grid g2">
+        <div><div class="k" style="font-size:9px;letter-spacing:.12em;color:var(--mint);margin-bottom:6px">WORKS BECAUSE</div><ul class="arr" style="font-size:13px"><li>Usually the cheapest tickets on the route</li><li>Full-service: Vietnam Airlines, Cathay, SQ, EVA</li><li>Far more date flexibility</li></ul></div>
+        <div><div class="k" style="font-size:9px;letter-spacing:.12em;color:var(--rose);margin-bottom:6px">WATCH OUT</div><ul class="arr" style="font-size:13px"><li>Adds 2–4 hours each way</li><li>Check transit visas for mainland China</li><li>Winter delays cascade — keep layovers generous</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="note ice"><div class="lb">The flight that makes Day 1 work</div>
+    <p>Non-stop KUL–ICN departures run from about 12:55 to 23:55, flight times 6h15m–7h20m. The <b>23:55 departure lands around 07:15</b> — leaving the night of 8 January puts you in Seoul with most of the 9th usable, which is what the itinerary assumes. An afternoon departure arrives that evening and costs you the whole first day.</p></div>
+
+  <h3 class="subh"><span class="k">EXACTLY WHAT'S INCLUDED</span>Baggage &amp; cabin, economy</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Airline</th><th>Checked</th><th>Cabin</th><th>Pitch</th><th>In the base fare</th></tr></thead>
+    <tbody>
+      <tr><td><b>Malaysia Airlines</b><span class="sm">MH38 / MH66 · KUL T1 → ICN T1</span></td><td class="m">20–30 kg<span class="sm">varies by fare</span></td><td class="m">1 bag, 7 kg<span class="sm">56×36×23 cm</span></td><td class="m">30–32 in</td><td><span class="y">Bag, meals, seat, entertainment.</span> Full service. Checked dimensions capped 158 cm; excess per kg.</td></tr>
+      <tr><td><b>Korean Air</b><span class="sm">KE428 · KUL T1 → ICN T2</span></td><td class="m">1 pc, 23 kg<span class="sm">158 cm total</span></td><td class="m">1 bag + personal<span class="sm">12 kg combined, 115 cm</span></td><td class="m">~33 in</td><td><span class="y">Bag, meals, seat, entertainment.</span> SkyTeam. Lands ICN Terminal 2 — newer, calmer.</td></tr>
+      <tr><td><b>Batik Air Malaysia</b><span class="sm">OD820 · KUL T1 → ICN T1</span></td><td class="m">20 kg<span class="sm">Super Saver may have none</span></td><td class="m">1 bag, 7 kg<span class="sm">personal item counts in the 7 kg</span></td><td class="m">30–32 in</td><td><span class="n">Check your fare class.</span> Standard economy has 20 kg, but the cheapest Super Saver fares can exclude checked baggage entirely.</td></tr>
+      <tr><td><b>AirAsia X</b><span class="sm">D7504 · KUL T2 klia2 → ICN T1</span></td><td class="m"><span class="n">None</span><span class="sm">pre-book 15/20/25/30/40 kg</span></td><td class="m">7 kg total<span class="sm">cabin + personal combined</span></td><td class="m">28–29 in</td><td><span class="n">Seat only.</span> Bags, meals, seats all extra and cheaper pre-booked. Max 32 kg per piece. Departs klia2.</td></tr>
+    </tbody></table></div>
+  <p class="fine">The comparison that matters: AirAsia X's headline fare looks cheapest, but add 20 kg, a meal and a seat and it often lands near Batik or Malaysia Airlines. On a nine-day winter trip you <em>will</em> check a bag — a padded coat and boots alone eat the allowance — so price fares <b style="color:var(--tx)">with</b> baggage. Allowances vary by fare bucket; confirm on the airline's own site.</p>
+
+  <h3 class="subh"><span class="k">WHERE TO BUY</span>Compare across all of these</h3>
+  <div class="grid g3">
+    <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:8px">COMPARE FIRST</div><h4 style="font-size:15.5px;margin-bottom:6px">Google Flights</h4><p style="font-size:13px;color:var(--mut)">Fastest whole-route view with a cheap-date calendar, and it handles multi-city cleanly — which matters for the open-jaw. Doesn't sell tickets.</p></div>
+    <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:8px">COMPARE FIRST</div><h4 style="font-size:15.5px;margin-bottom:6px">Skyscanner</h4><p style="font-size:13px;color:var(--mut)">Broadest net including small agents, whole-month view. Some cheap results are obscure resellers — check who you're buying from.</p></div>
+    <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:8px">BOOK DIRECT</div><h4 style="font-size:15.5px;margin-bottom:6px">Airline sites</h4><p style="font-size:13px;color:var(--mut)">Best for changes, cancellations and loyalty — and the only place to confirm your exact fare's baggage rules before paying.</p></div>
+    <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:8px">REGIONAL</div><h4 style="font-size:15.5px;margin-bottom:6px">Traveloka</h4><p style="font-size:13px;color:var(--mut)">Strong in Southeast Asia, prices in ringgit, local payment methods. Consistently competitive on this route.</p></div>
+    <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:8px">REGIONAL</div><h4 style="font-size:15.5px;margin-bottom:6px">AirAsia MOVE</h4><p style="font-size:13px;color:var(--mut)">The place to price the direct Busan route properly, since it bundles add-ons transparently. Also sells other carriers.</p></div>
+    <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:8px">GLOBAL</div><h4 style="font-size:15.5px;margin-bottom:6px">Trip.com</h4><p style="font-size:13px;color:var(--mut)">Sharp on Asian routes and strong for connections through Chinese and Taiwanese hubs. Frequent promo codes.</p></div>
+  </div>
+
+  <div class="note" style="margin-top:18px"><div class="lb">Timing</div>
+    <p>Early January spans New Year travel and Korean winter tourism — fares climb and cheap seats go first. Set alerts and book when you see a good one; waiting for a late January deal rarely works. If you want the open-jaw, book early: four weekly frequencies means limited seats.</p></div>
+</section>
+
+<!-- ══ VIEW: PACKING ══ -->
+<section class="view" id="v-pack">
+  <div class="vh"><span class="n">03 / PACKING</span><h2>Dressing for −9 °C when you live at 30 °C</h2>
+    <p>Seoul runs roughly −9 °C to 2 °C in January; Busan is milder but windier. From Kuala Lumpur this is a real shock. The mistake almost everyone makes is buying one enormous coat — Korean interiors are heated hard, so you roast in shops and freeze outside. Thin layers you can shed are the entire strategy.</p></div>
+
+  <div class="note"><div class="lb">Each item links to real photos</div>
+    <p>Tap <b>See real photos &amp; prices</b> on any card to open a live product search — you'll see actual current products rather than an illustration.</p></div>
+
+  <div class="chips" role="group" aria-label="Filter packing">
+    <button class="chip" aria-pressed="true" data-p="all">Everything</button>
+    <button class="chip" aria-pressed="false" data-p="buy-my">Buy in Malaysia</button>
+    <button class="chip" aria-pressed="false" data-p="buy-kr">Buy in Korea</button>
+    <button class="chip" aria-pressed="false" data-p="critical">Non-negotiable</button>
+  </div>
+
+  <div class="grid g3" id="packgrid">
+    <div class="card" data-pt="buy-my critical">
+      <a class="ph" href="https://www.google.com/search?q=uniqlo+heattech+thermal+innerwear&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="ico">◳</span><span class="tx">SEE REAL PHOTOS &amp; PRICES</span></span><span class="kr2">히트텍</span></a>
+      <div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">LAYER 1 · PACK 3–4</div>
+      <h4 style="font-size:15.5px;margin-bottom:6px">Thermal top &amp; leggings</h4>
+      <p style="font-size:13px;color:var(--mut)">The highest-value thing in your bag. Thin thermals worn under everything. Uniqlo Heattech is the reference product and sold in Malaysia — buy before you fly. Take enough for a fresh set daily; they're thin enough to barely cost luggage space.</p>
+    </div>
+
+    <div class="card" data-pt="buy-my">
+      <a class="ph" href="https://www.google.com/search?q=mens+fleece+jacket+winter+mid+layer&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="ico">◳</span><span class="tx">SEE REAL PHOTOS &amp; PRICES</span></span><span class="kr2">후리스</span></a>
+      <div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">LAYER 2 · PACK 3–4</div>
+      <h4 style="font-size:15.5px;margin-bottom:6px">Fleece or knit sweaters</h4>
+      <p style="font-size:13px;color:var(--mut)">Over the thermal, under the coat. Fleece is light and dries fast; wool knits photograph better. This is the layer you take off indoors, so pick things you're happy to be seen in on their own.</p>
+    </div>
+
+    <div class="card" data-pt="buy-kr critical">
+      <a class="ph" href="https://www.google.com/search?q=long+padded+down+winter+coat+hooded&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="ico">◳</span><span class="tx">SEE REAL PHOTOS &amp; PRICES</span></span><span class="kr2">패딩</span></a>
+      <div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">LAYER 3 · PACK 1</div>
+      <h4 style="font-size:15.5px;margin-bottom:6px">Long padded or down coat</h4>
+      <p style="font-size:13px;color:var(--mut)">The one big purchase. Koreans wear long padded coats because length shields your legs from wind. Prioritise a hood and windproof shell over thickness. Honest option: these are everywhere in Seoul, often cheaper and better suited — you could buy on Day 1.</p>
+    </div>
+
+    <div class="card" data-pt="buy-my critical">
+      <a class="ph" href="https://www.google.com/search?q=waterproof+winter+boots+non+slip+grip+sole&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="ico">◳</span><span class="tx">SEE REAL PHOTOS &amp; PRICES</span></span><span class="kr2">부츠</span></a>
+      <div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">FOOTWEAR · PACK 1–2</div>
+      <h4 style="font-size:15.5px;margin-bottom:6px">Waterproof boots with grip</h4>
+      <p style="font-size:13px;color:var(--mut)">A safety item, not a comfort one. Palace courtyards, the Cheonggyecheon path and Busan's hillside steps all ice over. Real tread, waterproof upper. Break them in before you fly — most days here run past 15,000 steps.</p>
+    </div>
+
+    <div class="card" data-pt="buy-my critical">
+      <a class="ph" href="https://www.google.com/search?q=touchscreen+winter+gloves+beanie+scarf&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="ico">◳</span><span class="tx">SEE REAL PHOTOS &amp; PRICES</span></span><span class="kr2">장갑</span></a>
+      <div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">EXTREMITIES · ESSENTIAL</div>
+      <h4 style="font-size:15.5px;margin-bottom:6px">Gloves, beanie, scarf</h4>
+      <p style="font-size:13px;color:var(--mut)">Heat escapes fastest from hands, head and neck, and these hurt first in wind. Get touchscreen gloves — you'll be on Naver Map constantly, and bare hands at −9 °C is painful within a minute.</p>
+    </div>
+
+    <div class="card" data-pt="buy-kr">
+      <a class="ph" href="https://www.google.com/search?q=thermal+wool+socks+disposable+hand+warmers&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="ico">◳</span><span class="tx">SEE REAL PHOTOS &amp; PRICES</span></span><span class="kr2">핫팩</span></a>
+      <div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">SMALL · BIG DIFFERENCE</div>
+      <h4 style="font-size:15.5px;margin-bottom:6px">Hand warmers &amp; thermal socks</h4>
+      <p style="font-size:13px;color:var(--mut)">Heat packs cost almost nothing at any Korean convenience store — buy a box day one, keep two in your coat permanently. Thermal socks matter more than expected once you're standing still for photos at Gamcheon.</p>
+    </div>
+
+    <div class="card" data-pt="buy-kr">
+      <a class="ph" href="https://www.google.com/search?q=winter+face+moisturiser+lip+balm+dry+skin&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="ico">◳</span><span class="tx">SEE REAL PHOTOS &amp; PRICES</span></span><span class="kr2">립밤</span></a>
+      <div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">SKIN · OFTEN FORGOTTEN</div>
+      <h4 style="font-size:15.5px;margin-bottom:6px">Heavy moisturiser &amp; lip balm</h4>
+      <p style="font-size:13px;color:var(--mut)">Korean winter air is dry in a way KL never is, and heated indoor air compounds it — lips crack within a day or two. You pass three Olive Young flagships, so this is genuinely better bought on arrival.</p>
+    </div>
+
+    <div class="card" data-pt="buy-my">
+      <a class="ph" href="https://www.google.com/search?q=smart+casual+shirt+knit+winter+dinner+outfit&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="ico">◳</span><span class="tx">SEE REAL PHOTOS &amp; PRICES</span></span><span class="kr2">캐주얼</span></a>
+      <div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">OCCASION · PACK 1</div>
+      <h4 style="font-size:15.5px;margin-bottom:6px">Something decent for chef dinners</h4>
+      <p style="font-size:13px;color:var(--mut)">You have Michelin-starred bookings. Nothing demands a suit, but smart-casual means feeling right at Nuwa or Solbam rather than underdressed. It also has to work worn over a thermal layer.</p>
+    </div>
+  </div>
+
+  <div class="grid g2" style="margin-top:18px">
+    <div class="card"><h4 style="font-size:15px;margin-bottom:8px">Buy there, not here</h4><p style="font-size:13.5px;color:var(--mut)">Padded coats, hand warmers, thermal socks, skincare and umbrellas are all cheaper and more winter-appropriate in Korea. If baggage is tight, bring base layers and boots — what you need the moment you land — and buy the rest in your first two days.</p></div>
+    <div class="card"><h4 style="font-size:15px;margin-bottom:8px">Leave behind</h4><p style="font-size:13.5px;color:var(--mut)">Shorts, sandals, thin cotton anything, most of what you'd wear in KL. Skip a large umbrella too — January in Korea is dry rather than wet, and snow is better handled by a hood.</p></div>
+  </div>
+</section>
+
+<!-- ══ VIEW: STAY ══ -->
+<section class="view" id="v-stay">
+  <div class="vh"><span class="n">04 / ACCOMMODATION</span><h2>Real places, filtered</h2>
+    <p>Every property below is real, with its actual Google rating, review count and what guests specifically say about the rooms. <b style="color:var(--tx)">Laundry is called out on every card</b> — for nine days of bulky winter layers it genuinely matters.</p></div>
+
+  <div class="note ice"><div class="lb">On laundry specifically</div>
+    <p>Almost no Korean hotel room has an in-room washing machine — that's an apartment feature, not a hotel one. You're realistically choosing between <b>coin laundry on site</b> (self-service washer and dryer, cheap, best for a long trip), <b>paid service</b> (per item, expensive), or <b>nothing</b>. For an actual washer in your room, book a serviced apartment or Airbnb and filter for it explicitly.</p></div>
+
+  <div class="chips" role="group" aria-label="Filter hotels">
+    <button class="chip" aria-pressed="true" data-h="all">All 12</button>
+    <button class="chip" aria-pressed="false" data-h="seoul">Seoul · Hongdae</button>
+    <button class="chip bz" aria-pressed="false" data-h="busan">Busan</button>
+    <button class="chip" aria-pressed="false" data-h="laundry">Has laundry</button>
+    <button class="chip" aria-pressed="false" data-h="budget">Budget</button>
+  </div>
+
+  <div class="grid g2" id="hotelgrid">
+    <div class="card hot" data-ht="seoul laundry">
+      <div class="top"><h4>Mercure Ambassador Seoul Hongdae</h4><div class="rt">4.6 ★<small>1,450 reviews</small></div></div>
+      <div class="loc">144 YANGHWA-RO · MAPO-GU</div>
+      <p>Strongest all-round pick. Guests specifically call out the <b style="color:var(--tx)">coin laundry and gym</b> as making the stay convenient, with rooms described as clean, modern and well equipped. Walking distance to Hongdae's shopping streets and the subway. Accor group, so staff English is reliable. Recurring complaint: inconsistent housekeeping — some rooms spotless, others dusty. Inspect on arrival.</p>
+      <div class="am"><span class="y">Coin laundry</span><span class="y">Gym</span><span>Modern</span><span>English desk</span></div>
+      <div class="pf"><span class="v">~₩150–220k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Mercure%20Ambassador%20Seoul%20Hongdae&amp;query_place_id=ChIJmzQsGfGZfDURZCHdQ9P8bAA" target="_blank" rel="noopener">Photos &amp; map →</a></div>
+    </div>
+
+    <div class="card hot" data-ht="seoul">
+      <div class="top"><h4>L7 Hongdae by Lotte</h4><div class="rt">4.6 ★<small>5,189 reviews</small></div></div>
+      <div class="loc">141 YANGHWA-RO · NEXT TO SUBWAY</div>
+      <p>The design-hotel option and most-reviewed in the district. Lobby on the 21st floor with a rooftop bar, a heated pool (extra fee), games in the common area, free water refill points on corridors. Beside the station and the Nike and Adidas flagships. Two consistent caveats: <b style="color:var(--tx)">rooms are small</b> — barely room for two open suitcases — and lift waits get long at peak.</p>
+      <div class="am"><span class="y">Rooftop bar</span><span class="y">Pool (paid)</span><span class="y">Water refill</span><span class="n">Small rooms</span></div>
+      <div class="pf"><span class="v">~₩200–320k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=L7%20Hongdae&amp;query_place_id=ChIJ5WXJar2ZfDUREfMssWUNq2U" target="_blank" rel="noopener">Photos &amp; map →</a></div>
+    </div>
+
+    <div class="card hot" data-ht="seoul">
+      <div class="top"><h4>Holiday Inn Express Seoul Hongdae</h4><div class="rt">4.4 ★<small>2,059 reviews</small></div></div>
+      <div class="loc">188 YANGHWA-RO · ABOVE METRO EXIT 5</div>
+      <p>Best on pure logistics: it sits <b style="color:var(--tx)">directly above Hongdae station</b>, one to two minutes from Exit 4 — so the AREX from Incheon drops you essentially at the door, worth a lot landing at 7am with luggage. Breakfast buffet included, 24-hour convenience store in the building, reliable luggage storage. Trade-off: small rooms with a hanging rail instead of drawers, and thin walls.</p>
+      <div class="am"><span class="y">Breakfast</span><span class="y">On the station</span><span class="y">Bag storage</span><span class="n">Thin walls</span></div>
+      <div class="pf"><span class="v">~₩170–260k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Holiday%20Inn%20Express%20Seoul%20Hongdae&amp;query_place_id=ChIJLw4y4-mYfDURxDEN4Ckb4wo" target="_blank" rel="noopener">Photos &amp; map →</a></div>
+    </div>
+
+    <div class="card hot" data-ht="seoul budget">
+      <div class="top"><h4>Hongdae Style Guesthouse</h4><div class="rt">4.6 ★<small>90 reviews</small></div></div>
+      <div class="loc">DONGGYO-DONG · NEAR EXIT 1, LINE 2</div>
+      <p>Highest-rated guesthouse in the area and a big step down in price. Homemade breakfast guests call filling, and an owner (Min) repeatedly singled out — one reviewer arrived a day late without luggage and was helped through the whole mess. Close to both the main street and Yeonnam-dong. Note: rooms small, <b style="color:var(--tx)">bathrooms shared</b>, approach is up rock steps so not step-free.</p>
+      <div class="am"><span class="y">Breakfast</span><span class="y">Excellent host</span><span class="n">Shared bathroom</span><span class="n">Steps</span></div>
+      <div class="pf"><span class="v">~₩50–80k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Hongdae%20Style%20Guesthouse&amp;query_place_id=ChIJfWgUId2YfDURAR_eAgfahhk" target="_blank" rel="noopener">Photos &amp; map →</a></div>
+    </div>
+
+    <div class="card hot" data-ht="seoul budget">
+      <div class="top"><h4>Hongdae Guesthouse</h4><div class="rt">4.4 ★<small>134 reviews</small></div></div>
+      <div class="loc">159-6 DONGGYO-DONG · CONNECTS TO EXIT 1</div>
+      <p>A repeat-visit favourite. Directly connected to subway Exit 1 <b style="color:var(--tx)">with an escalator</b> — a real advantage with a big suitcase — and in front of the main Hongdae area, airport shuttle stop nearby. Rooms described as spacious and clean with microwave and iron available, and staff who hold luggage if you side-trip to Busan. One reviewer felt photos oversold it, so check recent images.</p>
+      <div class="am"><span class="y">Microwave &amp; iron</span><span class="y">Escalator to subway</span><span class="y">Bag storage</span><span>Breakfast</span></div>
+      <div class="pf"><span class="v">~₩50–85k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Hongdae%20Guesthouse&amp;query_place_id=ChIJyQvE3sKYfDURIYERZC3MpPE" target="_blank" rel="noopener">Photos &amp; map →</a></div>
+    </div>
+
+    <div class="card hot" data-ht="seoul budget laundry">
+      <div class="top"><h4>Take 1 Guesthouse Hongdae</h4><div class="rt">3.6 ★<small>47 reviews</small></div></div>
+      <div class="loc">198-29 DONGGYO-DONG</div>
+      <p>Budget end, genuinely mixed reviews — included because guests mention an <b style="color:var(--tx)">affordable on-site laundry service</b>, free basic breakfast ingredients, bed curtains in dorms and a lounge. Honest counterweight: <b style="color:var(--tx)">no lift across four floors</b>, some reports of stained walls and bedding, and a warning that slightly more money buys considerably better.</p>
+      <div class="am"><span class="y">Cheap laundry</span><span class="y">Dorm curtains</span><span class="n">No lift</span><span class="n">Mixed cleanliness</span></div>
+      <div class="pf"><span class="v">~₩25–45k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Take%201%20Guesthouse%20Hongdae&amp;query_place_id=ChIJ18W1Mf-ZfDURAuuby1ROWSU" target="_blank" rel="noopener">Photos &amp; map →</a></div>
+    </div>
+
+    <div class="card hot" data-ht="busan">
+      <div class="top"><h4>Shilla Stay Haeundae</h4><div class="rt">4.2 ★<small>3,634 reviews</small></div></div>
+      <div class="loc">HAEUNDAE · IN FRONT OF THE BEACH</div>
+      <p>Most-reviewed Haeundae option and a reliable Shilla-group standard. Rooms described as spacious, spotless and comfortable — several guests noted they were larger and cheaper than a comparable Japanese hotel. Directly in front of Haeundae Beach and the market, so Days 6 and 7 both start at your door. Recurring gripe: check-in often runs past 3pm, occasionally to 4pm.</p>
+      <div class="am"><span class="y">Spacious</span><span class="y">Beachfront</span><span class="y">Buffet</span><span class="n">Slow check-in</span></div>
+      <div class="pf"><span class="v">~₩130–200k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Shilla%20Stay%20Haeundae&amp;query_place_id=ChIJCRw0u16NaDURKZnPabmjQDw" target="_blank" rel="noopener">Photos &amp; map →</a></div>
+    </div>
+
+    <div class="card hot" data-ht="busan budget">
+      <div class="top"><h4>Marysol by Haeundae Beach</h4><div class="rt">4.6 ★<small>267 reviews</small></div></div>
+      <div class="loc">37 GUNAM-RO · 7 MIN TO STATION</div>
+      <p>Highest-rated of the Haeundae set and explicitly budget-friendly for the location. Ocean-view rooms get strong praise — clean, spacious, comfortable beds, big beach views. Lobby on the 3rd floor, CU convenience store on the ground floor, restaurant on the 32nd. Staff repeatedly described as exceptionally helpful. Caveats: shares lifts with another hotel so waits can be long, and a minority report grease and smell in older rooms.</p>
+      <div class="am"><span class="y">Ocean view</span><span class="y">CU downstairs</span><span class="y">Great value</span><span class="n">Lift queues</span></div>
+      <div class="pf"><span class="v">~₩90–150k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Marysol%20by%20haeundae%20beach&amp;query_place_id=ChIJgVa7u12NaDURCpc6zMlquIc" target="_blank" rel="noopener">Photos &amp; map →</a></div>
+    </div>
+
+    <div class="card hot" data-ht="busan">
+      <div class="top"><h4>MS Hotel Haeundae</h4><div class="rt">4.2 ★<small>525 reviews</small></div></div>
+      <div class="loc">271 HAEUNDAEHAEBYEON-RO · OPPOSITE BEACH</div>
+      <p>Directly across from Haeundae Beach with genuine ocean views — and the detail that matters for your plan, it's a <b style="color:var(--tx)">10–15 minute walk to the Blue Line Park sky capsules</b>, so Day 7 starts on foot. Bus stop right outside, night market close by, rooms described as spacious and clean. Note that staff switch the air conditioning off after cleaning and rooms warm up in the afternoon.</p>
+      <div class="am"><span class="y">Walk to Sky Capsule</span><span class="y">Ocean view</span><span class="y">Bus outside</span><span class="n">AC switched off</span></div>
+      <div class="pf"><span class="v">~₩100–160k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=MS%20Hotel%20Haeundae&amp;query_place_id=ChIJ17vASFyNaDURXXAc5t8QXiY" target="_blank" rel="noopener">Photos &amp; map →</a></div>
+    </div>
+
+    <div class="card hot" data-ht="busan laundry">
+      <div class="top"><h4>Hanwha Resort Haeundae</h4><div class="rt">4.3 ★<small>6,680 reviews</small></div></div>
+      <div class="loc">MARINE CITY · BRIDGE VIEWS</div>
+      <p>Resort-scale and by far the most reviewed property in Haeundae. Rooms described as super clean and well equipped, with a <b style="color:var(--tx)">laundry service downstairs plus a small convenience store</b> in the building, and strong Gwangan Bridge views. Good seafood restaurant and a well-regarded breakfast buffet, both charged separately. Downsides: few power outlets, room temperature you can't really control, dated rooms.</p>
+      <div class="am"><span class="y">Laundry on site</span><span class="y">Shop in building</span><span class="y">Bridge views</span><span class="n">Dated</span></div>
+      <div class="pf"><span class="v">~₩120–200k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Hanwha%20Resort%20Haeundae&amp;query_place_id=ChIJE-cp562SaDURVkWeQcziN34" target="_blank" rel="noopener">Photos &amp; map →</a></div>
+    </div>
+
+    <div class="card hot" data-ht="busan laundry">
+      <div class="top"><h4>Solaria Nishitetsu Hotel Busan</h4><div class="rt">4.1 ★<small>1,747 reviews</small></div></div>
+      <div class="loc">20 SEOMYEON-RO · HEART OF SEOMYEON</div>
+      <p>Japanese-run, right in the middle of Seomyeon, walking distance to restaurants and the subway. Rooms a good size with ample closet space, a desk and a lounge chair; several guests praise the <b style="color:var(--tx)">soundproofing</b> despite the busy location, plus excellent water pressure. <b style="color:var(--tx)">Laundry is per-item service</b>, not coin-operated. Main complaint is noisy air conditioning in some rooms.</p>
+      <div class="am"><span class="y">Soundproofed</span><span class="y">Spacious</span><span>Laundry per item</span><span class="n">Noisy AC</span></div>
+      <div class="pf"><span class="v">~₩110–170k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Solaria%20Nishitetsu%20Hotel%20Busan&amp;query_place_id=ChIJX7hS4nDraDUR8zZOPw2Z0Pg" target="_blank" rel="noopener">Photos &amp; map →</a></div>
+    </div>
+
+    <div class="card hot" data-ht="busan budget">
+      <div class="top"><h4>tt hotel</h4><div class="rt">4.4 ★<small>712 reviews</small></div></div>
+      <div class="loc">35 SAESSAK-RO · SEOMYEON</div>
+      <p>Best-rated of the Seomyeon business hotels and repeatedly described as good value. Clean rooms, friendly staff, convenience store beside the lobby, and a breakfast that punches above the price — one frequent business traveller notes fruit and freshly squeezed juice at a three-star rate. Near Seomyeon station and Lotte. Reported issues: occasional low shower pressure, some rooms needing maintenance.</p>
+      <div class="am"><span class="y">Strong breakfast</span><span class="y">Shop at lobby</span><span class="y">Good value</span><span class="n">Variable upkeep</span></div>
+      <div class="pf"><span class="v">~₩80–130k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=tt%20hotel%20Busan&amp;query_place_id=ChIJDQNHsW7raDURKHnjeY7dejs" target="_blank" rel="noopener">Photos &amp; map →</a></div>
+    </div>
+  </div>
+
+  <div class="note rose" style="margin-top:18px"><div class="lb">Three in Hongdae I'd steer you away from</div>
+    <p>These show up in searches and look fine in photos, but the review record is poor and consistent. <b>Hotel The Designers Hongdae</b> (3.3★, 851) — repeated reports of dirt, mould, broken fixtures, unresponsive housekeeping. <b>THE GRAY HOTEL</b> (3.7★) — cigarette smell, burn holes in bedding, guests describing staff as hostile. <b>H Avenue Hotel Idae</b> (3.7★) — listed 3-star on booking sites, signed 2-star at the door, multiple reviewers using the word "scammed". Booking-site photos are not a reliable guide — read the recent one-star reviews.</p></div>
+
+  <h3 class="subh"><span class="k">WHERE TO BOOK</span>Compare at least three</h3>
+  <div class="grid g3">
+    <div class="card"><h4 style="font-size:15px;margin-bottom:6px">Agoda</h4><p style="font-size:13px;color:var(--mut)">Widest Korean inventory of the international platforms, including small guesthouses that don't appear elsewhere. Prices in ringgit.</p></div>
+    <div class="card"><h4 style="font-size:15px;margin-bottom:6px">Booking.com</h4><p style="font-size:13px;color:var(--mut)">Best filtering and the most genuinely free-cancellation rates — which matters when booking months ahead.</p></div>
+    <div class="card"><h4 style="font-size:15px;margin-bottom:6px">Yanolja · GoodChoice</h4><p style="font-size:13px;color:var(--mut)">Korea's two domestic apps, strong on motels and mid-range at rates international sites often don't match. English interfaces. Most travellers never check these.</p></div>
+    <div class="card"><h4 style="font-size:15px;margin-bottom:6px">Airbnb</h4><p style="font-size:13px;color:var(--mut)">The realistic route to an actual in-room washing machine. Filter for "washer" explicitly, and check the listing is legally registered — Korea regulates short-term rentals.</p></div>
+    <div class="card"><h4 style="font-size:15px;margin-bottom:6px">Hostelworld</h4><p style="font-size:13px;color:var(--mut)">Better hostel-specific detail — noise, atmosphere, bathroom ratios, and whether the laundry actually works.</p></div>
+    <div class="card"><h4 style="font-size:15px;margin-bottom:6px">Book the weekend first</h4><p style="font-size:13px;color:var(--mut)">Your Busan nights include Fri 15 and Sat 16 January. Weekend rates run higher and good rooms go first — locking those two early saves more than platform-hopping.</p></div>
+  </div>
+  <p class="fine">Ratings, review counts and locations from Google Maps, accurate when compiled. Nightly prices are indicative January ranges and vary by date, room type and platform. Confirm amenities with the property before booking — laundry facilities in particular get added and removed without notice.</p>
+</section>
+
+<!-- ══ VIEW: ITINERARY ══ -->
+<section class="view" id="v-plan">
+  <div class="vh"><span class="n">05 / ITINERARY</span><h2>Nine days, one at a time</h2>
+    <p>Pick a day below. Each has a <b style="color:var(--tx)">Plan B</b> covering what actually goes wrong in January — a restaurant closed, snow shutting an outdoor site, a booking you couldn't get, or being too wrecked for the full version. Tap any photo panel to see real images of that place.</p></div>
+
+  <div class="dayrail" role="group" aria-label="Choose a day" id="dayrail">
+    <button class="dchip" aria-pressed="true" data-d="1"><span class="d">SAT · JAN 9</span><span class="t">Arrive</span></button>
+    <button class="dchip" aria-pressed="false" data-d="2"><span class="d">SUN · JAN 10</span><span class="t">Palaces</span></button>
+    <button class="dchip" aria-pressed="false" data-d="3"><span class="d">MON · JAN 11</span><span class="t">Seongsu</span></button>
+    <button class="dchip" aria-pressed="false" data-d="4"><span class="d">TUE · JAN 12</span><span class="t">Gangnam</span></button>
+    <button class="dchip" aria-pressed="false" data-d="5"><span class="d">WED · JAN 13</span><span class="t">Itaewon</span></button>
+    <button class="dchip bz" aria-pressed="false" data-d="6"><span class="d">THU · JAN 14</span><span class="t">→ Busan</span></button>
+    <button class="dchip bz" aria-pressed="false" data-d="7"><span class="d">FRI · JAN 15</span><span class="t">Coast</span></button>
+    <button class="dchip bz" aria-pressed="false" data-d="8"><span class="d">SAT · JAN 16</span><span class="t">Gamcheon</span></button>
+    <button class="dchip bz" aria-pressed="false" data-d="9"><span class="d">SUN · JAN 17</span><span class="t">Fly home</span></button>
+  </div>
+
+  <!-- DAY 1 -->
+  <div class="dayview" data-day="1">
+    <h3 class="subh" style="margin-top:14px"><span class="k">DAY 1 · SATURDAY 9 JANUARY · JONGNO &amp; MYEONG-DONG</span>Land, hanok cafés, ease in</h3>
+    <div class="tabs" role="tablist"><button role="tab" aria-selected="true">PLAN A · as planned</button><button role="tab" aria-selected="false">PLAN B · if you're wrecked</button></div>
+    <div class="pane card">
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Incheon+Airport+AREX+train&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">~07:15</div><div class="bd"><h5>Incheon → Hongdae<span class="kr">AREX</span></h5><p>eSIM and T-money at the airport, AREX direct to Hongik Univ. Station. Most places hold bags if the room isn't ready.</p><span class="pr">₩4,500</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Ikseon-dong+hanok+village+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Late morning</div><div class="bd"><h5>Ikseon-dong Hanok Village<span class="kr">익선동</span></h5><p>Restored 1920s hanok houses turned into cafés and tiny boutiques. Warm, low-effort, ideal off a red-eye — duck into a heated café whenever the cold bites.</p><span class="pr free">Free · café ~₩7,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Myeongdong+street+food+night+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Afternoon</div><div class="bd"><h5>Myeong-dong<span class="kr">명동</span></h5><p>K-beauty flagships by day; street-food carts fire up around 5pm, so drifting in later works well.</p><span class="pr free">Free · food ~₩5,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Olive+Young+Myeongdong+flagship+store&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Late aft.</div><div class="bd"><h5>Olive Young Myeongdong Town<span class="kr">올리브영</span></h5><p>Two-floor global flagship, tax-free and multilingual. Buy the moisturiser and lip balm you'll need immediately.</p><span class="pr free">Free entry</span></div></div>
+    </div>
+    <div class="pane card" hidden>
+      <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">If the overnight destroys you, or it's snowing hard on arrival — cut everything except sleep and food.</p>
+      <div class="stop"><div class="tm">~07:15</div><div class="bd"><h5>Drop bags, then sleep</h5><p>Ask reception to hold luggage, then find a café or jjimjilbang and nap until check-in. Fighting through Day 1 exhausted ruins Day 2, which is the bigger day.</p><span class="pr">Jjimjilbang ~₩12,000</span></div></div>
+      <div class="stop"><div class="tm">Afternoon</div><div class="bd"><h5>Hongdae only — no commute<span class="kr">홍대</span></h5><p>Your own neighbourhood has indie shops, thrift and record stores, endless cafés and the Olive Young Playground. All within walking distance of your bed.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><div class="tm">Evening</div><div class="bd"><h5>Convenience-store dinner, early night</h5><p>CU or GS25 does a genuinely good cheap dinner. Ikseon-dong moves to any spare morning — it's near the Day 2 palace zone anyway.</p><span class="pr">~₩8,000</span></div></div>
+    </div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="dayview" data-day="2" hidden>
+    <h3 class="subh" style="margin-top:14px"><span class="k">DAY 2 · SUNDAY 10 JANUARY · JONGNO → DONGDAEMUN</span>Palace quarter, then a Dongdaemun night</h3>
+    <div class="tabs" role="tablist"><button role="tab" aria-selected="true">PLAN A · as planned</button><button role="tab" aria-selected="false">PLAN B · snow or closures</button></div>
+    <div class="pane card">
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Gyeongbokgung+palace+guard+ceremony+winter&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">08:30</div><div class="bd"><h5>Gyeongbokgung &amp; Gwanghwamun<span class="kr">경복궁</span></h5><p>Early for the guard-changing ceremony and thinner crowds. Rent hanbok nearby for free palace entry and better photos.</p><span class="pr">₩3,000 · hanbok ₩15–30k</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Bukchon+Hanok+Village+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">10:15</div><div class="bd"><h5>Bukchon Hanok Village<span class="kr">북촌한옥마을</span></h5><p>Uphill from the palace. Residential, so visiting hours are 10:00–17:00 and quiet is enforced.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Samcheong-dong+street+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">11:30</div><div class="bd"><h5>Samcheong-dong<span class="kr">삼청동</span></h5><p>Café-and-gallery street running north. A warm-up between the hanok lanes — duck into a tea house.</p><span class="pr free">Free · tea ~₩8,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=dongpo+pork+Korean+Chinese+dish&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">13:00</div><div class="bd"><h5>Doryang — Culinary Class Wars<span class="kr">도량</span></h5><p>Lim Tae-hoon's dongpo pork, the one chef restaurant in this zone. Closed Mondays, so Sunday lunch works. Book on CatchTable.</p><span class="pr">₩30–60,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Insadong+Ssamziegil+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">14:30</div><div class="bd"><h5>Insadong<span class="kr">인사동</span></h5><p>Traditional crafts, tea houses, Ssamziegil's spiral ramp. Walkable from lunch.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Cheonggyecheon+stream+Seoul+winter&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">15:30</div><div class="bd"><h5>Cheonggyecheon Stream<span class="kr">청계천</span></h5><p>The restored stream runs east toward Dongdaemun, linking straight into tonight. Exposed — keep moving.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Dongdaemun+Design+Plaza+night+lit&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">After dark</div><div class="bd"><h5>DDP → Fashion Town → Doota<span class="kr">동대문</span></h5><p>Zaha Hadid's building lit at night, then the fashion district around it. Doota trades till midnight — designer labels, big Olive Young, basement food court.</p><span class="pr free">Free · Doota till 00:00</span></div></div>
+    </div>
+    <div class="pane card" hidden>
+      <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">If it's snowing hard, the palace is miserable outdoors, or Doryang has no table — same zone, moved indoors.</p>
+      <div class="stop"><div class="tm">Morning</div><div class="bd"><h5>National Palace Museum instead<span class="kr">국립고궁박물관</span></h5><p>Right at Gyeongbokgung and entirely indoors, so you still get the Joseon material without standing in snow. Do a fast loop of the grounds only if the weather lifts.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><div class="tm">Midday</div><div class="bd"><h5>Ikseon-dong instead of Bukchon<span class="kr">익선동</span></h5><p>Tighter and more sheltered than Bukchon's exposed hillside, with a café every few metres.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><div class="tm">Lunch</div><div class="bd"><h5>Tosokchon Samgyetang<span class="kr">토속촌삼계탕</span></h5><p>If the chef restaurant fell through — the famous ginseng chicken soup institution beside Gyeongbokgung. No reservation needed, and hot soup is exactly right in a snowstorm.</p><span class="pr">~₩20,000</span></div></div>
+      <div class="stop"><div class="tm">Afternoon</div><div class="bd"><h5>Skip the stream, subway to Dongdaemun</h5><p>Cheonggyecheon is the most exposed part of the day and the first thing to cut. Two stops gets you to DDP without the wind.</p><span class="pr">₩1,400</span></div></div>
+      <div class="stop"><div class="tm">Evening</div><div class="bd"><h5>Dongdaemun as planned — all indoors<span class="kr">동대문</span></h5><p>This part survives any weather. DDP's interior exhibitions, then the malls. In bad weather it becomes the whole evening rather than a finale.</p><span class="pr free">Free</span></div></div>
+    </div>
+  </div>
+
+  <!-- DAY 3 -->
+  <div class="dayview" data-day="3" hidden>
+    <h3 class="subh" style="margin-top:14px"><span class="k">DAY 3 · MONDAY 11 JANUARY · SEONGDONG</span>Seongsu cafés &amp; the Han River</h3>
+    <div class="tabs" role="tablist"><button role="tab" aria-selected="true">PLAN A · as planned</button><button role="tab" aria-selected="false">PLAN B · too cold for the river</button></div>
+    <div class="pane card">
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Seongsu-dong+cafe+Seoul+industrial&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Morning</div><div class="bd"><h5>Seongsu-dong<span class="kr">성수동</span></h5><p>Old factories turned into concept cafés, pop-ups and galleries. Seoul's best café district and the ideal warm-indoors morning.</p><span class="pr free">Free · café ~₩8,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=KWANGYA+SM+Entertainment+Seongsu&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">11:30</div><div class="bd"><h5>SM Entertainment · KWANGYA<span class="kr">광야@서울</span></h5><p>Now in Seongsu, not Gangnam. MV screen outside, merch store and café inside.</p><span class="pr free">Free entry</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Olive+Young+Beauty+Mansion+Seongsu&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">13:00</div><div class="bd"><h5>Olive Young Beauty Mansion<span class="kr">뷰티 맨션</span></h5><p>Concept flagship — skin and scalp analysis, device studio, men's grooming floor. Free analysis slots fill within minutes of opening.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Seoul+Forest+park+winter&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">14:00</div><div class="bd"><h5>Seoul Forest<span class="kr">서울숲</span></h5><p>Ten minutes from Seongsu. Bare in winter but a pleasant reset.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Han+river+park+ramyeon+convenience+store&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">15:30</div><div class="bd"><h5>Ttukseom Hangang Park<span class="kr">뚝섬한강공원</span></h5><p>A winter snow slide runs here, and the convenience-store-ramyeon-by-the-river ritual is the whole point.</p><span class="pr free">Free · ramyeon ~₩2,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=dim+sum+Korean+Chinese+restaurant&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Evening</div><div class="bd"><h5>Tian Mi Mi<span class="kr">티엔미미</span></h5><p>Jung Ji-sun's dim sum and Sichuan — the most walk-in-friendly chef pick. Gangnam or Hongdae branch.</p><span class="pr">₩40–70,000</span></div></div>
+    </div>
+    <div class="pane card" hidden>
+      <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">The Han River in a January wind is genuinely unpleasant. Keep Seongsu, go indoors instead of riverside.</p>
+      <div class="stop"><div class="tm">Morning</div><div class="bd"><h5>Seongsu, but slower<span class="kr">성수동</span></h5><p>Stretch the café-hopping across the whole morning and early afternoon. Three cafés rather than one, plus the pop-up stores — Seongsu rewards lingering.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><div class="tm">Afternoon</div><div class="bd"><h5>Common Ground or Starfield Hanam<span class="kr">커먼그라운드</span></h5><p>Common Ground is a container-built complex a few stops away; Starfield Hanam a huge indoor mall further east. Either replaces the outdoor river block entirely.</p><span class="pr free">Free entry</span></div></div>
+      <div class="stop"><div class="tm">Or</div><div class="bd"><h5>A jjimjilbang<span class="kr">찜질방</span></h5><p>Korean bathhouse — hot pools, sauna, sleeping rooms. The single best cold-weather activity in the country and one of the more memorable cultural experiences on offer.</p><span class="pr">₩10–15,000</span></div></div>
+      <div class="stop"><div class="tm">Evening</div><div class="bd"><h5>Tian Mi Mi unchanged<span class="kr">티엔미미</span></h5><p>A chain with a Hongdae branch, so it survives almost anything — being walk-in-friendly makes it the safest chef meal to keep when a day falls apart.</p><span class="pr">₩40–70,000</span></div></div>
+    </div>
+  </div>
+
+  <!-- DAY 4 -->
+  <div class="dayview" data-day="4" hidden>
+    <h3 class="subh" style="margin-top:14px"><span class="k">DAY 4 · TUESDAY 12 JANUARY · GANGNAM · CHEONGDAM · SINSA</span>Gangnam, Apgujeong &amp; a chef dinner</h3>
+    <div class="tabs" role="tablist"><button role="tab" aria-selected="true">PLAN A · as planned</button><button role="tab" aria-selected="false">PLAN B · no Nuwa table</button></div>
+    <div class="pane card">
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Starfield+Library+COEX+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Morning</div><div class="bd"><h5>COEX &amp; Starfield Library<span class="kr">별마당 도서관</span></h5><p>Asia's largest underground mall with the four-storey library at its centre. Entirely indoor start on what may be your coldest morning.</p><span class="pr free">Library free · aquarium ₩33,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Apgujeong+Rodeo+street+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">12:30</div><div class="bd"><h5>Apgujeong &amp; Apgujeong Rodeo<span class="kr">압구정로데오</span></h5><p>Seoul's original luxury district — flagship boutiques, concept cafés, salt-bread bakeries.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Cheongdam+dong+luxury+street+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">13:30</div><div class="bd"><h5>Cheongdam<span class="kr">청담동</span></h5><p>The luxury spine east of Apgujeong — fashion houses in architectural buildings, high-end galleries. Atmosphere more than buying.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Garosu-gil+Sinsa+Seoul+street&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">14:30</div><div class="bd"><h5>Garosu-gil<span class="kr">가로수길</span></h5><p>Tree-lined boutique street in Sinsa with the Serosu-gil alleys off it.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Gangnam+station+underground+shopping+mall&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">16:00</div><div class="bd"><h5>Gangnam Station underground mall<span class="kr">강남역</span></h5><p>Long arcade wired into the subway — a warm browse with zero time outside.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=contemporary+Chinese+fine+dining+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Evening</div><div class="bd"><h5>Nuwa<span class="kr">누와</span></h5><p>Park Eun-young's first solo restaurant at Sinsa Square. Contemporary Chinese reinterpreting tradition.</p><span class="pr">₩80–150,000</span></div></div>
+    </div>
+    <div class="pane card" hidden>
+      <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">Chef restaurants book out months ahead. Five of your seven picks sit in this exact cluster, walkable to each other.</p>
+      <div class="stop"><div class="tm">Swap 1</div><div class="bd"><h5>Yun Seoul<span class="kr">윤 서울</span></h5><p>Kim Do-yoon's Michelin-starred noodle restaurant in Gangnam. The perilla-oil noodle was one of Season 1's most talked-about dishes. Closed Mondays, so Tuesday works.</p><span class="pr">₩80–150,000</span></div></div>
+      <div class="stop"><div class="tm">Swap 2</div><div class="bd"><h5>Solbam<span class="kr">솔밤</span></h5><p>Kim Si-hyun "Baby Beast" — one-Michelin-star contemporary Korean in Gangnam. Your only Season 2 pick, same zone.</p><span class="pr">₩150,000+</span></div></div>
+      <div class="stop"><div class="tm">Swap 3</div><div class="bd"><h5>CHOI Dot<span class="kr">최닷</span></h5><p>Choi Hyun-seok's haute Korean-fusion in Cheongdam — your flagged lower-priority pick, but it's right here and lunch is the affordable way in.</p><span class="pr">Lunch cheaper</span></div></div>
+      <div class="stop"><div class="tm">Not today</div><div class="bd"><h5>Bistro Notre is closed Mon–Tue<span class="kr">비스트로 노뜨르</span></h5><p>Worth stating plainly: it won't work as a Day 4 swap. Move it to Day 5 (Wednesday), which is one of the few days it opens.</p><span class="pr">Day 5 only</span></div></div>
+      <div class="stop"><div class="tm">Nothing free?</div><div class="bd"><h5>Gangnam Korean BBQ</h5><p>If none have space, this district is full of excellent hanwoo beef BBQ. Less of an event, but a proper Korean meal with no reservation needed.</p><span class="pr">₩40–80,000</span></div></div>
+    </div>
+  </div>
+
+  <!-- DAY 5 -->
+  <div class="dayview" data-day="5" hidden>
+    <h3 class="subh" style="margin-top:14px"><span class="k">DAY 5 · WEDNESDAY 13 JANUARY · YONGSAN → MAPO</span>Hannam, Itaewon &amp; back to Hongdae</h3>
+    <div class="tabs" role="tablist"><button role="tab" aria-selected="true">PLAN A · as planned</button><button role="tab" aria-selected="false">PLAN B · rest day version</button></div>
+    <div class="pane card">
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Hannam-dong+Leeum+museum+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Late morning</div><div class="bd"><h5>Hannam-dong<span class="kr">한남동</span></h5><p>Quietly wealthy quarter — Leeum Museum, designer flagships, excellent coffee.</p><span class="pr">Leeum ~₩20,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Itaewon+Seoul+street&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">11:45</div><div class="bd"><h5>Itaewon<span class="kr">이태원</span></h5><p>Next to Hannam — Seoul's most international district. Global food, vintage shops, a hilly tangle of bars.</p><span class="pr free">Free · lunch ~₩15,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=HYBE+headquarters+building+Yongsan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">12:30</div><div class="bd"><h5>HYBE HQ<span class="kr">하이브</span></h5><p>Home of BTS, SEVENTEEN, NewJeans. Working office, so exterior only.</p><span class="pr free">Free · no entry</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=neo+bistro+restaurant+Apgujeong&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">13:30</div><div class="bd"><h5>Bistro Notre — optional<span class="kr">비스트로 노뜨르</span></h5><p>Yoon Nam-no's bistro if you want a fourth chef meal. Closed Mon–Tue, so Wednesday is one of the few days it works.</p><span class="pr">₩39,000 amuse +</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Hongdae+street+Seoul+buskers&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Mid-aft.</div><div class="bd"><h5>Hongdae<span class="kr">홍대</span></h5><p>Home turf in daylight — buskers, indie shops, thrift and record stores.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Olive+Young+Hongdae+Playground+mens&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Afternoon</div><div class="bd"><h5>Olive Young Hongdae Playground<span class="kr">플레이그라운드</span></h5><p>Men's "Men's Edit" flagship — grooming, Aestura, free skin scans. On your doorstep.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=T1+Base+Camp+Faker+esports+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Late aft.</div><div class="bd"><h5>SKT T1 Base Camp<span class="kr">T1 베이스캠프</span></h5><p>Faker's team HQ — merch store and a PC bang you can play in. Open 24h, two minutes from the main strip.</p><span class="pr">PC ~₩2,000/hr</span></div></div>
+      <div class="stop"><div class="tm">Optional</div><div class="bd"><h5>Yeouido &amp; Banpo Hangang Parks<span class="kr">한강공원</span></h5><p>If daylight and energy allow. Banpo's rainbow fountain is off in winter, so it's for the walk, not the show. Easy to drop.</p><span class="pr free">Free</span></div></div>
+    </div>
+    <div class="pane card" hidden>
+      <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">By day five of a cold trip most people are worn down, and tomorrow is a travel day. This protects the KTX morning.</p>
+      <div class="stop"><div class="tm">Late morning</div><div class="bd"><h5>Start with a jjimjilbang<span class="kr">찜질방</span></h5><p>Hot pools and sauna do more for four days of walking in the cold than any sight will. Several good ones near Hongdae.</p><span class="pr">₩10–15,000</span></div></div>
+      <div class="stop"><div class="tm">Afternoon</div><div class="bd"><h5>Hongdae and Yeonnam-dong only<span class="kr">연남동</span></h5><p>Skip the Yongsan crossing entirely. Yeonnam-dong, just north of Hongdae, is a quieter café strip along the old railway park — a gentle afternoon on foot from your bed.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><div class="tm">Late aft.</div><div class="bd"><h5>Keep Olive Young Playground + T1</h5><p>Both are Hongdae-based and cost you no travel. The men's flagship is a genuine highlight five minutes away.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><div class="tm">Evening</div><div class="bd"><h5>Pack, early dinner, early night</h5><p>You have a KTX to catch. A blown Day 6 morning costs the Busan afternoon too, so an early night buys back more than a late one gives.</p><span class="pr">—</span></div></div>
+    </div>
+  </div>
+
+  <!-- DAY 6 -->
+  <div class="dayview" data-day="6" hidden>
+    <h3 class="subh" style="margin-top:14px"><span class="k">DAY 6 · THURSDAY 14 JANUARY · BUSAN · HAEUNDAE</span>Down to Busan · Haeundae coast</h3>
+    <div class="note ice" style="margin-bottom:14px"><div class="lb">KTX ↓ Seoul → Busan</div><p>Seoul Station to Busan, about 2h45m, roughly <b>₩60,000</b> standard class. Book on Korail Talk in advance. Drop bags at your Busan base and you keep the full afternoon.</p></div>
+    <div class="tabs alt" role="tablist"><button role="tab" aria-selected="true">PLAN A · as planned</button><button role="tab" aria-selected="false">PLAN B · late or bad weather</button></div>
+    <div class="pane card">
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=KTX+train+Korea&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Morning</div><div class="bd"><h5>KTX to Busan, check in</h5><p>Seoul Station → Busan Station, ~2h45m. Settle in, then straight to the coast.</p><span class="pr">~₩60,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Haeundae+Beach+Busan+winter&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Afternoon</div><div class="bd"><h5>Haeundae Beach<span class="kr">해운대해수욕장</span></h5><p>For walking, not swimming, in January — but the promenade and restaurant strip stay lively.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Busan+X+the+Sky+observatory&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">15:00</div><div class="bd"><h5>BUSAN X the SKY<span class="kr">부산엑스더스카이</span></h5><p>Deck on floors 98–100 — warm, indoors, glass floor, world's highest Starbucks. Time it for daylight into dusk.</p><span class="pr">~₩20–27,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Gwangalli+Beach+Gwangan+Bridge+night&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">After dark</div><div class="bd"><h5>Gwangalli Beach<span class="kr">광안리해수욕장</span></h5><p>Better than Haeundae at night — the bridge lights up, there's a regular drone show, and the café strip behind the sand is excellent. Dinner here.</p><span class="pr free">Free</span></div></div>
+    </div>
+    <div class="pane card" hidden>
+      <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">If the KTX is delayed, you oversleep, or the coast is being battered — the whole day still works indoors.</p>
+      <div class="stop"><div class="tm">On arrival</div><div class="bd"><h5>Shinsegae Centum City first<span class="kr">신세계 센텀시티</span></h5><p>World's largest department store, on the way in from Busan Station. Ice rink, spa, cinema, enormous food hall. Kills an afternoon comfortably and you eat well without going outside.</p><span class="pr free">Free entry · spa ~₩30,000</span></div></div>
+      <div class="stop"><div class="tm">Late aft.</div><div class="bd"><h5>X the SKY still works</h5><p>Indoors and open till 21:00, so a late arrival doesn't kill it. On a clear cold night the view is arguably better than by day.</p><span class="pr">~₩20–27,000</span></div></div>
+      <div class="stop"><div class="tm">Evening</div><div class="bd"><h5>Sheltered seafood dinner</h5><p>If wind makes the beachfront unpleasant, the restaurant streets one block back are sheltered. Busan seafood is the point, not the sand.</p><span class="pr">₩25–50,000</span></div></div>
+      <div class="stop"><div class="tm">Note</div><div class="bd"><h5>Push the beach to Day 7 or 9</h5><p>Haeundae is free, always open, and minutes from your hotel if you stay there. The easiest thing in the trip to move.</p><span class="pr free">Free</span></div></div>
+    </div>
+  </div>
+
+  <!-- DAY 7 -->
+  <div class="dayview" data-day="7" hidden>
+    <h3 class="subh" style="margin-top:14px"><span class="k">DAY 7 · FRIDAY 15 JANUARY · BUSAN EAST COAST</span>Coastal rail, skywalk &amp; seaside temple</h3>
+    <div class="tabs alt" role="tablist"><button role="tab" aria-selected="true">PLAN A · as planned</button><button role="tab" aria-selected="false">PLAN B · no Sky Capsule</button></div>
+    <div class="pane card">
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Haeundae+Sky+Capsule+Blueline+Park&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Morning</div><div class="bd"><h5>Blueline Park · Sky Capsule<span class="kr">블루라인파크</span></h5><p>Pastel pods on the old coastal railway, elevated above the sea at walking pace, Mipo to Cheongsapo. A free 4km trail runs alongside.</p><span class="pr">from ₩35,000 (1–2 pax)</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Cheongsapo+Daritdol+Skywalk+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">On route</div><div class="bd"><h5>Cheongsapo Daritdol Skywalk<span class="kr">청사포다릿돌전망대</span></h5><p>Free glass-floored walkway over the sea, right on the Blueline route.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Haedong+Yonggungsa+temple+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Midday</div><div class="bd"><h5>Haedong Yonggungsa Temple<span class="kr">해동용궁사</span></h5><p>A rare temple built into coastal rocks above the water. About 40 minutes out, same eastern direction as the morning.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Shinsegae+Centum+City+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Late aft.</div><div class="bd"><h5>Shinsegae Centum City<span class="kr">신세계 센텀시티</span></h5><p>Warm indoor fallback after a windy coastal day, and a good dinner option on the way back.</p><span class="pr free">Free entry</span></div></div>
+    </div>
+    <div class="pane card" hidden>
+      <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">The Sky Capsule sells out weeks ahead, and high winds can suspend it. Same fix either way — the route is still walkable.</p>
+      <div class="stop"><div class="tm">Morning</div><div class="bd"><h5>Walk the Busan Green Railway<span class="kr">그린레일웨이</span></h5><p>The free 4km coastal trail runs parallel to the Sky Capsule track, Mipo to Cheongsapo. Same sea views, same skywalk stop, costs nothing. Several people prefer it.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><div class="tm">Or</div><div class="bd"><h5>Take the Beach Train<span class="kr">해변열차</span></h5><p>The ground-level train shares the Mipo–Cheongsapo stretch and continues to Songjeong. Cheaper than the capsule and much easier to get a same-day seat.</p><span class="pr">~₩7,000–12,000</span></div></div>
+      <div class="stop"><div class="tm">Booking tip</div><div class="bd"><h5>Try the reverse direction</h5><p>Most tourists book Mipo → Cheongsapo, so that sells out first. <b>Cheongsapo → Mipo often still has seats</b> even a day or two out. Check both before giving up.</p><span class="pr">Worth checking</span></div></div>
+      <div class="stop"><div class="tm">Rest of day</div><div class="bd"><h5>Temple and Shinsegae unchanged</h5><p>Neither depends on the capsule, so the back half of the day runs exactly as planned.</p><span class="pr free">Free</span></div></div>
+    </div>
+  </div>
+
+  <!-- DAY 8 -->
+  <div class="dayview" data-day="8" hidden>
+    <h3 class="subh" style="margin-top:14px"><span class="k">DAY 8 · SATURDAY 16 JANUARY · SAHA · YEONGDO · NAMPO</span>Old town, hillside villages &amp; markets</h3>
+    <div class="tabs alt" role="tablist"><button role="tab" aria-selected="true">PLAN A · as planned</button><button role="tab" aria-selected="false">PLAN B · icy or short on time</button></div>
+    <div class="pane card">
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Gamcheon+Culture+Village+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Morning</div><div class="bd"><h5>Gamcheon Culture Village<span class="kr">감천문화마을</span></h5><p>Pastel houses stacked up a hillside — the one Busan sight not to miss. Bus 1-1 or 2-2 up, then walk down. Go early.</p><span class="pr">Stamp map ₩2,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Huinnyeoul+Culture+Village+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Midday</div><div class="bd"><h5>Huinnyeoul Culture Village<span class="kr">흰여울문화마을</span></h5><p>Cliffside village on Yeongdo with a seaside path and cafés in the slope. Quieter than Gamcheon. Lower path closes around 15:00.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Jagalchi+Market+Busan+seafood&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Lunch</div><div class="bd"><h5>Jagalchi Market<span class="kr">자갈치시장</span></h5><p>Korea's largest seafood market. Pick from the tanks downstairs, have it cooked upstairs.</p><span class="pr">₩20–40,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=BIFF+Square+Gukje+Market+Busan+hotteok&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Afternoon</div><div class="bd"><h5>BIFF Square &amp; Gukje Market<span class="kr">국제시장</span></h5><p>BIFF for the famous seed hotteok — a proper cold-weather reason to go — and Gukje for sprawling traditional stalls.</p><span class="pr free">Hotteok ~₩2,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Songdo+Marine+Cable+Car+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Optional</div><div class="bd"><h5>Songdo Cable Car<span class="kr">송도해상케이블카</span></h5><p>Glass-floor cabins over the bay, with a free seaside boardwalk below.</p><span class="pr">~₩22,000</span></div></div>
+    </div>
+    <div class="pane card" hidden>
+      <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">Gamcheon and Huinnyeoul are both steep and both ice over. If footing is bad or the day is short, trim to essentials.</p>
+      <div class="stop"><div class="tm">Morning</div><div class="bd"><h5>Gamcheon only — bus both ways</h5><p>The usual advice is bus up and walk down, but on ice that's how people fall. Bus up, stick to the marked main route, bus back down. Still the best thing in Busan.</p><span class="pr">Bus ₩1,500</span></div></div>
+      <div class="stop"><div class="tm">Cut</div><div class="bd"><h5>Drop Huinnyeoul<span class="kr">흰여울문화마을</span></h5><p>The cliff path is narrow, exposed and above a drop — first thing to cut in bad conditions. It also duplicates Gamcheon most, so you lose the least by skipping it.</p><span class="pr">—</span></div></div>
+      <div class="stop"><div class="tm">Lunch on</div><div class="bd"><h5>Nampo markets as planned — all flat<span class="kr">남포동</span></h5><p>Jagalchi, BIFF and Gukje are level ground, partly covered, and full of hot food. Weather-proof, and where the eating is.</p><span class="pr">₩20–40,000</span></div></div>
+      <div class="stop"><div class="tm">Instead of Songdo</div><div class="bd"><h5>Lotte Gwangbok rooftop<span class="kr">롯데백화점</span></h5><p>Free rooftop garden with a harbour view right by the markets, indoor mall underneath. Replaces the cable car when wind shuts it or the light has gone.</p><span class="pr free">Free</span></div></div>
+    </div>
+  </div>
+
+  <!-- DAY 9 -->
+  <div class="dayview" data-day="9" hidden>
+    <h3 class="subh" style="margin-top:14px"><span class="k">DAY 9 · SUNDAY 17 JANUARY · DEPARTURE</span>Last morning &amp; fly home</h3>
+    <div class="tabs alt" role="tablist"><button role="tab" aria-selected="true">PLAN A · direct from Busan</button><button role="tab" aria-selected="false">PLAN B · flying from Incheon</button></div>
+    <div class="pane card">
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Jeonpo+Cafe+Street+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Morning</div><div class="bd"><h5>One last thing, your call</h5><p>Depending on flight time: a final Gwangalli seafront walk, a café in Jeonpo Cafe Street, or Beomeosa Temple for one quiet mountain temple. Keep it near your base.</p><span class="pr free">Mostly free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Gimhae+International+Airport+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Departure</div><div class="bd"><h5>Gimhae Airport → KUL<span class="kr">김해공항</span></h5><p>Gimhae is only about 30 minutes from central Busan, so no need to leave absurdly early. AirAsia X flies the route on Sundays. The clean ending — no backtracking.</p><span class="pr">Airport bus ~₩7,000</span></div></div>
+    </div>
+    <div class="pane card" hidden>
+      <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">If you booked a plain return through Incheon, or the direct Busan flight doesn't run your date.</p>
+      <div class="stop"><div class="tm">Early</div><div class="bd"><h5>Check out, KTX north<span class="kr">KTX</span></h5><p>Busan → Seoul Station, ~2h45m. Book this seat in advance too — Sunday afternoon trains fill up. Leave a wide margin.</p><span class="pr">~₩60,000</span></div></div>
+      <div class="stop"><div class="tm">Midday</div><div class="bd"><h5>Seoul Station → Incheon on AREX</h5><p>Another ~50 minutes. Door-to-door is comfortably 4 hours from your Busan hotel to the ICN check-in desk — work backwards from your flight and add a winter buffer.</p><span class="pr">~₩9,500 express</span></div></div>
+      <div class="stop"><div class="tm">Reality</div><div class="bd"><h5>Keep the morning empty</h5><p>Don't schedule anything in Busan on this version. The trade for a cheaper fare is that this is a travel day, and squeezing in a last sight is how people miss flights.</p><span class="pr">—</span></div></div>
+    </div>
+  </div>
+
+  <div class="note rose" style="margin-top:20px"><div class="lb">Weekday closures — verified</div>
+    <p>Days of the week are correct for 2027. <b>Doryang closes Mondays</b>, so the Day-2 Sunday lunch is fine. <b>Bistro Notre closes Mon–Tue</b>, so it only works on Day 5. <b>Tian Mi Mi</b> is a chain and generally open, but reconfirm your branch. Check each restaurant on CatchTable or Naver before building a night around it.</p></div>
+</section>
+
+<!-- ══ VIEW: BUDGET ══ -->
+<section class="view" id="v-cost">
+  <div class="vh"><span class="n">06 / BUDGET</span><h2>What this actually costs</h2>
+    <p>Korea isn't the bargain that parts of Southeast Asia are, but it's well below Japan and far below Western Europe. Built for your specific nine days, split between what you can't avoid and what you control.</p></div>
+
+  <div class="tiles">
+    <div class="tile"><dt>Lean version</dt><dd>≈ RM3,000</dd></div>
+    <div class="tile"><dt>This plan</dt><dd class="a">≈ RM4,300</dd></div>
+    <div class="tile"><dt>Comfortable</dt><dd>≈ RM7,300</dd></div>
+    <div class="tile"><dt>Excludes</dt><dd class="i">Flights &amp; shopping</dd></div>
+  </div>
+
+  <div class="led">
+    <div class="lh"><span>Fixed · unavoidable</span><span>KRW</span></div>
+    <div class="r"><span class="l"><b>Return flights</b> KUL–ICN or open-jaw, booked early</span><span class="v">1,300,000–2,200,000</span></div>
+    <div class="r"><span class="l"><b>K-ETA</b> official site only</span><span class="v">10,000</span></div>
+    <div class="r"><span class="l"><b>eSIM</b> 10-day unlimited</span><span class="v">35,000–42,000</span></div>
+    <div class="r"><span class="l"><b>AREX</b> Incheon → Hongdae</span><span class="v">4,500</span></div>
+    <div class="r"><span class="l"><b>KTX</b> Seoul → Busan, standard</span><span class="v">60,000</span></div>
+    <div class="r"><span class="l"><b>Accommodation</b> 8 nights, guesthouse private room</span><span class="v">400,000–680,000</span></div>
+    <div class="tot"><span>Subtotal</span><span class="v">1,810,000–2,996,500</span></div>
+  </div>
+
+  <div class="led">
+    <div class="lh"><span>Your itinerary · spending</span><span>KRW</span></div>
+    <div class="r"><span class="l"><b>Three chef dinners</b> Doryang, Tian Mi Mi, Nuwa</span><span class="v">150,000–280,000</span></div>
+    <div class="r"><span class="l"><b>Everyday meals</b> ~25,000/day × 9</span><span class="v">225,000</span></div>
+    <div class="r"><span class="l"><b>Attractions</b> palace, hanbok, X the SKY, Sky Capsule, Songdo</span><span class="v">110,000–140,000</span></div>
+    <div class="r"><span class="l"><b>Local transport</b> subway, buses, T-money</span><span class="v">30,000–45,000</span></div>
+    <div class="r"><span class="l"><b>Cafés and snacks</b> a Seongsu-heavy plan</span><span class="v">60,000–90,000</span></div>
+    <div class="r"><span class="l"><b>Winter kit bought there</b> hand warmers, skincare, socks</span><span class="v">30,000–60,000</span></div>
+    <div class="tot"><span>Subtotal</span><span class="v">605,000–840,000</span></div>
+  </div>
+  <p class="fine">Ringgit figures are rough and move with the exchange rate. Shopping is excluded on purpose — it's the one line only you can size, and with three Olive Young flagships, Doota, Dongdaemun and Cheongdam on your route it can rival everything else combined.</p>
+
+  <div class="grid g2" style="margin-top:20px">
+    <div class="card"><h4 style="font-size:15px;margin-bottom:7px">Paying — near-cashless</h4><p style="font-size:13.5px;color:var(--mut)">Cards work at nearly every shop, café and most street stalls in tourist areas. Bring a low-foreign-fee card as primary and carry some won as backup — market stalls at Jagalchi and Gukje are often cash-only.</p></div>
+    <div class="card"><h4 style="font-size:15px;margin-bottom:7px">Cash — look for "Global ATM"</h4><p style="font-size:13.5px;color:var(--mut)">Standard Korean ATMs frequently reject foreign cards. Machines marked <b style="color:var(--tx)">Global ATM</b> are common in convenience stores and stations. <b style="color:var(--tx)">WOWPASS</b> is a prepaid tourist card that doubles as T-money.</p></div>
+    <div class="card"><h4 style="font-size:15px;margin-bottom:7px">T-money — buy on arrival</h4><p style="font-size:13.5px;color:var(--mut)">Any convenience store or airport booth. A subway ride is about ₩1,400, and it works on buses in both cities plus most convenience stores. The most useful small purchase you'll make.</p></div>
+    <div class="card"><h4 style="font-size:15px;margin-bottom:7px">Tipping and tax</h4><p style="font-size:13.5px;color:var(--mut)">Tipping isn't practised and can confuse people — service is in the price. Going the other way, foreign visitors can claim <b style="color:var(--tx)">tax refunds</b>: keep receipts, look for Tax Free signage, process at the airport.</p></div>
+  </div>
+
+  <div class="note rose" style="margin-top:18px"><div class="lb">The two costs people underestimate</div>
+    <p><b>Fine dining and shopping.</b> Gangnam chef restaurants run past ₩100,000 a head with drinks — Bistro Notre alone requires a ₩39,000 amuse-bouche and a bottle of wine per table before you order. And this route passes three Olive Young flagships, Doota, Dongdaemun and Cheongdam. Set a shopping ceiling before you go.</p></div>
+</section>
+
+<!-- ══ VIEW: CONNECTIVITY ══ -->
+<section class="view" id="v-sim">
+  <div class="vh"><span class="n">07 / CONNECTIVITY</span><h2>Staying online</h2>
+    <p>You'll lean on data constantly — Korean maps, translation, CatchTable, finding your way around Dongdaemun at midnight. Three options, and realistically the choice is between two.</p></div>
+
+  <div class="tw"><table>
+    <thead><tr><th>Option</th><th>5 days</th><th>10 days</th><th>Korean number</th><th>Trade-off</th></tr></thead>
+    <tbody>
+      <tr><td><b>eSIM</b><span class="sm">digital, nothing to swap</span></td><td class="m">₩25–30,000</td><td class="m">₩35–42,000</td><td><span class="n">Usually not</span></td><td>Install before you fly, land connected, keep your Malaysian number live on the same phone. Cheapest and least hassle. Needs an eSIM-capable handset.</td></tr>
+      <tr><td><b>Physical SIM</b><span class="sm">USIM</span></td><td class="m">₩28–33,000</td><td class="m">₩38–45,000</td><td><span class="y">Often yes</span></td><td>Buy at an Incheon arrivals booth. Pricier and you must remove your home SIM, but tourist SIMs frequently include a Korean number.</td></tr>
+      <tr><td><b>Pocket WiFi</b><span class="sm">rental device</span></td><td class="m">Varies</td><td class="m">Varies</td><td><span class="n">No</span></td><td>Only sensible for groups sharing one connection. Solo, it's another device to carry, charge and return.</td></tr>
+    </tbody></table></div>
+
+  <div class="note rose" style="margin-top:16px"><div class="lb">The catch that affects your trip specifically</div>
+    <h4>Data-only eSIMs have no Korean number — and some Korean apps demand one</h4>
+    <p>Most tourist eSIMs are data-only. Fine for maps, chat and browsing, but <b>some Korean services require a local number for SMS verification at sign-up</b>, and restaurant booking apps are among them. Your whole chef-restaurant plan runs on <b>CatchTable</b>.</p>
+    <p><b>Do this:</b> create and test a CatchTable account before committing to an eSIM. If it accepts your Malaysian number, take the eSIM. If it insists on a Korean one, a physical tourist SIM is worth the extra. Either way, book the key restaurants before you fly.</p></div>
+
+  <div class="grid g2">
+    <div class="card"><h4 style="font-size:15px;margin-bottom:7px">SK Telecom — widest coverage</h4><p style="font-size:13.5px;color:var(--mut)">Largest network, best rural and island reach. Worth it if you were adding countryside or Jeju; for Seoul and Busan you're paying for coverage you won't use.</p></div>
+    <div class="card"><h4 style="font-size:15px;margin-bottom:7px">KT — the middle</h4><p style="font-size:13.5px;color:var(--mut)">Similar pricing to SKT, solid in cities, and runs tourist bundles pairing a SIM with a transport card — one airport transaction.</p></div>
+    <div class="card"><h4 style="font-size:15px;margin-bottom:7px">LG U+ — budget</h4><p style="font-size:13.5px;color:var(--mut)">Cheapest of the three and perfectly good across Seoul and Busan, which is all this itinerary needs. Priced by speed tier, so 5G costs more.</p></div>
+    <div class="card"><h4 style="font-size:15px;margin-bottom:7px">Read the "unlimited" wording</h4><p style="font-size:13.5px;color:var(--mut)">Most Korean unlimited plans cap high-speed data around <b style="color:var(--tx)">3GB per day</b>, then throttle. Ample for maps and photos. If you'll hotspot a laptop, check the daily cap and hotspot rules specifically.</p></div>
+  </div>
+
+  <h3 class="subh"><span class="k">PROVIDERS</span>Compare at booking time</h3>
+  <div class="grid g3">
+    <div class="card"><h4 style="font-size:15px;margin-bottom:6px">Airalo</h4><p style="font-size:13px;color:var(--mut)">Best-known global brand, straightforward app, reliable Korean coverage. Rarely cheapest, but the safe pick if you've never used an eSIM.</p></div>
+    <div class="card"><h4 style="font-size:15px;margin-bottom:6px">Holafly</h4><p style="font-size:13px;color:var(--mut)">One of the few with genuinely unlimited-style plans. Pricier, but appealing if you hotspot or don't want to watch a counter.</p></div>
+    <div class="card"><h4 style="font-size:15px;margin-bottom:6px">Nomad</h4><p style="font-size:13px;color:var(--mut)">Flexible packages priced well for one-to-two-week trips and often cheaper than the bigger names. Good fit for nine days.</p></div>
+    <div class="card"><h4 style="font-size:15px;margin-bottom:6px">Saily · Roamless · Maaltalk</h4><p style="font-size:13px;color:var(--mut)">All cover Korea competitively. Maaltalk is Korea-focused; Saily comes from the NordVPN team. Prices shift, so compare when you book.</p></div>
+    <div class="card"><h4 style="font-size:15px;margin-bottom:6px">Superalink · Roambit · Simbye</h4><p style="font-size:13px;color:var(--mut)">Newer Korea-based challengers, often sharply priced, some with no hotspot throttling. Smaller operations — read recent reviews.</p></div>
+    <div class="card"><h4 style="font-size:15px;margin-bottom:6px">Incheon airport booths</h4><p style="font-size:13px;color:var(--mut)">All three carriers staff arrival counters, some with SIM-plus-T-money bundles. Simplest if you'd rather not pre-plan — but you'll queue at 7am.</p></div>
+  </div>
+
+  <div class="note mint" style="margin-top:18px"><div class="lb">Recommendation</div>
+    <p>Buy a <b>10-day eSIM before you fly</b> (₩35–42,000), install at home, switch on when you land — you walk out connected while everyone else queues. Settle the CatchTable question first. Incheon has free airport WiFi as a fallback.</p></div>
+</section>
+
+<!-- ══ VIEW: APPS ══ -->
+<section class="view" id="v-apps">
+  <div class="vh"><span class="n">08 / APPS</span><h2>Install before you fly</h2>
+    <p>One thing catches nearly every first-timer: <b style="color:var(--tx)">Google Maps barely works in Korea</b>. Mapping-data export restrictions mean walking and driving directions are unreliable or missing. You need the Korean alternatives, tested at home rather than at Incheon.</p></div>
+
+  <div class="note"><div class="lb">The four that are load-bearing</div>
+    <p><b>Naver Map, KakaoTalk, Papago and CatchTable.</b> Everything else is convenience — these four your trip depends on.</p></div>
+
+  <div class="grid g3">
+    <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">ESSENTIAL · MAPS</div><h4 style="font-size:15.5px">Naver Map</h4><div style="font-size:12px;color:var(--dim);margin:3px 0 8px">네이버 지도</div><p style="font-size:13px;color:var(--mut)">The default for getting around Korea. Accurate walking directions, subway routing with exit numbers, bus arrivals, business hours. English mode available. Learning the exit numbers saves cold minutes on the wrong side of a road.</p></div>
+    <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">ESSENTIAL · MAPS</div><h4 style="font-size:15.5px">KakaoMap</h4><div style="font-size:12px;color:var(--dim);margin:3px 0 8px">카카오맵</div><p style="font-size:13px;color:var(--mut)">The main alternative. Many prefer its interface, and it occasionally has better data for a given place. Have both — when one gives a strange route, check the other.</p></div>
+    <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">ESSENTIAL · MESSAGING</div><h4 style="font-size:15.5px">KakaoTalk</h4><div style="font-size:12px;color:var(--dim);margin:3px 0 8px">카카오톡</div><p style="font-size:13px;color:var(--mut)">Korea's universal messenger. Guesthouses and booking services often communicate through it rather than email, so having it makes you contactable the way Koreans expect.</p></div>
+    <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">ESSENTIAL · LANGUAGE</div><h4 style="font-size:15.5px">Papago</h4><div style="font-size:12px;color:var(--dim);margin:3px 0 8px">파파고</div><p style="font-size:13px;color:var(--mut)">Naver's translator, distinctly better than Google Translate for Korean. Camera mode reads menus and signs live — invaluable at Jagalchi and Gukje. Download offline Korean before you fly.</p></div>
+    <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">ESSENTIAL · BOOKINGS</div><h4 style="font-size:15.5px">CatchTable</h4><div style="font-size:12px;color:var(--dim);margin:3px 0 8px">캐치테이블</div><p style="font-size:13px;color:var(--mut)">The platform your chef restaurants use — Doryang, Tian Mi Mi, Nuwa and Bistro Notre all book through it. Set up and test early; see the phone-number issue in Connectivity.</p></div>
+    <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">TRANSPORT</div><h4 style="font-size:15.5px">Kakao T</h4><div style="font-size:12px;color:var(--dim);margin:3px 0 8px">카카오 T</div><p style="font-size:13px;color:var(--mut)">Korea's dominant taxi app. Easier than flagging one down and explaining a destination, and it protects you from the unmetered "call van" scam. Useful for Haedong Yonggungsa.</p></div>
+    <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">TRANSPORT</div><h4 style="font-size:15.5px">Korail Talk</h4><div style="font-size:12px;color:var(--dim);margin:3px 0 8px">코레일톡</div><p style="font-size:13px;color:var(--mut)">Official Korail app for booking your KTX seat on Day 6 — and Day 9 if you take the Incheon fallback. Book ahead rather than turning up.</p></div>
+    <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">TRANSPORT</div><h4 style="font-size:15.5px">Subway Korea</h4><div style="font-size:12px;color:var(--dim);margin:3px 0 8px">지하철</div><p style="font-size:13px;color:var(--mut)">Covers both Seoul and Busan, with first and last train times and transfer-optimised routing. Works offline, which genuinely matters underground.</p></div>
+    <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">TICKETS</div><h4 style="font-size:15.5px">Klook · Trazy</h4><p style="font-size:13px;color:var(--mut);margin-top:8px">Discounted advance tickets for BUSAN X the SKY, Songdo Cable Car, tours and passes. Often below gate price and lets you skip a queue in the cold.</p></div>
+    <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">MONEY</div><h4 style="font-size:15.5px">WOWPASS</h4><p style="font-size:13px;color:var(--mut);margin-top:8px">Prepaid card for foreign visitors — load foreign currency, spend like a Korean debit card, use it as T-money. Kiosks in major subway stations.</p></div>
+    <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">FOOD</div><h4 style="font-size:15.5px">Naver reviews · MangoPlate</h4><p style="font-size:13px;color:var(--mut);margin-top:8px">Korean restaurant discovery runs through Naver, not Google. Reviews and photos on Naver Map are the local source of truth; MangoPlate is an English-friendly second opinion.</p></div>
+    <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">OPTIONAL</div><h4 style="font-size:15.5px">Visit Busan Pass</h4><p style="font-size:13px;color:var(--mut);margin-top:8px">Bundled pass over 24 or 48 hours covering X the SKY, Songdo Cable Car and free hanbok rental among ~30 sights. Worth the arithmetic against Days 6–8.</p></div>
+  </div>
+
+  <div class="note rose" style="margin-top:18px"><div class="lb">Before you leave Malaysia</div>
+    <p>Install everything, create the accounts, and <b>test them on home WiFi</b>. Several Korean apps need SMS verification or have awkward English sign-up flows — sorting that at home beats doing it jet-lagged in an arrivals hall. Also download offline Korean in Papago and screenshot your K-ETA approval.</p></div>
+</section>
+
+<!-- ══ VIEW: CHECKLIST ══ -->
+<section class="view" id="v-todo">
+  <div class="vh"><span class="n">09 / CHECKLIST</span><h2>Everything that needs doing</h2>
+    <p>Ordered by deadline. Tick as you go — progress shows below. <b style="color:var(--tx)">Ticks reset when you close the page</b>, so treat this as a working list rather than a saved record.</p></div>
+
+  <div class="card" style="margin-bottom:20px">
+    <div style="display:flex;justify-content:space-between;margin-bottom:9px"><span class="k" style="font-size:10px;letter-spacing:.14em;color:var(--dim)">PROGRESS</span><span class="k" style="font-size:12px;color:var(--amber)" id="pgtext">0 / 14</span></div>
+    <div style="height:6px;background:var(--panel2);border-radius:3px;overflow:hidden"><div id="pgbar" style="height:100%;width:0%;background:linear-gradient(90deg,var(--amber),var(--ice));transition:width .3s"></div></div>
+  </div>
+
+  <h3 class="subh" style="margin-top:0"><span class="k">NOW — 12 MONTHS OUT</span>Do these first</h3>
+  <label class="chk"><input type="checkbox"><span class="t"><b>Check passport expiry</b><span>Needs six months' validity beyond travel — so valid past roughly July 2027. Malaysian renewal takes time, so this is today's job.</span></span></label>
+  <label class="chk"><input type="checkbox"><span class="t"><b>Decide your flight routing</b><span>Open-jaw (Seoul in, Busan out) is the best fit and needs booking early — only four weekly frequencies on the Busan route.</span></span></label>
+  <label class="chk"><input type="checkbox"><span class="t"><b>Set fare alerts</b><span>Skyscanner and Google Flights, from around February 2026. January is peak season.</span></span></label>
+
+  <h3 class="subh"><span class="k">ONCE DATES ARE LOCKED</span>Book immediately</h3>
+  <label class="chk"><input type="checkbox"><span class="t"><b>Flights</b><span>Price with baggage included, not the headline fare. Confirm your exact fare's allowance on the airline's own site.</span></span></label>
+  <label class="chk"><input type="checkbox"><span class="t"><b>Accommodation — Hongdae and Busan</b><span>Lock the Friday and Saturday Busan nights (15–16 Jan) first; weekend rates climb and good rooms go early.</span></span></label>
+  <label class="chk"><input type="checkbox"><span class="t"><b>Sky Capsule, Day 7</b><span>Sells out weeks ahead even midweek. If Mipo→Cheongsapo is full, try the reverse direction.</span></span></label>
+  <label class="chk"><input type="checkbox"><span class="t"><b>KTX seat, Day 6 morning</b><span>Book on Korail Talk. Add the Day 9 return leg too if you're flying from Incheon.</span></span></label>
+  <label class="chk"><input type="checkbox"><span class="t"><b>Chef restaurants on CatchTable</b><span>Doryang (Day 2), Tian Mi Mi (Day 3), Nuwa (Day 4). Test the account first — see the phone-number issue.</span></span></label>
+
+  <h3 class="subh"><span class="k">2–3 MONTHS OUT</span>Verify and prepare</h3>
+  <label class="chk"><input type="checkbox"><span class="t"><b>Re-check K-ETA rules at k-eta.go.kr</b><span>The fastest-moving item in the plan. Confirm the requirement still stands and nothing has changed for Malaysia.</span></span></label>
+  <label class="chk"><input type="checkbox"><span class="t"><b>Confirm the Busan departure still runs your date</b><span>AirAsia X flies PUS–KUL four times weekly. Verify 17 January is still scheduled.</span></span></label>
+  <label class="chk"><input type="checkbox"><span class="t"><b>Buy base layers and boots</b><span>The two things you need the moment you land. Break the boots in — most days here run past 15,000 steps.</span></span></label>
+
+  <h3 class="subh"><span class="k">FINAL MONTH</span>Last steps</h3>
+  <label class="chk"><input type="checkbox"><span class="t"><b>Apply for the K-ETA</b><span>At least 72 hours before departure, at k-eta.go.kr only. About ₩10,000 — never USD 50–100.</span></span></label>
+  <label class="chk"><input type="checkbox"><span class="t"><b>Buy and install the eSIM</b><span>10-day plan, installed at home so you land connected rather than queueing at 7am.</span></span></label>
+  <label class="chk"><input type="checkbox"><span class="t"><b>Install and test all apps</b><span>Naver Map, KakaoTalk, Papago, CatchTable, Kakao T, Korail Talk. Download offline Korean. Screenshot the K-ETA approval.</span></span></label>
+
+  <p class="fine">Prices are indicative, drawn from 2026 sources, in Korean won unless stated; ringgit conversions are approximate. Hotel ratings and locations from Google Maps. Opening hours, ticket prices, flight schedules, baggage allowances and entry requirements can all change before January 2027 — reconfirm anything you're building a day around. Photo panels open live image searches so you see current pictures rather than a stale snapshot.</p>
+</section>
+
+</div><!-- /main -->
+</div><!-- /app -->
+
+<nav class="mbar" id="mbar" aria-label="Sections">
+  <button data-v="entry" aria-current="true">ENTRY</button>
+  <button data-v="fly">FLIGHTS</button>
+  <button data-v="pack">PACKING</button>
+  <button data-v="stay">STAY</button>
+  <button data-v="plan">ITINERARY</button>
+  <button data-v="cost">BUDGET</button>
+  <button data-v="sim">DATA</button>
+  <button data-v="apps">APPS</button>
+  <button data-v="todo">CHECKLIST</button>
+</nav>
+
+<script>
+(function(){
+  var TITLES={entry:'Entry & visa',fly:'Flights',pack:'Packing',stay:'Accommodation',plan:'Itinerary',cost:'Budget',sim:'Connectivity',apps:'Apps',todo:'Checklist'};
+  var crumb=document.getElementById('crumb');
+
+  // ── view router
+  function go(v){
+    document.querySelectorAll('.view').forEach(function(s){ s.classList.toggle('on', s.id==='v-'+v); });
+    document.querySelectorAll('#snav button,#mbar button').forEach(function(b){
+      b.setAttribute('aria-current', b.dataset.v===v ? 'true':'false');
+    });
+    if(crumb && TITLES[v]) crumb.textContent=TITLES[v];
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+  document.querySelectorAll('#snav button,#mbar button').forEach(function(b){
+    b.addEventListener('click',function(){ go(b.dataset.v); });
+  });
+
+  // ── accordions
+  document.querySelectorAll('.acc>button').forEach(function(b){
+    b.addEventListener('click',function(){
+      var open=b.getAttribute('aria-expanded')==='true';
+      b.setAttribute('aria-expanded', open?'false':'true');
+      var body=b.nextElementSibling;
+      if(body) body.hidden=open;
+    });
+  });
+
+  // ── tab groups (Plan A / Plan B)
+  document.querySelectorAll('.tabs').forEach(function(g){
+    var btns=[].slice.call(g.querySelectorAll('button'));
+    var panes=[];
+    var n=g.nextElementSibling;
+    while(n && n.classList.contains('pane')){ panes.push(n); n=n.nextElementSibling; }
+    function sel(i){
+      btns.forEach(function(b,j){ b.setAttribute('aria-selected', i===j?'true':'false'); });
+      panes.forEach(function(p,j){ p.hidden = i!==j; });
+    }
+    btns.forEach(function(b,i){
+      b.addEventListener('click',function(){ sel(i); });
+      b.addEventListener('keydown',function(e){
+        if(e.key==='ArrowRight'||e.key==='ArrowLeft'){
+          e.preventDefault();
+          var k=e.key==='ArrowRight'?(i+1)%btns.length:(i-1+btns.length)%btns.length;
+          btns[k].focus(); sel(k);
+        }
+      });
+    });
+  });
+
+  // ── day selector
+  var rail=document.getElementById('dayrail');
+  if(rail){
+    rail.querySelectorAll('.dchip').forEach(function(c){
+      c.addEventListener('click',function(){
+        var d=c.dataset.d;
+        rail.querySelectorAll('.dchip').forEach(function(x){ x.setAttribute('aria-pressed', x===c?'true':'false'); });
+        document.querySelectorAll('.dayview').forEach(function(v){ v.hidden = v.dataset.day!==d; });
+      });
+    });
+  }
+
+  // ── generic chip filters
+  function filt(sel, attr, key){
+    var chips=document.querySelectorAll(sel);
+    chips.forEach(function(c){
+      c.addEventListener('click',function(){
+        chips.forEach(function(x){ x.setAttribute('aria-pressed', x===c?'true':'false'); });
+        var want=c.dataset[key];
+        document.querySelectorAll(attr).forEach(function(item){
+          var tags=(item.dataset[key==='f'?'tags':(key==='h'?'ht':'pt')]||'');
+          item.style.display = (want==='all'||tags.indexOf(want)>-1) ? '' : 'none';
+        });
+      });
+    });
+  }
+  filt('[data-f]','#routes > .card','f');
+  filt('[data-h]','#hotelgrid > .card','h');
+  filt('[data-p]','#packgrid > .card','p');
+
+  // ── checklist progress
+  var boxes=document.querySelectorAll('#v-todo input[type=checkbox]');
+  var bar=document.getElementById('pgbar'), txt=document.getElementById('pgtext');
+  function upd(){
+    var done=0; boxes.forEach(function(b){ if(b.checked) done++; });
+    if(bar) bar.style.width=(boxes.length?done/boxes.length*100:0)+'%';
+    if(txt) txt.textContent=done+' / '+boxes.length;
+  }
+  boxes.forEach(function(b){ b.addEventListener('change',upd); });
+  upd();
+
+  // ── offline support (only when served over http/https)
+  if('serviceWorker' in navigator && location.protocol.startsWith('http')){
+    window.addEventListener('load', function(){
+      navigator.serviceWorker.register('sw.js').catch(function(){ /* offline mode unavailable, site still works */ });
+    });
+  }
+})();
+</script>
+</body>
+</html>
