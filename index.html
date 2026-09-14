@@ -86,6 +86,11 @@ button{font-family:inherit}
   .mbar button[aria-current="true"]{color:var(--amber);border-top-color:var(--amber)}
 }
 
+.z{transition:opacity .22s}
+.z.dim{opacity:.13}
+.flow{transition:opacity .22s}
+.flow.dim{opacity:.06}
+
 /* ══ COMPONENTS ══ */
 .card{background:var(--panel);border:1px solid var(--edge);border-radius:var(--r);padding:18px 19px}
 .grid{display:grid;gap:13px}
@@ -251,13 +256,14 @@ ul.arr li b{color:var(--tx)}
     <button data-v="stay"><span class="ic">04</span>Accommodation</button>
     <div class="grp">On the ground</div>
     <button data-v="plan"><span class="ic">05</span>Itinerary</button>
+    <button data-v="zones"><span class="ic">05B</span>Zone maps</button>
     <button data-v="cost"><span class="ic">06</span>Budget</button>
     <button data-v="sim"><span class="ic">07</span>Connectivity</button>
     <button data-v="apps"><span class="ic">08</span>Apps</button>
     <div class="grp">Action</div>
     <button data-v="todo"><span class="ic">09</span>Checklist</button>
   </nav>
-  <div class="sfoot">Base: <b>Hongdae</b><br>Split: <b>5 Seoul · 4 Busan</b><br>Entry: <b>K-ETA required</b></div>
+  <div class="sfoot">Base: <b>Myeong-dong</b><br>KTX south: <b>14 Jan · 05:58</b><br>Home: <b>17 Jan · 10:00 PUS</b></div>
 </aside>
 
 <div class="main">
@@ -267,6 +273,7 @@ ul.arr li b{color:var(--tx)}
     <div class="sp"></div>
     <span class="chipmini">9–17 Jan 2027</span>
     <span class="chipmini">−9 °C</span>
+    <span class="chipmini">Open-jaw · ICN in, PUS out</span>
   </div>
 
 <!-- ══ VIEW: ENTRY ══ -->
@@ -329,10 +336,10 @@ ul.arr li b{color:var(--tx)}
   <div id="routes">
     <div class="card" data-tags="best" style="border-color:var(--amber2);margin-bottom:13px">
       <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px">
-        <span style="font-family:'IBM Plex Mono';font-size:10px;background:var(--amber);color:#1B1206;padding:5px 10px;border-radius:3px;font-weight:500">OPTION 1 · BEST FIT</span>
+        <span style="font-family:'IBM Plex Mono';font-size:10px;background:var(--mint);color:#04241A;padding:5px 10px;border-radius:3px;font-weight:500">OPTION 1 · YOUR ROUTING</span>
         <h4 style="font-size:17px;flex:1;min-width:180px">Open-jaw: into Seoul, home from Busan</h4>
         <span class="k" style="font-size:11.5px;color:var(--ice)">KUL→ICN · PUS→KUL</span></div>
-      <p style="font-size:14px;color:var(--mut);margin-bottom:14px">Fly into Incheon on the overnight, fly home directly from Busan Gimhae. No backtracking — your itinerary ends where your flight leaves. Book as multi-city, or as two one-ways if that prices better.</p>
+      <p style="font-size:14px;color:var(--mut);margin-bottom:14px"><b style="color:var(--tx)">This is what you're doing.</b> Overnight into Incheon landing 07:00 on 9 January, then a direct morning flight home from Busan Gimhae on the 17th. No backtracking — the itinerary ends where your flight leaves. Book as multi-city, or as two one-ways if that prices better.</p>
       <div class="grid g2">
         <div><div class="k" style="font-size:9px;letter-spacing:.12em;color:var(--mint);margin-bottom:6px">WORKS BECAUSE</div><ul class="arr" style="font-size:13px"><li>Zero backtracking — saves a half-day</li><li>AirAsia X flies PUS→KUL Sundays, matching 17 Jan</li><li>Gimhae is ~30 min from central Busan</li></ul></div>
         <div><div class="k" style="font-size:9px;letter-spacing:.12em;color:var(--rose);margin-bottom:6px">WATCH OUT</div><ul class="arr" style="font-size:13px"><li>Only 4 weekly frequencies — date is fixed</li><li>Low-cost carrier: add bags to compare fairly</li><li>Multi-city can price oddly; check two one-ways</li></ul></div>
@@ -486,66 +493,72 @@ ul.arr li b{color:var(--tx)}
 <!-- ══ VIEW: STAY ══ -->
 <section class="view" id="v-stay">
   <div class="vh"><span class="n">04 / ACCOMMODATION</span><h2>Real places, filtered</h2>
-    <p>Every property below is real, with its actual Google rating, review count and what guests specifically say about the rooms. <b style="color:var(--tx)">Laundry is called out on every card</b> — for nine days of bulky winter layers it genuinely matters.</p></div>
+    <p>Rebuilt for your <b style="color:var(--tx)">Myeong-dong</b> base. Every property is real, with its actual Google rating, review count and what guests say about the rooms. One honest warning up front: Myeong-dong's budget stock is <b style="color:var(--tx)">noticeably weaker than Hongdae's</b> — there are more poorly-run places here trading on the location, so read recent reviews before booking anything not listed below.</p></div>
 
   <div class="note ice"><div class="lb">On laundry specifically</div>
-    <p>Almost no Korean hotel room has an in-room washing machine — that's an apartment feature, not a hotel one. You're realistically choosing between <b>coin laundry on site</b> (self-service washer and dryer, cheap, best for a long trip), <b>paid service</b> (per item, expensive), or <b>nothing</b>. For an actual washer in your room, book a serviced apartment or Airbnb and filter for it explicitly.</p></div>
+    <p>Almost no Korean hotel room has an in-room washing machine — that's an apartment feature, not a hotel one. You're choosing between <b>coin laundry on site</b>, <b>paid per-item service</b>, or <b>nothing</b>. <b>Your move made this harder:</b> the Hongdae options included places with confirmed coin laundry, whereas in Myeong-dong the properties advertising laundry are mostly the badly-reviewed ones — Migliore has a laundry room but a 3.3★ record, and New Stay Inn charges ₩2,000 wash plus ₩2,000 dry on just two machines, available only 18:00–23:00. Better plan: use a <b>24-hour coin laundry</b> nearby (several around Myeong-dong and Euljiro), or book an Airbnb filtered for "washer".</p></div>
+
+  <div class="note mint"><div class="lb">What changes by basing here</div>
+    <h4>Myeong-dong trades nightlife for centrality — and mostly in your favour</h4>
+    <p><b>Better:</b> Seoul Station is one stop away, which makes the Day 6 KTX morning far easier. Dongdaemun is four stops up Line 4, so the Day 2 night ends with a ten-minute ride home. The palace quarter, Euljiro, Namdaemun Market and the Namsan cable car are all walkable or nearly so. Street food is outside your door every evening.</p>
+    <p><b>Worse:</b> you're no longer on the airport train line, so arrival needs the limousine bus or a transfer at Seoul Station. Hongdae becomes a 30-minute excursion rather than home, which is why Day 5 was rebuilt. And Myeong-dong is <b>touristy and quieter late</b> — shops shut and the crowd thins, where Hongdae ran all night. Euljiro next door is the fix for that.</p></div>
+
+  <div class="note mint"><div class="lb">Busan: one base or two?</div>
+    <h4>One base, and it should be Seomyeon — the maths changed with the itinerary</h4>
+    <p><b>Count which days actually want which side.</b> Day 6 arrives at Busan Station (west), stops at Seomyeon (centre), then runs east. Day 7 is entirely east. Day 8 is entirely west. Day 9 is a 07:00 airport run to the northwest. So <b>only one of your four Busan days genuinely favours Haeundae</b> — Day 7.</p>
+    <p><b>Why Haeundae for all three nights is the weakest option.</b> It creates a zigzag on Day 6: Busan Station → out east to drop bags → back west to Seomyeon → east again. It adds roughly an hour on Day 8, since Gamcheon is ~1h10 away and you'd return from Nampo at night across the whole city. And it makes Sunday's airport run 60–70 minutes at six in the morning.</p>
+    <p><b>Why Seomyeon works for all three.</b> Ten minutes from Busan Station, so you drop bags immediately and the Day 6 Seomyeon stop is literally on your doorstep. ~30 min to Haeundae, ~20 to Nampo, ~40 to Gamcheon and Songdo, and <b>~33 minutes to Gimhae</b> — the shortest airport run of any major area. It's also cheaper and better for food than Haeundae.</p>
+    <p><b>The one real cost, stated plainly:</b> Day 7. From Seomyeon, Blueline Park is ~40 min rather than a walk, and Haedong Yonggungsa becomes about 1h15 instead of 40 minutes. If your Sky Capsule slot is early, that's an early start. Across the whole day you lose perhaps 40–50 minutes — less than Haeundae costs you on Days 6, 8 and 9 combined.</p>
+    <p><b>When to split instead (2 Haeundae + 1 Seomyeon/Nampo):</b> only if waking up by the sea for two mornings is worth something to you in itself. On travel time alone it roughly breaks even once you count the checkout, the cross-city bag haul on Day 8, and the extra booking — so it's a preference call, not an efficiency one.</p></div>
 
   <div class="chips" role="group" aria-label="Filter hotels">
-    <button class="chip" aria-pressed="true" data-h="all">All 12</button>
-    <button class="chip" aria-pressed="false" data-h="seoul">Seoul · Hongdae</button>
+    <button class="chip" aria-pressed="true" data-h="all">All 11</button>
+    <button class="chip" aria-pressed="false" data-h="seoul">Seoul · Myeong-dong</button>
     <button class="chip bz" aria-pressed="false" data-h="busan">Busan</button>
     <button class="chip" aria-pressed="false" data-h="laundry">Has laundry</button>
     <button class="chip" aria-pressed="false" data-h="budget">Budget</button>
   </div>
 
   <div class="grid g2" id="hotelgrid">
-    <div class="card hot" data-ht="seoul laundry">
-      <div class="top"><h4>Mercure Ambassador Seoul Hongdae</h4><div class="rt">4.6 ★<small>1,450 reviews</small></div></div>
-      <div class="loc">144 YANGHWA-RO · MAPO-GU</div>
-      <p>Strongest all-round pick. Guests specifically call out the <b style="color:var(--tx)">coin laundry and gym</b> as making the stay convenient, with rooms described as clean, modern and well equipped. Walking distance to Hongdae's shopping streets and the subway. Accor group, so staff English is reliable. Recurring complaint: inconsistent housekeeping — some rooms spotless, others dusty. Inspect on arrival.</p>
-      <div class="am"><span class="y">Coin laundry</span><span class="y">Gym</span><span>Modern</span><span>English desk</span></div>
-      <div class="pf"><span class="v">~₩150–220k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Mercure%20Ambassador%20Seoul%20Hongdae&amp;query_place_id=ChIJmzQsGfGZfDURZCHdQ9P8bAA" target="_blank" rel="noopener">Photos &amp; map →</a></div>
+
+    <div class="card hot" data-ht="seoul">
+      <div class="top"><h4>Hotel Skypark Myeongdong III</h4><div class="rt">4.2 ★<small>884 reviews</small></div></div>
+      <div class="loc">139 TOEGYE-RO · JUNG-GU</div>
+      <p>The strongest Myeong-dong pick, and the one that fits your arrival best: guests note the <b style="color:var(--tx)">subway station and airport limousine bus stop are directly in front</b> — which matters now that you're not on the airport train line. A 7-Eleven connects straight to the hotel for late-night food. Staff repeatedly singled out for going well beyond, including arranging taxis and helping guests in trouble. No breakfast, but you're surrounded by food. Main caveat: <b style="color:var(--tx)">thin walls</b> — one five-night guest heard neighbours talking and showering, though not enough to lose sleep over.</p>
+      <div class="am"><span class="y">6015 bus at the door</span><span class="y">7-Eleven attached</span><span class="y">Good AC</span><span class="n">Thin walls</span></div>
+      <div class="pf"><span class="v">~₩130–200k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Hotel%20Skypark%20Myeongdong%20III&amp;query_place_id=ChIJBecUjvqifDURMD8U6d0R8M4" target="_blank" rel="noopener">Photos &amp; map →</a></div>
     </div>
 
     <div class="card hot" data-ht="seoul">
-      <div class="top"><h4>L7 Hongdae by Lotte</h4><div class="rt">4.6 ★<small>5,189 reviews</small></div></div>
-      <div class="loc">141 YANGHWA-RO · NEXT TO SUBWAY</div>
-      <p>The design-hotel option and most-reviewed in the district. Lobby on the 21st floor with a rooftop bar, a heated pool (extra fee), games in the common area, free water refill points on corridors. Beside the station and the Nike and Adidas flagships. Two consistent caveats: <b style="color:var(--tx)">rooms are small</b> — barely room for two open suitcases — and lift waits get long at peak.</p>
-      <div class="am"><span class="y">Rooftop bar</span><span class="y">Pool (paid)</span><span class="y">Water refill</span><span class="n">Small rooms</span></div>
-      <div class="pf"><span class="v">~₩200–320k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=L7%20Hongdae&amp;query_place_id=ChIJ5WXJar2ZfDUREfMssWUNq2U" target="_blank" rel="noopener">Photos &amp; map →</a></div>
-    </div>
-
-    <div class="card hot" data-ht="seoul">
-      <div class="top"><h4>Holiday Inn Express Seoul Hongdae</h4><div class="rt">4.4 ★<small>2,059 reviews</small></div></div>
-      <div class="loc">188 YANGHWA-RO · ABOVE METRO EXIT 5</div>
-      <p>Best on pure logistics: it sits <b style="color:var(--tx)">directly above Hongdae station</b>, one to two minutes from Exit 4 — so the AREX from Incheon drops you essentially at the door, worth a lot landing at 7am with luggage. Breakfast buffet included, 24-hour convenience store in the building, reliable luggage storage. Trade-off: small rooms with a hanging rail instead of drawers, and thin walls.</p>
-      <div class="am"><span class="y">Breakfast</span><span class="y">On the station</span><span class="y">Bag storage</span><span class="n">Thin walls</span></div>
-      <div class="pf"><span class="v">~₩170–260k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Holiday%20Inn%20Express%20Seoul%20Hongdae&amp;query_place_id=ChIJLw4y4-mYfDURxDEN4Ckb4wo" target="_blank" rel="noopener">Photos &amp; map →</a></div>
+      <div class="top"><h4>Days Hotel by Wyndham Seoul Myeongdong</h4><div class="rt">4.1 ★<small>402 reviews</small></div></div>
+      <div class="loc">107 TOEGYE-RO · ON THE MAIN ROAD</div>
+      <p>Sits on the main road so it's easy for taxis and close to the subway, while being <b style="color:var(--tx)">slightly away from Myeong-dong's noise</b> — a real consideration when your hotel is inside a night-market district. Rooms are small but well priced, bottled water daily, and a familiar international chain standard. One thing I won't gloss over: <b style="color:var(--tx)">two separate reviewers describe front-desk staff openly mocking guests in Korean</b> for speaking English, one not realising the guest understood. Location and rooms are fine; go in aware of that.</p>
+      <div class="am"><span class="y">Quieter side</span><span class="y">Near subway</span><span>Small rooms</span><span class="n">Staff complaints</span></div>
+      <div class="pf"><span class="v">~₩110–170k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Days%20Hotel%20by%20Wyndham%20Seoul%20Myeongdong&amp;query_place_id=ChIJcbocIPGifDURFmCSzRrtW4c" target="_blank" rel="noopener">Photos &amp; map →</a></div>
     </div>
 
     <div class="card hot" data-ht="seoul budget">
-      <div class="top"><h4>Hongdae Style Guesthouse</h4><div class="rt">4.6 ★<small>90 reviews</small></div></div>
-      <div class="loc">DONGGYO-DONG · NEAR EXIT 1, LINE 2</div>
-      <p>Highest-rated guesthouse in the area and a big step down in price. Homemade breakfast guests call filling, and an owner (Min) repeatedly singled out — one reviewer arrived a day late without luggage and was helped through the whole mess. Close to both the main street and Yeonnam-dong. Note: rooms small, <b style="color:var(--tx)">bathrooms shared</b>, approach is up rock steps so not step-free.</p>
-      <div class="am"><span class="y">Breakfast</span><span class="y">Excellent host</span><span class="n">Shared bathroom</span><span class="n">Steps</span></div>
-      <div class="pf"><span class="v">~₩50–80k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Hongdae%20Style%20Guesthouse&amp;query_place_id=ChIJfWgUId2YfDURAR_eAgfahhk" target="_blank" rel="noopener">Photos &amp; map →</a></div>
+      <div class="top"><h4>Step Inn Myeongdong 1</h4><div class="rt">4.1 ★<small>475 reviews</small></div></div>
+      <div class="loc">55 MYEONGDONG-GIL · IN THE CENTRE</div>
+      <p>A hostel rather than a hotel, and honest about it. Best-rated budget option in the district, right in the middle of Myeong-dong. Two things suit your trip specifically: they run an <b style="color:var(--tx)">airport taxi service</b> (book a day ahead) and will <b style="color:var(--tx)">store luggage before check-in</b> — useful landing at 07:15. Basic but decent breakfast, pleasant café. Caveats: rooms are small enough that two people take turns opening suitcases, and there's banging from upper floors plus midnight check-ins. Bring earplugs.</p>
+      <div class="am"><span class="y">Airport taxi service</span><span class="y">Bag storage</span><span class="y">Breakfast</span><span class="n">Noisy</span></div>
+      <div class="pf"><span class="v">~₩35–70k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Step%20Inn%20Myeongdong%201&amp;query_place_id=ChIJZxB04--ifDURE0tSqNBR49U" target="_blank" rel="noopener">Photos &amp; map →</a></div>
     </div>
 
     <div class="card hot" data-ht="seoul budget">
-      <div class="top"><h4>Hongdae Guesthouse</h4><div class="rt">4.4 ★<small>134 reviews</small></div></div>
-      <div class="loc">159-6 DONGGYO-DONG · CONNECTS TO EXIT 1</div>
-      <p>A repeat-visit favourite. Directly connected to subway Exit 1 <b style="color:var(--tx)">with an escalator</b> — a real advantage with a big suitcase — and in front of the main Hongdae area, airport shuttle stop nearby. Rooms described as spacious and clean with microwave and iron available, and staff who hold luggage if you side-trip to Busan. One reviewer felt photos oversold it, so check recent images.</p>
-      <div class="am"><span class="y">Microwave &amp; iron</span><span class="y">Escalator to subway</span><span class="y">Bag storage</span><span>Breakfast</span></div>
-      <div class="pf"><span class="v">~₩50–85k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Hongdae%20Guesthouse&amp;query_place_id=ChIJyQvE3sKYfDURIYERZC3MpPE" target="_blank" rel="noopener">Photos &amp; map →</a></div>
+      <div class="top"><h4>24guesthouse Myeongdong Town</h4><div class="rt">4.2 ★<small>56 reviews</small></div></div>
+      <div class="loc">61 TOEGYE-RO · NEAR HOEHYEON</div>
+      <p>The budget pick with the most relevant detail for a January trip: a guest staying in winter specifically praised the <b style="color:var(--tx)">radiant floor heating and hot shower</b> as making the stay genuinely comfortable in the cold — not something you can take for granted at this price. Small rooms, but clean, with a cosy shared pantry for tea and meals and handwritten local tips on the wall. Some rooms look out toward Namsan Tower and the cable cars. Airport bus stop nearby.</p>
+      <div class="am"><span class="y">Floor heating</span><span class="y">Shared pantry</span><span class="y">Airport bus near</span><span>Small rooms</span></div>
+      <div class="pf"><span class="v">~₩40–70k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=24guesthouse%20Myeongdong%20Town&amp;query_place_id=ChIJrUyMUvSifDURrbzXC4oLcm8" target="_blank" rel="noopener">Photos &amp; map →</a></div>
     </div>
 
-    <div class="card hot" data-ht="seoul budget laundry">
-      <div class="top"><h4>Take 1 Guesthouse Hongdae</h4><div class="rt">3.6 ★<small>47 reviews</small></div></div>
-      <div class="loc">198-29 DONGGYO-DONG</div>
-      <p>Budget end, genuinely mixed reviews — included because guests mention an <b style="color:var(--tx)">affordable on-site laundry service</b>, free basic breakfast ingredients, bed curtains in dorms and a lounge. Honest counterweight: <b style="color:var(--tx)">no lift across four floors</b>, some reports of stained walls and bedding, and a warning that slightly more money buys considerably better.</p>
-      <div class="am"><span class="y">Cheap laundry</span><span class="y">Dorm curtains</span><span class="n">No lift</span><span class="n">Mixed cleanliness</span></div>
-      <div class="pf"><span class="v">~₩25–45k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Take%201%20Guesthouse%20Hongdae&amp;query_place_id=ChIJ18W1Mf-ZfDURAuuby1ROWSU" target="_blank" rel="noopener">Photos &amp; map →</a></div>
+    <div class="card hot" data-ht="seoul budget">
+      <div class="top"><h4>3Guesthouse MyeongDong</h4><div class="rt">4.2 ★<small>26 reviews</small></div></div>
+      <div class="loc">34 SOGONG-RO 6-GIL · 10 MIN TO STATION</div>
+      <p>Small operation, small review count, but consistently well rated on the things that matter: cleanliness, helpful hosts who <b style="color:var(--tx)">speak English and Chinese</b>, and a clear Namsan Tower view. Café downstairs gives guests 20% off. Rooms described as spacious for the price. Ten minutes' walk to Myeongdong Station and the shopping streets, and close to the Namsan cable car base. Caveat worth weighing: one guest had a confirmed booking cancelled a week out, so reconfirm directly.</p>
+      <div class="am"><span class="y">Namsan view</span><span class="y">English &amp; Chinese</span><span class="y">Café discount</span><span class="n">Few reviews</span></div>
+      <div class="pf"><span class="v">~₩45–75k</span><a href="https://www.google.com/maps/search/?api=1&amp;query=3Guesthouse%20MyeongDong&amp;query_place_id=ChIJGS-lDNCjfDURG_qFykdpjwY" target="_blank" rel="noopener">Photos &amp; map →</a></div>
     </div>
 
     <div class="card hot" data-ht="busan">
@@ -597,8 +610,8 @@ ul.arr li b{color:var(--tx)}
     </div>
   </div>
 
-  <div class="note rose" style="margin-top:18px"><div class="lb">Three in Hongdae I'd steer you away from</div>
-    <p>These show up in searches and look fine in photos, but the review record is poor and consistent. <b>Hotel The Designers Hongdae</b> (3.3★, 851) — repeated reports of dirt, mould, broken fixtures, unresponsive housekeeping. <b>THE GRAY HOTEL</b> (3.7★) — cigarette smell, burn holes in bedding, guests describing staff as hostile. <b>H Avenue Hotel Idae</b> (3.7★) — listed 3-star on booking sites, signed 2-star at the door, multiple reviewers using the word "scammed". Booking-site photos are not a reliable guide — read the recent one-star reviews.</p></div>
+  <div class="note rose" style="margin-top:18px"><div class="lb">Five in Myeong-dong I'd steer you away from</div>
+    <p>All of these rank highly in Myeong-dong searches and photograph well, but the review records are poor and consistent. <b>Migliore Hotel</b> (3.3★, 1,039) — water leaking through a ceiling handled with indifference, front-desk rudeness, dated rooms, air conditioning that won't go below 25°C. <b>MAYONE Hotel</b> (3.2★) — "the pictures scam us", dirty walls, a guest reporting an item stolen from the room, no ventilation. <b>LINE Hotel</b> (3.8★) — tiny windowless rooms, and one guest who walked in and straight back out over coffee splatter on the wall and hairs in the bed. <b>MyeongDong New Stay Inn</b> (3.3★) — dirty bedsheets, mould, water seeping from the toilet. <b>24 Guesthouse Avenue Point</b> (3.5★) — five days without the room being cleaned or bins emptied. Booking-site photos are not a reliable guide here; read the recent one-star reviews.</p></div>
 
   <h3 class="subh"><span class="k">WHERE TO BOOK</span>Compare at least three</h3>
   <div class="grid g3">
@@ -615,7 +628,7 @@ ul.arr li b{color:var(--tx)}
 <!-- ══ VIEW: ITINERARY ══ -->
 <section class="view" id="v-plan">
   <div class="vh"><span class="n">05 / ITINERARY</span><h2>Nine days, one at a time</h2>
-    <p>Pick a day below. Each has a <b style="color:var(--tx)">Plan B</b> covering what actually goes wrong in January — a restaurant closed, snow shutting an outdoor site, a booking you couldn't get, or being too wrecked for the full version. Tap any photo panel to see real images of that place.</p></div>
+    <p>Pick a day below. Each has a <b style="color:var(--tx)">Plan B</b> covering what actually goes wrong in January — a restaurant closed, snow shutting an outdoor site, a booking you couldn't get, or being too wrecked for the full version. <b style="color:var(--tx)">Day 9 is departure only</b>: with a 10:00 direct flight home, Busan is really three days — but the early KTX on the 14th buys most of that back. Tap any photo panel to see real images of that place.</p></div>
 
   <div class="dayrail" role="group" aria-label="Choose a day" id="dayrail">
     <button class="dchip" aria-pressed="true" data-d="1"><span class="d">SAT · JAN 9</span><span class="t">Arrive</span></button>
@@ -623,27 +636,38 @@ ul.arr li b{color:var(--tx)}
     <button class="dchip" aria-pressed="false" data-d="3"><span class="d">MON · JAN 11</span><span class="t">Seongsu</span></button>
     <button class="dchip" aria-pressed="false" data-d="4"><span class="d">TUE · JAN 12</span><span class="t">Gangnam</span></button>
     <button class="dchip" aria-pressed="false" data-d="5"><span class="d">WED · JAN 13</span><span class="t">Itaewon</span></button>
-    <button class="dchip bz" aria-pressed="false" data-d="6"><span class="d">THU · JAN 14</span><span class="t">→ Busan</span></button>
+    <button class="dchip bz" aria-pressed="false" data-d="6"><span class="d">THU · JAN 14</span><span class="t">Seomyeon</span></button>
     <button class="dchip bz" aria-pressed="false" data-d="7"><span class="d">FRI · JAN 15</span><span class="t">Coast</span></button>
-    <button class="dchip bz" aria-pressed="false" data-d="8"><span class="d">SAT · JAN 16</span><span class="t">Gamcheon</span></button>
-    <button class="dchip bz" aria-pressed="false" data-d="9"><span class="d">SUN · JAN 17</span><span class="t">Fly home</span></button>
+    <button class="dchip bz" aria-pressed="false" data-d="8"><span class="d">SAT · JAN 16</span><span class="t">Old town</span></button>
+    <button class="dchip bz" aria-pressed="false" data-d="9"><span class="d">SUN · JAN 17</span><span class="t">Fly 10:00</span></button>
   </div>
 
   <!-- DAY 1 -->
   <div class="dayview" data-day="1">
-    <h3 class="subh" style="margin-top:14px"><span class="k">DAY 1 · SATURDAY 9 JANUARY · JONGNO &amp; MYEONG-DONG</span>Land, hanok cafés, ease in</h3>
+    <h3 class="subh" style="margin-top:14px"><span class="k">DAY 1 · SATURDAY 9 JANUARY · JONGNO &amp; MYEONG-DONG</span>Land, a UNESCO palace, then home turf</h3>
+    <div class="note rose" style="margin-bottom:14px"><div class="lb">The one hard deadline in your whole trip</div>
+    <h4>Secret Garden tickets open at 10:00 KST, exactly six days before</h4>
+    <p>Only <b>100 people per tour session</b>: 50 online, 50 sold on the day at the ticket office. Online booking opens on the official Royal Palaces reservation site at <b>10:00 Korea time, 6 days ahead</b> — so for 9 January that's <b>10:00 KST on 3 January</b>, which is 09:00 in Malaysia. Slots go fast; one traveller described logging on at the opening minute and finding everything gone.</p>
+    <p><b>Practical notes:</b> the palace and the garden are <b>separate tickets</b> — ₩3,000 general admission plus ₩5,000 for Huwon, and the garden ticket alone won't get you through the front gate. Pay within 24 hours of booking or the reservation auto-cancels. The <b>mobile ticket must be live on your phone</b> — a screenshot is not accepted — and it activates 30 minutes before your tour. If online sells out, the 50 same-day tickets are first-come at the ticket office; arriving before opening gives you a real chance on a January Saturday.</p></div>
+    <div class="note mint" style="margin-bottom:14px"><div class="lb">Money-saver worth knowing</div>
+    <p>You're visiting <b>Gyeongbokgung on Day 2</b> as well. The <b>Royal Palace Pass at ₩10,000</b> covers Changdeokgung <em>including</em> the Secret Garden, plus Gyeongbokgung, Changgyeonggung, Deoksugung and Jongmyo Shrine, valid three months. Buying separately costs ₩8,000 + ₩3,000 = ₩11,000, so the pass is cheaper <em>and</em> opens up two more palaces if you want them. You still need to reserve a Huwon tour slot — the pass doesn't skip that queue.</p></div>
     <div class="tabs" role="tablist"><button role="tab" aria-selected="true">PLAN A · as planned</button><button role="tab" aria-selected="false">PLAN B · if you're wrecked</button></div>
     <div class="pane card">
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Incheon+Airport+AREX+train&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">~07:15</div><div class="bd"><h5>Incheon → Hongdae<span class="kr">AREX</span></h5><p>eSIM and T-money at the airport, AREX direct to Hongik Univ. Station. Most places hold bags if the room isn't ready.</p><span class="pr">₩4,500</span></div></div>
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Ikseon-dong+hanok+village+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Late morning</div><div class="bd"><h5>Ikseon-dong Hanok Village<span class="kr">익선동</span></h5><p>Restored 1920s hanok houses turned into cafés and tiny boutiques. Warm, low-effort, ideal off a red-eye — duck into a heated café whenever the cold bites.</p><span class="pr free">Free · café ~₩7,000</span></div></div>
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Myeongdong+street+food+night+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Afternoon</div><div class="bd"><h5>Myeong-dong<span class="kr">명동</span></h5><p>K-beauty flagships by day; street-food carts fire up around 5pm, so drifting in later works well.</p><span class="pr free">Free · food ~₩5,000</span></div></div>
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Olive+Young+Myeongdong+flagship+store&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Late aft.</div><div class="bd"><h5>Olive Young Myeongdong Town<span class="kr">올리브영</span></h5><p>Two-floor global flagship, tax-free and multilingual. Buy the moisturiser and lip balm you'll need immediately.</p><span class="pr free">Free entry</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Incheon+airport+limousine+bus+6015&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">07:00 land</div><div class="bd"><h5>Incheon → Myeong-dong<span class="kr">공항버스 6015</span></h5><p><b>Realistic timeline:</b> land 07:00, clear immigration and bags by roughly 08:00, then 70–90 min by bus or about 50 min by rail — so you're at your hotel <b>between 09:00 and 09:30</b>. Too early to check in, so drop bags and go. Myeong-dong is <em>not</em> on the airport train line: take the <b>6015 or 6001 limousine bus</b> to hotel doors (~₩17,000), or <b>AREX Express to Seoul Station</b> then one stop on Line 4 (~₩11,000). Grab eSIM and T-money before leaving the airport.</p><span class="pr">Bus ~₩17,000 · rail ~₩11,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Changdeokgung+palace+Seoul+winter&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">~10:15</div><div class="bd"><h5>Changdeokgung Palace<span class="kr">창덕궁</span></h5><p>Line 4 to Chungmuro, Line 3 to <b>Anguk, Exit 3</b>, then a 10-minute walk — about 25 minutes door to door. A UNESCO site and the Joseon palace many people rate above Gyeongbokgung, because it was built to follow the contours of the land rather than flatten them. Wander the main grounds on your own before the garden tour.</p><span class="pr">Palace ₩3,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Changdeokgung+Secret+Garden+Huwon&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">11:30 tour</div><div class="bd"><h5>Secret Garden · Huwon<span class="kr">후원</span></h5><p><b>Guided tour only — you cannot wander it alone.</b> Ponds, pavilions and Buyongjeong set against Bugaksan, once reserved for the royal family. The tour runs about an hour and you can linger afterwards. <b>Be at the palace main gate 20 minutes before your slot</b> — the Huwon gate is a 10–15 minute walk <em>inside</em> the grounds, past the throne hall, and they will not wait for you.</p><span class="pr">Garden +₩5,000 · book ahead</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Ikseon-dong+hanok+village+cafe+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">~12:45</div><div class="bd"><h5>Ikseon-dong Hanok Village<span class="kr">익선동</span></h5><p>A <b>10-minute walk</b> from Changdeokgung, which is why these two pair so well. Restored 1920s hanok houses turned into cafés, dessert spots and tiny boutiques. Lunch here, then warm up properly — off a red-eye this is where you slow down.</p><span class="pr free">Free · lunch + café ~₩20,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Olive+Young+Myeongdong+flagship+store&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">~15:00</div><div class="bd"><h5>Back to Myeong-dong · Olive Young<span class="kr">명동 · 올리브영</span></h5><p>Your own neighbourhood, so no planning needed. The two-floor global flagship is tax-free and multilingual — buy the heavy moisturiser and lip balm you'll want by tomorrow. Myeong-dong Cathedral is a five-minute detour if you want it.</p><span class="pr free">Free entry</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Seoullo+7017+Seoul+night&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">~17:15 · dusk</div><div class="bd"><h5>Seoullo 7017<span class="kr">서울로 7017</span></h5><p>An old overpass turned elevated sky garden, running <b>Seoul Station ↔ Hoehyeon</b> — and Hoehyeon is the station right next to Myeong-dong, so you can walk on from the shops. Under 20 minutes end to end, free, open 24h. <b>Do it after dark:</b> reviewers say the building light shows are the point, and there's a public piano partway. Dark by ~17:30 in January, so this timing is right.</p><span class="pr free">Free · 24h</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Myeongdong+street+food+night+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Evening</div><div class="bd"><h5>Myeong-dong street food<span class="kr">명동</span></h5><p>Walk back up from Hoehyeon and the carts are already running — they fire up around 5pm. Cheap, hot, and outside your door. Then sleep: tomorrow is the palace-quarter day and it's long.</p><span class="pr free">~₩10,000</span></div></div>
     </div>
     <div class="pane card" hidden>
-      <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">If the overnight destroys you, or it's snowing hard on arrival — cut everything except sleep and food.</p>
-      <div class="stop"><div class="tm">~07:15</div><div class="bd"><h5>Drop bags, then sleep</h5><p>Ask reception to hold luggage, then find a café or jjimjilbang and nap until check-in. Fighting through Day 1 exhausted ruins Day 2, which is the bigger day.</p><span class="pr">Jjimjilbang ~₩12,000</span></div></div>
-      <div class="stop"><div class="tm">Afternoon</div><div class="bd"><h5>Hongdae only — no commute<span class="kr">홍대</span></h5><p>Your own neighbourhood has indie shops, thrift and record stores, endless cafés and the Olive Young Playground. All within walking distance of your bed.</p><span class="pr free">Free</span></div></div>
-      <div class="stop"><div class="tm">Evening</div><div class="bd"><h5>Convenience-store dinner, early night</h5><p>CU or GS25 does a genuinely good cheap dinner. Ikseon-dong moves to any spare morning — it's near the Day 2 palace zone anyway.</p><span class="pr">~₩8,000</span></div></div>
+      <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">If the overnight flight destroys you, or it's snowing hard on arrival.</p>
+      <div class="stop"><div class="tm">The catch</div><div class="bd"><h5>Book a later Huwon slot as insurance</h5><p>This is the argument for taking an <b>afternoon tour time rather than the earliest</b>. A timed ticket is the one thing on Day 1 you can't shuffle — if you're wrecked at 11:00 you forfeit ₩8,000 and the booking. A 14:00 or 15:00 slot lets you sleep first and still make it.</p><span class="pr">₩8,000 at risk</span></div></div>
+      <div class="stop"><div class="tm">~09:30</div><div class="bd"><h5>Drop bags and sleep first</h5><p>Ask reception to hold luggage, then find a café or jjimjilbang and nap until check-in. Fighting through Day 1 exhausted ruins Day 2, which is the bigger day.</p><span class="pr">Jjimjilbang ~₩12,000</span></div></div>
+      <div class="stop"><div class="tm">Afternoon</div><div class="bd"><h5>Myeong-dong only — no commute<span class="kr">명동</span></h5><p>Your own neighbourhood, central enough that it barely feels like a compromise: the Olive Young flagship, the cathedral, endless street food, Namdaemun Market a few minutes west. All on foot from your bed.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><div class="tm">Evening</div><div class="bd"><h5>Seoullo 7017 still works<span class="kr">서울로</span></h5><p>Twenty minutes, flat, free, and it starts one stop away at Hoehyeon. It's the lowest-effort thing on the day and it's better after dark anyway — keep this one even on a write-off day.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><div class="tm">Note</div><div class="bd"><h5>Changdeokgung can move to Day 2</h5><p>It's a 10-minute walk from Gyeongbokgung's zone, so if you lose it today it can be folded into the palace-quarter day — though that makes Day 2 very long, and you'd need to rebook the Huwon slot six days ahead for the new date.</p><span class="pr">—</span></div></div>
     </div>
   </div>
 
@@ -658,7 +682,7 @@ ul.arr li b{color:var(--tx)}
       <div class="stop"><a class="ph" href="https://www.google.com/search?q=dongpo+pork+Korean+Chinese+dish&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">13:00</div><div class="bd"><h5>Doryang — Culinary Class Wars<span class="kr">도량</span></h5><p>Lim Tae-hoon's dongpo pork, the one chef restaurant in this zone. Closed Mondays, so Sunday lunch works. Book on CatchTable.</p><span class="pr">₩30–60,000</span></div></div>
       <div class="stop"><a class="ph" href="https://www.google.com/search?q=Insadong+Ssamziegil+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">14:30</div><div class="bd"><h5>Insadong<span class="kr">인사동</span></h5><p>Traditional crafts, tea houses, Ssamziegil's spiral ramp. Walkable from lunch.</p><span class="pr free">Free</span></div></div>
       <div class="stop"><a class="ph" href="https://www.google.com/search?q=Cheonggyecheon+stream+Seoul+winter&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">15:30</div><div class="bd"><h5>Cheonggyecheon Stream<span class="kr">청계천</span></h5><p>The restored stream runs east toward Dongdaemun, linking straight into tonight. Exposed — keep moving.</p><span class="pr free">Free</span></div></div>
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Dongdaemun+Design+Plaza+night+lit&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">After dark</div><div class="bd"><h5>DDP → Fashion Town → Doota<span class="kr">동대문</span></h5><p>Zaha Hadid's building lit at night, then the fashion district around it. Doota trades till midnight — designer labels, big Olive Young, basement food court.</p><span class="pr free">Free · Doota till 00:00</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Dongdaemun+Design+Plaza+night+lit&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">After dark</div><div class="bd"><h5>DDP → Fashion Town → Doota<span class="kr">동대문</span></h5><p>Zaha Hadid's building lit at night, then the fashion district around it. Doota trades till midnight — designer labels, big Olive Young, basement food court. <b>Your move helps here:</b> Dongdaemun is four stops straight up Line 4 from Myeong-dong, so you can stay out late and be home in ten minutes instead of crossing the city.</p><span class="pr free">Free · Doota till 00:00</span></div></div>
     </div>
     <div class="pane card" hidden>
       <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">If it's snowing hard, the palace is miserable outdoors, or Doryang has no table — same zone, moved indoors.</p>
@@ -679,15 +703,15 @@ ul.arr li b{color:var(--tx)}
       <div class="stop"><a class="ph" href="https://www.google.com/search?q=KWANGYA+SM+Entertainment+Seongsu&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">11:30</div><div class="bd"><h5>SM Entertainment · KWANGYA<span class="kr">광야@서울</span></h5><p>Now in Seongsu, not Gangnam. MV screen outside, merch store and café inside.</p><span class="pr free">Free entry</span></div></div>
       <div class="stop"><a class="ph" href="https://www.google.com/search?q=Olive+Young+Beauty+Mansion+Seongsu&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">13:00</div><div class="bd"><h5>Olive Young Beauty Mansion<span class="kr">뷰티 맨션</span></h5><p>Concept flagship — skin and scalp analysis, device studio, men's grooming floor. Free analysis slots fill within minutes of opening.</p><span class="pr free">Free</span></div></div>
       <div class="stop"><a class="ph" href="https://www.google.com/search?q=Seoul+Forest+park+winter&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">14:00</div><div class="bd"><h5>Seoul Forest<span class="kr">서울숲</span></h5><p>Ten minutes from Seongsu. Bare in winter but a pleasant reset.</p><span class="pr free">Free</span></div></div>
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Han+river+park+ramyeon+convenience+store&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">15:30</div><div class="bd"><h5>Ttukseom Hangang Park<span class="kr">뚝섬한강공원</span></h5><p>A winter snow slide runs here, and the convenience-store-ramyeon-by-the-river ritual is the whole point.</p><span class="pr free">Free · ramyeon ~₩2,000</span></div></div>
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=dim+sum+Korean+Chinese+restaurant&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Evening</div><div class="bd"><h5>Tian Mi Mi<span class="kr">티엔미미</span></h5><p>Jung Ji-sun's dim sum and Sichuan — the most walk-in-friendly chef pick. Gangnam or Hongdae branch.</p><span class="pr">₩40–70,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Han+river+park+ramyeon+convenience+store&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">15:30</div><div class="bd"><h5>Ttukseom Hangang Park<span class="kr">뚝섬한강공원</span></h5><p><b>The best Hangang park of the three in winter</b>, which is why it stays on the schedule rather than being optional: a snow slide runs in January, and the convenience-store-ramyeon-by-the-river ritual — buy a cup, cook it at the machine, eat it watching the water — is the whole point. Ten minutes from Seongsu.</p><span class="pr free">Free · ramyeon ~₩2,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=dim+sum+Korean+Chinese+restaurant&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Evening</div><div class="bd"><h5>Tian Mi Mi<span class="kr">티엔미미</span></h5><p>Jung Ji-sun's dim sum and Sichuan — the most walk-in-friendly chef pick. Two branches: <b>take the Gangnam one now you're based in Myeong-dong</b> — the Hongdae branch was the convenient one before, but it no longer is.</p><span class="pr">₩40–70,000</span></div></div>
     </div>
     <div class="pane card" hidden>
       <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">The Han River in a January wind is genuinely unpleasant. Keep Seongsu, go indoors instead of riverside.</p>
       <div class="stop"><div class="tm">Morning</div><div class="bd"><h5>Seongsu, but slower<span class="kr">성수동</span></h5><p>Stretch the café-hopping across the whole morning and early afternoon. Three cafés rather than one, plus the pop-up stores — Seongsu rewards lingering.</p><span class="pr free">Free</span></div></div>
       <div class="stop"><div class="tm">Afternoon</div><div class="bd"><h5>Common Ground or Starfield Hanam<span class="kr">커먼그라운드</span></h5><p>Common Ground is a container-built complex a few stops away; Starfield Hanam a huge indoor mall further east. Either replaces the outdoor river block entirely.</p><span class="pr free">Free entry</span></div></div>
       <div class="stop"><div class="tm">Or</div><div class="bd"><h5>A jjimjilbang<span class="kr">찜질방</span></h5><p>Korean bathhouse — hot pools, sauna, sleeping rooms. The single best cold-weather activity in the country and one of the more memorable cultural experiences on offer.</p><span class="pr">₩10–15,000</span></div></div>
-      <div class="stop"><div class="tm">Evening</div><div class="bd"><h5>Tian Mi Mi unchanged<span class="kr">티엔미미</span></h5><p>A chain with a Hongdae branch, so it survives almost anything — being walk-in-friendly makes it the safest chef meal to keep when a day falls apart.</p><span class="pr">₩40–70,000</span></div></div>
+      <div class="stop"><div class="tm">Evening</div><div class="bd"><h5>Tian Mi Mi unchanged<span class="kr">티엔미미</span></h5><p>A chain with several branches, so it survives almost anything — being walk-in-friendly makes it the safest chef meal to keep when a day falls apart. From Myeong-dong the Gangnam branch is the straightforward one.</p><span class="pr">₩40–70,000</span></div></div>
     </div>
   </div>
 
@@ -701,6 +725,7 @@ ul.arr li b{color:var(--tx)}
       <div class="stop"><a class="ph" href="https://www.google.com/search?q=Cheongdam+dong+luxury+street+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">13:30</div><div class="bd"><h5>Cheongdam<span class="kr">청담동</span></h5><p>The luxury spine east of Apgujeong — fashion houses in architectural buildings, high-end galleries. Atmosphere more than buying.</p><span class="pr free">Free</span></div></div>
       <div class="stop"><a class="ph" href="https://www.google.com/search?q=Garosu-gil+Sinsa+Seoul+street&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">14:30</div><div class="bd"><h5>Garosu-gil<span class="kr">가로수길</span></h5><p>Tree-lined boutique street in Sinsa with the Serosu-gil alleys off it.</p><span class="pr free">Free</span></div></div>
       <div class="stop"><a class="ph" href="https://www.google.com/search?q=Gangnam+station+underground+shopping+mall&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">16:00</div><div class="bd"><h5>Gangnam Station underground mall<span class="kr">강남역</span></h5><p>Long arcade wired into the subway — a warm browse with zero time outside.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Banpo+Hangang+Park+Seoul+bridge&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Dusk</div><div class="bd"><h5>Banpo Hangang Park<span class="kr">반포한강공원</span></h5><p><b>Back in, and moved here.</b> This was on Day 5 before your base change; it belongs on the Gangnam day instead — Banpo is two stops from Sinsa on Line 3, so it sits between the shopping and dinner rather than being a separate trip. Riverside paths under Banpo Bridge with the city lighting up across the water. <b>Honest caveat:</b> the Moonlight Rainbow Fountain does <em>not</em> run in winter, so come for the walk and the bridge, not the show. Twenty minutes is enough in January.</p><span class="pr free">Free · fountain off in winter</span></div></div>
       <div class="stop"><a class="ph" href="https://www.google.com/search?q=contemporary+Chinese+fine+dining+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Evening</div><div class="bd"><h5>Nuwa<span class="kr">누와</span></h5><p>Park Eun-young's first solo restaurant at Sinsa Square. Contemporary Chinese reinterpreting tradition.</p><span class="pr">₩80–150,000</span></div></div>
     </div>
     <div class="pane card" hidden>
@@ -715,104 +740,338 @@ ul.arr li b{color:var(--tx)}
 
   <!-- DAY 5 -->
   <div class="dayview" data-day="5" hidden>
-    <h3 class="subh" style="margin-top:14px"><span class="k">DAY 5 · WEDNESDAY 13 JANUARY · YONGSAN → MAPO</span>Hannam, Itaewon &amp; back to Hongdae</h3>
+    <h3 class="subh" style="margin-top:14px"><span class="k">DAY 5 · WEDNESDAY 13 JANUARY · YONGSAN → MAPO → JUNG-GU</span>Itaewon, then west to Hongdae</h3>
     <div class="tabs" role="tablist"><button role="tab" aria-selected="true">PLAN A · as planned</button><button role="tab" aria-selected="false">PLAN B · rest day version</button></div>
     <div class="pane card">
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Hannam-dong+Leeum+museum+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Late morning</div><div class="bd"><h5>Hannam-dong<span class="kr">한남동</span></h5><p>Quietly wealthy quarter — Leeum Museum, designer flagships, excellent coffee.</p><span class="pr">Leeum ~₩20,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Hannam-dong+Leeum+museum+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Late morning</div><div class="bd"><h5>Hannam-dong<span class="kr">한남동</span></h5><p>Quietly wealthy quarter — Leeum Museum, designer flagships, excellent coffee. <b>Closer from Myeong-dong than it was from Hongdae</b> — Line 4 to Samgakji then Line 6, about 20 minutes.</p><span class="pr">Leeum ~₩20,000</span></div></div>
       <div class="stop"><a class="ph" href="https://www.google.com/search?q=Itaewon+Seoul+street&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">11:45</div><div class="bd"><h5>Itaewon<span class="kr">이태원</span></h5><p>Next to Hannam — Seoul's most international district. Global food, vintage shops, a hilly tangle of bars.</p><span class="pr free">Free · lunch ~₩15,000</span></div></div>
       <div class="stop"><a class="ph" href="https://www.google.com/search?q=HYBE+headquarters+building+Yongsan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">12:30</div><div class="bd"><h5>HYBE HQ<span class="kr">하이브</span></h5><p>Home of BTS, SEVENTEEN, NewJeans. Working office, so exterior only.</p><span class="pr free">Free · no entry</span></div></div>
       <div class="stop"><a class="ph" href="https://www.google.com/search?q=neo+bistro+restaurant+Apgujeong&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">13:30</div><div class="bd"><h5>Bistro Notre — optional<span class="kr">비스트로 노뜨르</span></h5><p>Yoon Nam-no's bistro if you want a fourth chef meal. Closed Mon–Tue, so Wednesday is one of the few days it works.</p><span class="pr">₩39,000 amuse +</span></div></div>
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Hongdae+street+Seoul+buskers&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Mid-aft.</div><div class="bd"><h5>Hongdae<span class="kr">홍대</span></h5><p>Home turf in daylight — buskers, indie shops, thrift and record stores.</p><span class="pr free">Free</span></div></div>
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Olive+Young+Hongdae+Playground+mens&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Afternoon</div><div class="bd"><h5>Olive Young Hongdae Playground<span class="kr">플레이그라운드</span></h5><p>Men's "Men's Edit" flagship — grooming, Aestura, free skin scans. On your doorstep.</p><span class="pr free">Free</span></div></div>
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=T1+Base+Camp+Faker+esports+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Late aft.</div><div class="bd"><h5>SKT T1 Base Camp<span class="kr">T1 베이스캠프</span></h5><p>Faker's team HQ — merch store and a PC bang you can play in. Open 24h, two minutes from the main strip.</p><span class="pr">PC ~₩2,000/hr</span></div></div>
-      <div class="stop"><div class="tm">Optional</div><div class="bd"><h5>Yeouido &amp; Banpo Hangang Parks<span class="kr">한강공원</span></h5><p>If daylight and energy allow. Banpo's rainbow fountain is off in winter, so it's for the walk, not the show. Easy to drop.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Hongdae+street+Seoul+buskers&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Mid-aft.</div><div class="bd"><h5>Hongdae — now a trip out west<span class="kr">홍대</span></h5><p><b>Changed by your move.</b> This was your neighbourhood; now it's a deliberate excursion (~30 min from Myeong-dong on Line 2 or 4→2). Still worth it for the two stops below — buskers, indie shops, thrift and record stores — but treat it as an afternoon block and head back before the night gets late.</p><span class="pr free">Free · ~30 min each way</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Olive+Young+Hongdae+Playground+mens&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Afternoon</div><div class="bd"><h5>Olive Young Hongdae Playground<span class="kr">플레이그라운드</span></h5><p>Men's "Men's Edit" flagship — grooming, Aestura, free skin scans. The main reason to make the trip west, since there's no equivalent near Myeong-dong. Pair it with T1 below so one journey covers both.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=T1+Base+Camp+Faker+esports+Seoul&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Late aft.</div><div class="bd"><h5>SKT T1 Base Camp<span class="kr">T1 베이스캠프</span></h5><p>Faker's team HQ — merch store and a PC bang you can play in. Two minutes from the Hongdae strip, so it pairs with the stop above. Open 24h, but don't use that as an excuse to linger — you've got a KTX in the morning and a ride home.</p><span class="pr">PC ~₩2,000/hr</span></div></div>
+      <div class="stop"><div class="tm">Evening</div><div class="bd"><h5>Back east — Euljiro for the last night<span class="kr">을지로</span></h5><p><b>This replaces the Hongdae nightlife ending.</b> Euljiro ("Hip-jiro") sits directly beside Myeong-dong — walkable from your hotel — and is where Seoul's bar scene actually moved: printing-workshop buildings with hidden bars upstairs. Better than commuting back from Hongdae at midnight on the night before a KTX. Namdaemun Market is close by too if you'd rather eat late.</p><span class="pr free">Walk from your hotel</span></div></div>
     </div>
     <div class="pane card" hidden>
       <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">By day five of a cold trip most people are worn down, and tomorrow is a travel day. This protects the KTX morning.</p>
       <div class="stop"><div class="tm">Late morning</div><div class="bd"><h5>Start with a jjimjilbang<span class="kr">찜질방</span></h5><p>Hot pools and sauna do more for four days of walking in the cold than any sight will. Several good ones near Hongdae.</p><span class="pr">₩10–15,000</span></div></div>
-      <div class="stop"><div class="tm">Afternoon</div><div class="bd"><h5>Hongdae and Yeonnam-dong only<span class="kr">연남동</span></h5><p>Skip the Yongsan crossing entirely. Yeonnam-dong, just north of Hongdae, is a quieter café strip along the old railway park — a gentle afternoon on foot from your bed.</p><span class="pr free">Free</span></div></div>
-      <div class="stop"><div class="tm">Late aft.</div><div class="bd"><h5>Keep Olive Young Playground + T1</h5><p>Both are Hongdae-based and cost you no travel. The men's flagship is a genuine highlight five minutes away.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><div class="tm">Afternoon</div><div class="bd"><h5>Or swap in Yeouido Hangang Park<span class="kr">여의도한강공원</span></h5><p>If you want the third river park and have the energy, Yeouido is the biggest of them — ferry piers, wide paths, the Han at its broadest. It's a trip west (Line 5 to Yeouinaru), so it only makes sense on a day you're not crossing the city anyway. Otherwise Ttukseom on Day 3 and Banpo on Day 4 already cover the river.</p><span class="pr free">Free · 24h</span></div></div>
+      <div class="stop"><div class="tm">On foot</div><div class="bd"><h5>Namsan and Euljiro, both on foot<span class="kr">남산 · 을지로</span></h5><p>Skip the Yongsan and Hongdae crossings entirely. The <b>Namsan cable car base is a short walk up from Myeong-dong</b> — the city view you skipped on Day 1 — and Euljiro's bar alleys are on the other side of your hotel. A gentle afternoon and evening without touching a subway.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><div class="tm">Late aft.</div><div class="bd"><h5>Trade the men's flagship for the Myeongdong one</h5><p>The Hongdae Playground is a 30-minute ride each way — too much on a rest day. The <b>Olive Young Myeongdong flagship is on your doorstep</b> and carries most of the same range, just without the men's-only concept floor. You lose a little; you gain an hour of not being on a train.</p><span class="pr free">Free</span></div></div>
       <div class="stop"><div class="tm">Evening</div><div class="bd"><h5>Pack, early dinner, early night</h5><p>You have a KTX to catch. A blown Day 6 morning costs the Busan afternoon too, so an early night buys back more than a late one gives.</p><span class="pr">—</span></div></div>
     </div>
+    <div class="note rose"><div class="lb">Biggest change from your move</div>
+      <p>Day 5 was the one day built entirely around Hongdae being home — it ended with nightlife on your doorstep and the men's Olive Young flagship five minutes away. From Myeong-dong, Hongdae is a <b>30-minute ride each way</b>, so it's now an afternoon excursion rather than a homecoming, and the evening returns east to <b>Euljiro</b>, which is walkable from your hotel and is where Seoul's bar scene actually is now. Everything you wanted is still here; only the order and the ending changed.</p></div>
   </div>
 
   <!-- DAY 6 -->
   <div class="dayview" data-day="6" hidden>
-    <h3 class="subh" style="margin-top:14px"><span class="k">DAY 6 · THURSDAY 14 JANUARY · BUSAN · HAEUNDAE</span>Down to Busan · Haeundae coast</h3>
-    <div class="note ice" style="margin-bottom:14px"><div class="lb">KTX ↓ Seoul → Busan</div><p>Seoul Station to Busan, about 2h45m, roughly <b>₩60,000</b> standard class. Book on Korail Talk in advance. Drop bags at your Busan base and you keep the full afternoon.</p></div>
+    <h3 class="subh" style="margin-top:14px"><span class="k">DAY 6 · THURSDAY 14 JANUARY · SEOMYEON → HAEUNDAE</span>Early train, then straight out east</h3>
+    <div class="note ice" style="margin-bottom:14px"><div class="lb">KTX ↓ Seoul → Busan · early departure</div>
+    <h4>Which early train, and the 05:30 problem</h4>
+    <p>Real departures from Seoul Station: <b>05:15 → 07:49</b>, <b>05:28 → 08:15</b>, <b>05:58 → 08:42</b>, <b>06:03 → 08:48</b>, <b>06:33 → 09:21</b>. Roughly ₩60,000 standard class — book on Korail Talk well ahead.</p>
+    <p><b>The catch on the first two:</b> the Seoul Metro doesn't start until about 05:30, so for the 05:15 or 05:28 you'd need a <b>taxi</b> from Myeong-dong to Seoul Station — short and cheap (₩5,000–6,000), but book it the night before. From <b>05:58 onward the metro is running</b>, and Seoul Station is one stop on Line 4.</p>
+    <p><b>My pick: the 05:58 or 06:03.</b> You're in Busan before 09:00 with a genuinely full day, without a 04:30 alarm or a taxi dependency. The 05:15 buys you under an hour more and costs a lot of sleep before your biggest Busan day.</p></div>
     <div class="tabs alt" role="tablist"><button role="tab" aria-selected="true">PLAN A · as planned</button><button role="tab" aria-selected="false">PLAN B · late or bad weather</button></div>
     <div class="pane card">
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=KTX+train+Korea&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Morning</div><div class="bd"><h5>KTX to Busan, check in</h5><p>Seoul Station → Busan Station, ~2h45m. Settle in, then straight to the coast.</p><span class="pr">~₩60,000</span></div></div>
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Haeundae+Beach+Busan+winter&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Afternoon</div><div class="bd"><h5>Haeundae Beach<span class="kr">해운대해수욕장</span></h5><p>For walking, not swimming, in January — but the promenade and restaurant strip stay lively.</p><span class="pr free">Free</span></div></div>
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Busan+X+the+Sky+observatory&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">15:00</div><div class="bd"><h5>BUSAN X the SKY<span class="kr">부산엑스더스카이</span></h5><p>Deck on floors 98–100 — warm, indoors, glass floor, world's highest Starbucks. Time it for daylight into dusk.</p><span class="pr">~₩20–27,000</span></div></div>
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Gwangalli+Beach+Gwangan+Bridge+night&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">After dark</div><div class="bd"><h5>Gwangalli Beach<span class="kr">광안리해수욕장</span></h5><p>Better than Haeundae at night — the bridge lights up, there's a regular drone show, and the café strip behind the sand is excellent. Dinner here.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=KTX+train+Korea&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">05:58→08:42</div><div class="bd"><h5>KTX to Busan, then straight east</h5><p>Busan Station sits on the <b>west</b> side — the side you now want to save for the end — so don't linger. Head to your base and drop bags. If you're staying Haeundae that's ~50 min on Line 1→2; from Seomyeon it's 10 minutes.</p><span class="pr">~₩60,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Seomyeon+underground+shopping+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">~11:00</div><div class="bd"><h5>Seomyeon Shopping District<span class="kr">서면</span></h5><p>Central Busan and the crossroads of Lines 1 and 2, so it sits naturally between the station and the coast. Lunch here, then the <b>underground shopping centre</b> running for blocks beneath the streets (10:00–22:00) — entirely indoors, which is welcome after a 05:00 start. Honest note: reviews are mixed and some stock skews older, so treat it as browsing and eating rather than serious shopping.</p><span class="pr free">Free · 10:00–22:00</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Haeundae+Beach+Busan+winter&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">~14:30</div><div class="bd"><h5>Haeundae Beach<span class="kr">해운대해수욕장</span></h5><p>Line 2 out east — the furthest point of the trip, and deliberately early in it. For walking, not swimming, in January, but the promenade and restaurant strip stay lively. Dongbaek Island at the far end is a short coastal loop if you have daylight left.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Gwangalli+Beach+Gwangan+Bridge+night&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">After dark</div><div class="bd"><h5>Gwangalli Beach &amp; Gwangan Bridge<span class="kr">광안리 · 광안대교</span></h5><p>Dark by 17:30, which suits this perfectly — the bridge lights up, there's a regular drone show over the water, and the café strip behind the sand is excellent. Dinner here, then an early night: you were up before five.</p><span class="pr free">Free · drone show free</span></div></div>
     </div>
     <div class="pane card" hidden>
-      <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">If the KTX is delayed, you oversleep, or the coast is being battered — the whole day still works indoors.</p>
-      <div class="stop"><div class="tm">On arrival</div><div class="bd"><h5>Shinsegae Centum City first<span class="kr">신세계 센텀시티</span></h5><p>World's largest department store, on the way in from Busan Station. Ice rink, spa, cinema, enormous food hall. Kills an afternoon comfortably and you eat well without going outside.</p><span class="pr free">Free entry · spa ~₩30,000</span></div></div>
-      <div class="stop"><div class="tm">Late aft.</div><div class="bd"><h5>X the SKY still works</h5><p>Indoors and open till 21:00, so a late arrival doesn't kill it. On a clear cold night the view is arguably better than by day.</p><span class="pr">~₩20–27,000</span></div></div>
-      <div class="stop"><div class="tm">Evening</div><div class="bd"><h5>Sheltered seafood dinner</h5><p>If wind makes the beachfront unpleasant, the restaurant streets one block back are sheltered. Busan seafood is the point, not the sand.</p><span class="pr">₩25–50,000</span></div></div>
-      <div class="stop"><div class="tm">Note</div><div class="bd"><h5>Push the beach to Day 7 or 9</h5><p>Haeundae is free, always open, and minutes from your hotel if you stay there. The easiest thing in the trip to move.</p><span class="pr free">Free</span></div></div>
+      <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">If the KTX runs late or the coast is being battered by wind — Seomyeon absorbs the whole afternoon indoors.</p>
+      <div class="stop"><div class="tm">On arrival</div><div class="bd"><h5>Stay in Seomyeon longer<span class="kr">서면</span></h5><p>The underground centre plus Lotte and the food alleys can hold an entire afternoon and evening without stepping outside. It's also the easiest place in Busan to eat well cheaply.</p><span class="pr free">Free entry</span></div></div>
+      <div class="stop"><div class="tm">Evening</div><div class="bd"><h5>Gwangalli still works in the cold</h5><p>The bridge lighting and the drone show are the point, and you can watch both from inside a café on the strip rather than standing on the sand.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><div class="tm">Note</div><div class="bd"><h5>Haeundae Beach is the easiest thing to move</h5><p>Free, always open, and right by your hotel. Push it to the Day 7 morning before the Sky Capsule, or any spare half-hour.</p><span class="pr free">Free</span></div></div>
     </div>
   </div>
 
   <!-- DAY 7 -->
   <div class="dayview" data-day="7" hidden>
-    <h3 class="subh" style="margin-top:14px"><span class="k">DAY 7 · FRIDAY 15 JANUARY · BUSAN EAST COAST</span>Coastal rail, skywalk &amp; seaside temple</h3>
+    <h3 class="subh" style="margin-top:14px"><span class="k">DAY 7 · FRIDAY 15 JANUARY · EAST COAST → CENTUM CITY</span>Coastal rail, temple &amp; the two big stores</h3>
     <div class="tabs alt" role="tablist"><button role="tab" aria-selected="true">PLAN A · as planned</button><button role="tab" aria-selected="false">PLAN B · no Sky Capsule</button></div>
     <div class="pane card">
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Haeundae+Sky+Capsule+Blueline+Park&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Morning</div><div class="bd"><h5>Blueline Park · Sky Capsule<span class="kr">블루라인파크</span></h5><p>Pastel pods on the old coastal railway, elevated above the sea at walking pace, Mipo to Cheongsapo. A free 4km trail runs alongside.</p><span class="pr">from ₩35,000 (1–2 pax)</span></div></div>
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Cheongsapo+Daritdol+Skywalk+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">On route</div><div class="bd"><h5>Cheongsapo Daritdol Skywalk<span class="kr">청사포다릿돌전망대</span></h5><p>Free glass-floored walkway over the sea, right on the Blueline route.</p><span class="pr free">Free</span></div></div>
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Haedong+Yonggungsa+temple+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Midday</div><div class="bd"><h5>Haedong Yonggungsa Temple<span class="kr">해동용궁사</span></h5><p>A rare temple built into coastal rocks above the water. About 40 minutes out, same eastern direction as the morning.</p><span class="pr free">Free</span></div></div>
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Shinsegae+Centum+City+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Late aft.</div><div class="bd"><h5>Shinsegae Centum City<span class="kr">신세계 센텀시티</span></h5><p>Warm indoor fallback after a windy coastal day, and a good dinner option on the way back.</p><span class="pr free">Free entry</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Haeundae+Sky+Capsule+Blueline+Park&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Morning</div><div class="bd"><h5>Haeundae Blueline Park · Sky Capsule<span class="kr">블루라인파크</span></h5><p>Pastel pods on the old coastal railway, elevated above the sea at walking pace, Mipo to Cheongsapo. A free 4km trail runs alongside if you'd rather walk it.</p><span class="pr">from ₩35,000 (1–2 pax)</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Cheongsapo+Daritdol+Skywalk+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">On route</div><div class="bd"><h5>Cheongsapo Daritdol Skywalk<span class="kr">청사포다릿돌전망대</span></h5><p>Free glass-floored walkway over the sea, right on the Blueline route — costs nothing to add.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Haedong+Yonggungsa+temple+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Midday</div><div class="bd"><h5>Haedong Yonggungsa Temple<span class="kr">해동용궁사</span></h5><p>A rare temple built into coastal rocks above the water — most Korean temples sit inland in forests, which is what makes this one worth the trip. About 40 minutes out, same eastern direction as the morning.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Shinsegae+Centum+City+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Late aft.</div><div class="bd"><h5>Shinsegae Centum City<span class="kr">신세계 센텀시티</span></h5><p>The world's largest department store — ice rink, spa, cinema, enormous food hall. Warm indoor landing after a windy coastal day.</p><span class="pr free">Free entry · spa ~₩30,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Lotte+Department+Store+Centum+City+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Evening</div><div class="bd"><h5>Lotte Department Store Centum City<span class="kr">롯데백화점 센텀시티점</span></h5><p><b>New — you asked for this.</b> Directly beside Shinsegae, so the two are one stop, not two. Quieter than its giant neighbour, which several reviewers prefer, with a good Kyobo Bookstore you can sit and read in. The detail worth knowing: there's a <b>free rooftop garden on the 10th floor</b> with a city view. Closes 20:00 weekdays, 20:30 Fri–Sun — so on a Friday you have until 20:30.</p><span class="pr free">Free · till 20:30 Fri</span></div></div>
     </div>
     <div class="pane card" hidden>
-      <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">The Sky Capsule sells out weeks ahead, and high winds can suspend it. Same fix either way — the route is still walkable.</p>
+      <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">The Sky Capsule sells out weeks ahead, and high winds can suspend it. The route is still walkable either way.</p>
       <div class="stop"><div class="tm">Morning</div><div class="bd"><h5>Walk the Busan Green Railway<span class="kr">그린레일웨이</span></h5><p>The free 4km coastal trail runs parallel to the Sky Capsule track, Mipo to Cheongsapo. Same sea views, same skywalk stop, costs nothing. Several people prefer it.</p><span class="pr free">Free</span></div></div>
-      <div class="stop"><div class="tm">Or</div><div class="bd"><h5>Take the Beach Train<span class="kr">해변열차</span></h5><p>The ground-level train shares the Mipo–Cheongsapo stretch and continues to Songjeong. Cheaper than the capsule and much easier to get a same-day seat.</p><span class="pr">~₩7,000–12,000</span></div></div>
+      <div class="stop"><div class="tm">Or</div><div class="bd"><h5>Take the Beach Train instead<span class="kr">해변열차</span></h5><p>The ground-level train shares the Mipo–Cheongsapo stretch and continues to Songjeong. Cheaper than the capsule and far easier to get a same-day seat.</p><span class="pr">~₩7,000–12,000</span></div></div>
       <div class="stop"><div class="tm">Booking tip</div><div class="bd"><h5>Try the reverse direction</h5><p>Most tourists book Mipo → Cheongsapo, so that sells out first. <b>Cheongsapo → Mipo often still has seats</b> even a day or two out. Check both before giving up.</p><span class="pr">Worth checking</span></div></div>
-      <div class="stop"><div class="tm">Rest of day</div><div class="bd"><h5>Temple and Shinsegae unchanged</h5><p>Neither depends on the capsule, so the back half of the day runs exactly as planned.</p><span class="pr free">Free</span></div></div>
+      <div class="stop"><div class="tm">Rest of day</div><div class="bd"><h5>Temple and both stores unchanged</h5><p>None of the back half depends on the capsule, so Yonggungsa, Shinsegae and Lotte all run exactly as planned.</p><span class="pr free">Free</span></div></div>
     </div>
   </div>
 
   <!-- DAY 8 -->
   <div class="dayview" data-day="8" hidden>
-    <h3 class="subh" style="margin-top:14px"><span class="k">DAY 8 · SATURDAY 16 JANUARY · SAHA · YEONGDO · NAMPO</span>Old town, hillside villages &amp; markets</h3>
-    <div class="tabs alt" role="tablist"><button role="tab" aria-selected="true">PLAN A · as planned</button><button role="tab" aria-selected="false">PLAN B · icy or short on time</button></div>
+    <h3 class="subh" style="margin-top:14px"><span class="k">DAY 8 · SATURDAY 16 JANUARY · SAHA · SONGDO · NAMPO</span>West side, closing in on the airport</h3>
+    <div class="note" style="margin-bottom:14px"><div class="lb">Why this day looks like this</div><p>You wanted the far side done early and the last days near Gimhae, so everything west now lands here. That works — <b>Gamcheon, Songdo and Nampo are all roughly 40 minutes from the airport</b>, against 60–70 from Haeundae. The cost is that Day 8 carries four clusters. Two timing points: <b>Huinnyeoul's lower coastal path closes ~15:00</b>, and Busan Tower is better lit after dark. See the note below on what to cut.</p></div>
+    <div class="tabs alt" role="tablist"><button role="tab" aria-selected="true">PLAN A · as planned</button><button role="tab" aria-selected="false">PLAN B · trimmed</button></div>
     <div class="pane card">
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Gamcheon+Culture+Village+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Morning</div><div class="bd"><h5>Gamcheon Culture Village<span class="kr">감천문화마을</span></h5><p>Pastel houses stacked up a hillside — the one Busan sight not to miss. Bus 1-1 or 2-2 up, then walk down. Go early.</p><span class="pr">Stamp map ₩2,000</span></div></div>
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Huinnyeoul+Culture+Village+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Midday</div><div class="bd"><h5>Huinnyeoul Culture Village<span class="kr">흰여울문화마을</span></h5><p>Cliffside village on Yeongdo with a seaside path and cafés in the slope. Quieter than Gamcheon. Lower path closes around 15:00.</p><span class="pr free">Free</span></div></div>
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Jagalchi+Market+Busan+seafood&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Lunch</div><div class="bd"><h5>Jagalchi Market<span class="kr">자갈치시장</span></h5><p>Korea's largest seafood market. Pick from the tanks downstairs, have it cooked upstairs.</p><span class="pr">₩20–40,000</span></div></div>
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=BIFF+Square+Gukje+Market+Busan+hotteok&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Afternoon</div><div class="bd"><h5>BIFF Square &amp; Gukje Market<span class="kr">국제시장</span></h5><p>BIFF for the famous seed hotteok — a proper cold-weather reason to go — and Gukje for sprawling traditional stalls.</p><span class="pr free">Hotteok ~₩2,000</span></div></div>
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Songdo+Marine+Cable+Car+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Optional</div><div class="bd"><h5>Songdo Cable Car<span class="kr">송도해상케이블카</span></h5><p>Glass-floor cabins over the bay, with a free seaside boardwalk below.</p><span class="pr">~₩22,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Gamcheon+Culture+Village+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">09:00</div><div class="bd"><h5>Gamcheon Culture Village<span class="kr">감천문화마을</span></h5><p>Pastel houses stacked up a hillside — the one Busan sight not to miss. Bus 1-1 or 2-2 up, then walk down. Go early: it's a Saturday and it fills up. If you're changing hotels today, store bags at the new place first.</p><span class="pr">Stamp map ₩2,000</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Songdo+Beach+Busan+cloud+trails+skywalk&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">~11:30</div><div class="bd"><h5>Songdo Beach &amp; Cloud Trails<span class="kr">송도해수욕장</span></h5><p>Twenty minutes from Gamcheon, so it costs almost nothing to add. Opened 1913 and <b>Korea's first public beach</b> — quieter than Gwangalli, clean sand, views to the port and islands. The <b>Cloud Trails skywalk</b> out over the water and the suspension bridge are both free to walk. Lunch here.</p><span class="pr free">Beach &amp; skywalk free</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Huinnyeoul+Culture+Village+Yeongdo+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">~14:00</div><div class="bd"><h5>Yeongdo Island · Huinnyeoul<span class="kr">영도 · 흰여울문화마을</span></h5><p>The island across the bridge from Nampo. Huinnyeoul is its cliffside village — a seaside path with cafés built into the slope, quieter than Gamcheon. <b>The 15:00 path closure makes this tight</b> after Gamcheon and Songdo. If the coastal path matters, do Yeongdo <em>first</em> at 09:00 and push Gamcheon later; the upper village stays open all day regardless.</p><span class="pr free">Free · path closes ~15:00</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Busan+Tower+Yongdusan+Park+night&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Dusk</div><div class="bd"><h5>Busan Tower &amp; Yongdusan Park<span class="kr">부산타워 · 용두산공원</span></h5><p>The 120m Busan Diamond Tower in Yongdusan Park above Nampo — 360° views over the harbour, the mountains and the bridge. Reviewers rate it good value and best at night. Take the <b>free outdoor escalator</b> up from Nampo-dong rather than the hill. Open till 22:00.</p><span class="pr">Tower ticket · park free · till 22:00</span></div></div>
+      <div class="stop"><a class="ph" href="https://www.google.com/search?q=BIFF+Square+Gukje+Market+Busan+hotteok&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Evening</div><div class="bd"><h5>BIFF Square &amp; Gukje Market<span class="kr">BIFF광장 · 국제시장</span></h5><p>Downhill from the park and open into the evening. BIFF for the famous seed hotteok, Gukje for sprawling traditional stalls. Your last dinner, eaten standing up. <b>Then home and pack</b> — you're leaving for the airport around 07:00, and from this side of the city that's a manageable start rather than a brutal one.</p><span class="pr free">Free · hotteok ~₩2,000</span></div></div>
     </div>
     <div class="pane card" hidden>
-      <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">Gamcheon and Huinnyeoul are both steep and both ice over. If footing is bad or the day is short, trim to essentials.</p>
-      <div class="stop"><div class="tm">Morning</div><div class="bd"><h5>Gamcheon only — bus both ways</h5><p>The usual advice is bus up and walk down, but on ice that's how people fall. Bus up, stick to the marked main route, bus back down. Still the best thing in Busan.</p><span class="pr">Bus ₩1,500</span></div></div>
-      <div class="stop"><div class="tm">Cut</div><div class="bd"><h5>Drop Huinnyeoul<span class="kr">흰여울문화마을</span></h5><p>The cliff path is narrow, exposed and above a drop — first thing to cut in bad conditions. It also duplicates Gamcheon most, so you lose the least by skipping it.</p><span class="pr">—</span></div></div>
-      <div class="stop"><div class="tm">Lunch on</div><div class="bd"><h5>Nampo markets as planned — all flat<span class="kr">남포동</span></h5><p>Jagalchi, BIFF and Gukje are level ground, partly covered, and full of hot food. Weather-proof, and where the eating is.</p><span class="pr">₩20–40,000</span></div></div>
-      <div class="stop"><div class="tm">Instead of Songdo</div><div class="bd"><h5>Lotte Gwangbok rooftop<span class="kr">롯데백화점</span></h5><p>Free rooftop garden with a harbour view right by the markets, indoor mall underneath. Replaces the cable car when wind shuts it or the light has gone.</p><span class="pr free">Free</span></div></div>
+      <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">Four clusters plus a possible hotel move is a lot. Here's the honest order of what to cut, and the bad-weather version.</p>
+      <div class="stop"><div class="tm">Cut first</div><div class="bd"><h5>Drop Yeongdo, keep Gamcheon<span class="kr">영도</span></h5><p>They're both hillside-village experiences and they duplicate each other more than anything else on the day. Gamcheon is the more distinctive of the two, and Huinnyeoul's 15:00 path deadline is what makes the schedule tight in the first place. Cutting it buys you a relaxed afternoon.</p><span class="pr">—</span></div></div>
+      <div class="stop"><div class="tm">Or the reverse</div><div class="bd"><h5>Drop Gamcheon, keep Yeongdo<span class="kr">감천</span></h5><p>Valid if you'd rather have the sea cliffs than the painted houses — and it's the one you actually asked for. Doing Yeongdo at 09:00 also removes the path-closure problem entirely. You lose Busan's most photographed sight, which is the trade.</p><span class="pr">—</span></div></div>
+      <div class="stop"><div class="tm">Cut second</div><div class="bd"><h5>Songdo cable car, not the beach</h5><p>The Busan Air Cruise across to Amnam Park (~₩22,000 return, crystal cabins) is worth an hour you may not have. The beach and the free skywalk are the actual draw — keep those.</p><span class="pr">~₩22,000 if you do it</span></div></div>
+      <div class="stop"><div class="tm">If icy</div><div class="bd"><h5>Nampo is flat and weather-proof<span class="kr">남포동</span></h5><p>Gamcheon and Huinnyeoul both ice over and both sit above drops. Nampo doesn't: the escalator does the climbing, the tower is indoors once you're up, and BIFF and Gukje are level, partly covered and full of hot food. Whatever the weather does, keep the evening.</p><span class="pr free">Mostly free</span></div></div>
     </div>
   </div>
 
   <!-- DAY 9 -->
   <div class="dayview" data-day="9" hidden>
-    <h3 class="subh" style="margin-top:14px"><span class="k">DAY 9 · SUNDAY 17 JANUARY · DEPARTURE</span>Last morning &amp; fly home</h3>
-    <div class="tabs alt" role="tablist"><button role="tab" aria-selected="true">PLAN A · direct from Busan</button><button role="tab" aria-selected="false">PLAN B · flying from Incheon</button></div>
+    <h3 class="subh" style="margin-top:14px"><span class="k">DAY 9 · SUNDAY 17 JANUARY · DEPARTURE ONLY</span>10:00 flight — no schedule</h3>
+    <div class="note rose" style="margin-bottom:14px"><div class="lb">Nothing fits here, and that is the right call</div><p>A 10:00 international departure means being at Gimhae by <b>08:00</b> and leaving your accommodation around <b>07:00</b>. There is no version of this morning that includes a sight — anything you try to squeeze in becomes the reason you miss the flight. Everything that used to sit here has moved to Day 8.</p></div>
+    <div class="tabs alt" role="tablist"><button role="tab" aria-selected="true">GETTING TO GIMHAE</button><button role="tab" aria-selected="false">IF YOU FLY FROM INCHEON</button></div>
     <div class="pane card">
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Jeonpo+Cafe+Street+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Morning</div><div class="bd"><h5>One last thing, your call</h5><p>Depending on flight time: a final Gwangalli seafront walk, a café in Jeonpo Cafe Street, or Beomeosa Temple for one quiet mountain temple. Keep it near your base.</p><span class="pr free">Mostly free</span></div></div>
-      <div class="stop"><a class="ph" href="https://www.google.com/search?q=Gimhae+International+Airport+Busan&amp;tbm=isch" target="_blank" rel="noopener"><span class="lbl"><span class="tx">PHOTOS</span></span></a><div class="tm">Departure</div><div class="bd"><h5>Gimhae Airport → KUL<span class="kr">김해공항</span></h5><p>Gimhae is only about 30 minutes from central Busan, so no need to leave absurdly early. AirAsia X flies the route on Sundays. The clean ending — no backtracking.</p><span class="pr">Airport bus ~₩7,000</span></div></div>
+      <div class="stop"><div class="tm">Night before</div><div class="bd"><h5>Pack, set two alarms, pre-book the ride</h5><p>Do all of it on Day 8 evening. At 06:45 on a Sunday you do not want to be deciding anything. If you are taking a taxi, book it the night before through <b>Kakao T</b> rather than hoping one passes.</p><span class="pr">—</span></div></div>
+      <div class="stop"><div class="tm">~06:45</div><div class="bd"><h5>Taxi — the safe option<span class="kr">택시</span></h5><p>Roughly <b>₩18,000–25,000</b> and 23–45 minutes. <b>Ending on the west side pays off here:</b> from Seomyeon or Nampo you're looking at the short end of that range, against 60–70 minutes from Haeundae. On a Sunday at that hour the roads are empty, so it's the fast, predictable choice and you avoid dragging luggage through two transfers in the dark.</p><span class="pr">₩18,000–25,000 · 25–45 min</span></div></div>
+      <div class="stop"><div class="tm">~06:45</div><div class="bd"><h5>Or metro + light rail<span class="kr">부산김해경전철</span></h5><p>The Busan Metro runs from about <b>05:00</b>, so this works — but first-train times vary by station, so check yours the night before. Route: your line to <b>Sasang</b>, then the <b>Busan–Gimhae Light Rail</b> to the airport. From Seomyeon that is about 33 minutes total; from Haeundae closer to an hour. Cheap (~₩1,600) but you carry your bags up and down stairs.</p><span class="pr">~₩1,600 · check first train</span></div></div>
+      <div class="stop"><div class="tm">Avoid</div><div class="bd"><h5>Don't rely on the limousine bus</h5><p>The Haeundae–Gijang airport route takes about <b>110 minutes</b>, which does not work for an 08:00 arrival, and the limousine lines <b>do not serve Nampo, Busan Station or Gwangalli</b> directly. Early-morning departures also fill up. Taxi or rail.</p><span class="pr">Too slow</span></div></div>
+      <div class="stop"><div class="tm">08:00</div><div class="bd"><h5>Gimhae International · check in<span class="kr">김해공항</span></h5><p>Two hours before a 10:00 departure. Gimhae is small compared with Incheon, so security is quick, but leave the buffer anyway — this is the one deadline on the whole trip you cannot renegotiate.</p><span class="pr">—</span></div></div>
     </div>
     <div class="pane card" hidden>
-      <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">If you booked a plain return through Incheon, or the direct Busan flight doesn't run your date.</p>
-      <div class="stop"><div class="tm">Early</div><div class="bd"><h5>Check out, KTX north<span class="kr">KTX</span></h5><p>Busan → Seoul Station, ~2h45m. Book this seat in advance too — Sunday afternoon trains fill up. Leave a wide margin.</p><span class="pr">~₩60,000</span></div></div>
-      <div class="stop"><div class="tm">Midday</div><div class="bd"><h5>Seoul Station → Incheon on AREX</h5><p>Another ~50 minutes. Door-to-door is comfortably 4 hours from your Busan hotel to the ICN check-in desk — work backwards from your flight and add a winter buffer.</p><span class="pr">~₩9,500 express</span></div></div>
-      <div class="stop"><div class="tm">Reality</div><div class="bd"><h5>Keep the morning empty</h5><p>Don't schedule anything in Busan on this version. The trade for a cheaper fare is that this is a travel day, and squeezing in a last sight is how people miss flights.</p><span class="pr">—</span></div></div>
+      <p style="font-size:13px;color:var(--dim);font-style:italic;padding-bottom:12px;border-bottom:1px dashed var(--edge);margin-bottom:6px">If the direct Busan departure does not run your date and you end up on an Incheon flight — this changes Day 8, not just Day 9.</p>
+      <div class="stop"><div class="tm">The catch</div><div class="bd"><h5>A morning Incheon flight means leaving Busan on Day 8</h5><p>You cannot KTX from Busan and make a morning flight out of Seoul — the first train would not get you there in time. You would have to <b>travel north on the evening of Day 8</b> and sleep near Seoul or the airport, which costs you the Nampo evening: Busan Tower and BIFF Square.</p><span class="pr">Costs you Day 8 night</span></div></div>
+      <div class="stop"><div class="tm">Reshuffle</div><div class="bd"><h5>Move Busan Tower earlier if this happens</h5><p>Do Nampo before Songdo, catch the tower at dusk on Day 7 instead, or accept losing it. The rest of Day 8 — Gamcheon, Songdo, Yeongdo — still works as a shortened daytime run before an evening KTX.</p><span class="pr">—</span></div></div>
+      <div class="stop"><div class="tm">Cost</div><div class="bd"><h5>Budget for an extra night</h5><p>KTX ~₩60,000 plus a Seoul or Incheon-area hotel. Worth pricing against the direct Busan fare before you book — the open-jaw is usually still cheaper once you count this.</p><span class="pr">~₩60,000 + hotel</span></div></div>
     </div>
   </div>
 
   <div class="note rose" style="margin-top:20px"><div class="lb">Weekday closures — verified</div>
     <p>Days of the week are correct for 2027. <b>Doryang closes Mondays</b>, so the Day-2 Sunday lunch is fine. <b>Bistro Notre closes Mon–Tue</b>, so it only works on Day 5. <b>Tian Mi Mi</b> is a chain and generally open, but reconfirm your branch. Check each restaurant on CatchTable or Naver before building a night around it.</p></div>
+</section>
+
+<!-- ══ VIEW: ZONES ══ -->
+<section class="view" id="v-zones">
+  <div class="vh"><span class="n">05B / ZONES</span><h2>Where each day actually sits</h2>
+    <p>Schematic maps, not live ones — relative positions and travel logic rather than street accuracy. Tap a day to isolate it. The point is to see the shape of the trip: Seoul radiates out from Myeong-dong and comes back; Busan runs east first, then west toward the airport.</p></div>
+
+  <div class="note ice"><div class="lb">On these maps</div><p>These are drawn to show <b>which zone belongs to which day and how the zones sit relative to each other</b>. They are not to scale and are not navigational — for actual routing use <b>Naver Map</b> or <b>KakaoMap</b>, which is what the Apps tab recommends. Rivers, coastline and district positions are approximately right; distances are not.</p></div>
+
+  <div class="chips" role="group" aria-label="Isolate a day" id="zonechips">
+    <button class="chip" aria-pressed="true" data-z="all">All days</button>
+    <button class="chip" aria-pressed="false" data-z="1">D1</button>
+    <button class="chip" aria-pressed="false" data-z="2">D2</button>
+    <button class="chip" aria-pressed="false" data-z="3">D3</button>
+    <button class="chip" aria-pressed="false" data-z="4">D4</button>
+    <button class="chip" aria-pressed="false" data-z="5">D5</button>
+    <button class="chip bz" aria-pressed="false" data-z="6">D6</button>
+    <button class="chip bz" aria-pressed="false" data-z="7">D7</button>
+    <button class="chip bz" aria-pressed="false" data-z="8">D8</button>
+    <button class="chip bz" aria-pressed="false" data-z="9">D9</button>
+  </div>
+
+  <div class="card" style="padding:0;overflow:hidden;margin-bottom:16px">
+    <div style="padding:15px 18px;border-bottom:1px solid var(--edge);display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <h4 style="font-size:16px">Seoul · Days 1–5</h4>
+      <span class="k" style="font-size:10px;color:var(--dim)">BASE: MYEONG-DONG · CENTRE</span>
+    </div>
+    <div style="overflow-x:auto">
+    <svg viewBox="0 0 820 470" style="display:block;width:100%;min-width:600px;height:auto;background:#0C1219" role="img" aria-label="Schematic zone map of Seoul showing days 1 to 5">
+      <defs>
+        <linearGradient id="riv" x1="0" x2="1"><stop offset="0" stop-color="#1B3A4A"/><stop offset="1" stop-color="#16303E"/></linearGradient>
+      </defs>
+      <!-- Han River -->
+      <path d="M0 300 C160 288 250 316 400 308 C560 300 660 282 820 276 L820 322 C660 328 560 346 400 354 C250 362 160 334 0 346 Z" fill="url(#riv)"/>
+      <text x="566" y="340" fill="#4E7E93" font-size="12" font-family="monospace" letter-spacing="2">HAN RIVER · 한강</text>
+      <!-- compass -->
+      <g opacity=".5"><text x="770" y="34" fill="#6B8095" font-size="11" font-family="monospace" text-anchor="middle">N</text><path d="M770 40 v22" stroke="#6B8095" stroke-width="1"/><path d="M766 46 l4-6 4 6" fill="#6B8095"/></g>
+
+      <!-- D2 Jongno / palace quarter -->
+      <g class="z" data-days="2">
+        <ellipse cx="360" cy="120" rx="118" ry="62" fill="#F0728A" fill-opacity=".14" stroke="#F0728A" stroke-width="1.6"/>
+        <text x="360" y="106" fill="#F0728A" font-size="14" font-weight="700" text-anchor="middle" font-family="sans-serif">Jongno · palace quarter</text>
+        <text x="360" y="126" fill="#9FB3C4" font-size="11" text-anchor="middle" font-family="sans-serif">Gyeongbokgung · Bukchon · Samcheong</text>
+        <text x="360" y="143" fill="#9FB3C4" font-size="11" text-anchor="middle" font-family="sans-serif">Insadong · Ikseon-dong</text>
+      </g>
+      <!-- D2 Dongdaemun -->
+      <g class="z" data-days="2">
+        <ellipse cx="576" cy="176" rx="80" ry="42" fill="#F0728A" fill-opacity=".14" stroke="#F0728A" stroke-width="1.6"/>
+        <text x="576" y="172" fill="#F0728A" font-size="13" font-weight="700" text-anchor="middle" font-family="sans-serif">Dongdaemun</text>
+        <text x="576" y="190" fill="#9FB3C4" font-size="10.5" text-anchor="middle" font-family="sans-serif">DDP · Doota</text>
+      </g>
+      <!-- Cheonggyecheon link -->
+      <g class="z" data-days="2"><path d="M418 190 C470 196 500 190 520 182" stroke="#F0728A" stroke-width="1.4" stroke-dasharray="4 4" fill="none" opacity=".8"/></g>
+
+      <!-- D1 Myeong-dong (base) -->
+      <g class="z" data-days="1">
+        <ellipse cx="392" cy="222" rx="92" ry="46" fill="#F5AC5F" fill-opacity=".17" stroke="#F5AC5F" stroke-width="2"/>
+        <text x="392" y="214" fill="#F5AC5F" font-size="14" font-weight="700" text-anchor="middle" font-family="sans-serif">Myeong-dong ★</text>
+        <text x="392" y="232" fill="#9FB3C4" font-size="10.5" text-anchor="middle" font-family="sans-serif">your base · Euljiro · Namdaemun</text>
+      </g>
+
+      <!-- D5 Hongdae -->
+      <g class="z" data-days="5">
+        <ellipse cx="132" cy="212" rx="86" ry="46" fill="#B99CE8" fill-opacity=".14" stroke="#B99CE8" stroke-width="1.6"/>
+        <text x="132" y="208" fill="#B99CE8" font-size="13" font-weight="700" text-anchor="middle" font-family="sans-serif">Hongdae</text>
+        <text x="132" y="226" fill="#9FB3C4" font-size="10.5" text-anchor="middle" font-family="sans-serif">OY Playground · T1</text>
+      </g>
+      <!-- D5 Yongsan / Itaewon -->
+      <g class="z" data-days="5">
+        <ellipse cx="330" cy="284" rx="92" ry="40" fill="#B99CE8" fill-opacity=".14" stroke="#B99CE8" stroke-width="1.6"/>
+        <text x="330" y="280" fill="#B99CE8" font-size="13" font-weight="700" text-anchor="middle" font-family="sans-serif">Yongsan · Itaewon</text>
+        <text x="330" y="298" fill="#9FB3C4" font-size="10.5" text-anchor="middle" font-family="sans-serif">Hannam · HYBE</text>
+      </g>
+
+      <!-- D3 Seongsu -->
+      <g class="z" data-days="3">
+        <ellipse cx="662" cy="268" rx="98" ry="48" fill="#63D2A0" fill-opacity=".14" stroke="#63D2A0" stroke-width="1.6"/>
+        <text x="662" y="260" fill="#63D2A0" font-size="13" font-weight="700" text-anchor="middle" font-family="sans-serif">Seongsu · Seongdong</text>
+        <text x="662" y="278" fill="#9FB3C4" font-size="10.5" text-anchor="middle" font-family="sans-serif">Seoul Forest · Ttukseom Hangang</text>
+      </g>
+
+      <!-- D5 Yeouido (optional) -->
+      <g class="z" data-days="5">
+        <ellipse cx="150" cy="322" rx="66" ry="28" fill="#B99CE8" fill-opacity=".09" stroke="#B99CE8" stroke-width="1.2" stroke-dasharray="5 4"/>
+        <text x="150" y="320" fill="#B99CE8" font-size="11.5" font-weight="700" text-anchor="middle" font-family="sans-serif">Yeouido</text>
+        <text x="150" y="335" fill="#7E93A6" font-size="9.5" text-anchor="middle" font-family="sans-serif">optional · Plan B</text>
+      </g>
+
+      <!-- D4 Banpo -->
+      <g class="z" data-days="4">
+        <ellipse cx="400" cy="352" rx="64" ry="28" fill="#5FC9E8" fill-opacity=".14" stroke="#5FC9E8" stroke-width="1.6"/>
+        <text x="400" y="356" fill="#5FC9E8" font-size="12" font-weight="700" text-anchor="middle" font-family="sans-serif">Banpo Hangang</text>
+      </g>
+      <!-- D4 Sinsa / Apgujeong / Cheongdam -->
+      <g class="z" data-days="4">
+        <ellipse cx="530" cy="398" rx="128" ry="42" fill="#5FC9E8" fill-opacity=".14" stroke="#5FC9E8" stroke-width="1.6"/>
+        <text x="530" y="394" fill="#5FC9E8" font-size="13" font-weight="700" text-anchor="middle" font-family="sans-serif">Sinsa · Apgujeong · Cheongdam</text>
+        <text x="530" y="412" fill="#9FB3C4" font-size="10.5" text-anchor="middle" font-family="sans-serif">Garosu-gil · Nuwa</text>
+      </g>
+      <!-- D4 Gangnam -->
+      <g class="z" data-days="4">
+        <ellipse cx="640" cy="442" rx="88" ry="30" fill="#5FC9E8" fill-opacity=".14" stroke="#5FC9E8" stroke-width="1.6"/>
+        <text x="640" y="446" fill="#5FC9E8" font-size="12.5" font-weight="700" text-anchor="middle" font-family="sans-serif">Gangnam · COEX</text>
+      </g>
+
+      <!-- Seoul Station marker -->
+      <g class="z" data-days="6">
+        <circle cx="246" cy="286" r="7" fill="#F5AC5F" stroke="#0C1219" stroke-width="2"/>
+        <text x="246" y="272" fill="#F5AC5F" font-size="10" font-family="monospace" text-anchor="middle">SEOUL STN → KTX</text>
+      </g>
+    </svg>
+    </div>
+    <div style="padding:13px 18px;border-top:1px solid var(--edge);font-size:13px;color:var(--mut)">
+      <b style="color:var(--tx)">The shape:</b> Days 1–2 sit on top of your base. Day 3 goes east, Day 4 south across the river, Day 5 west and back. Nothing is more than about 35 minutes out, which is why one hotel works for all five nights.
+    </div>
+  </div>
+
+  <div class="card" style="padding:0;overflow:hidden">
+    <div style="padding:15px 18px;border-bottom:1px solid var(--edge);display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <h4 style="font-size:16px">Busan · Days 6–9</h4>
+      <span class="k" style="font-size:10px;color:var(--dim)">EAST FIRST → WEST → AIRPORT</span>
+    </div>
+    <div style="overflow-x:auto">
+    <svg viewBox="0 0 820 470" style="display:block;width:100%;min-width:600px;height:auto;background:#0C1219" role="img" aria-label="Schematic zone map of Busan showing days 6 to 9">
+      <!-- sea -->
+      <path d="M820 0 L820 470 L120 470 C170 400 250 400 330 430 C420 452 470 400 500 340 C540 260 620 200 700 150 C750 118 790 70 820 0 Z" fill="#12303E" opacity=".55"/>
+      <text x="660" y="420" fill="#4E7E93" font-size="13" font-family="monospace" letter-spacing="3">SEA</text>
+      <g opacity=".5"><text x="60" y="34" fill="#6B8095" font-size="11" font-family="monospace" text-anchor="middle">N</text><path d="M60 40 v22" stroke="#6B8095" stroke-width="1"/><path d="M56 46 l4-6 4 6" fill="#6B8095"/></g>
+
+      <!-- D9 Gimhae airport -->
+      <g class="z" data-days="9">
+        <ellipse cx="98" cy="98" rx="76" ry="38" fill="#F0728A" fill-opacity=".16" stroke="#F0728A" stroke-width="1.8"/>
+        <text x="98" y="94" fill="#F0728A" font-size="13" font-weight="700" text-anchor="middle" font-family="sans-serif">Gimhae ✈</text>
+        <text x="98" y="112" fill="#9FB3C4" font-size="10" text-anchor="middle" font-family="sans-serif">17 Jan · 10:00</text>
+      </g>
+
+      <!-- D6 Seomyeon -->
+      <g class="z" data-days="6">
+        <ellipse cx="300" cy="196" rx="86" ry="42" fill="#F5AC5F" fill-opacity=".16" stroke="#F5AC5F" stroke-width="1.8"/>
+        <text x="300" y="192" fill="#F5AC5F" font-size="13" font-weight="700" text-anchor="middle" font-family="sans-serif">Seomyeon</text>
+        <text x="300" y="210" fill="#9FB3C4" font-size="10.5" text-anchor="middle" font-family="sans-serif">centre · shopping</text>
+      </g>
+      <!-- Busan station -->
+      <g class="z" data-days="6">
+        <circle cx="286" cy="284" r="7" fill="#F5AC5F" stroke="#0C1219" stroke-width="2"/>
+        <text x="286" y="304" fill="#F5AC5F" font-size="10" font-family="monospace" text-anchor="middle">BUSAN STN ← KTX</text>
+      </g>
+
+      <!-- D6 Haeundae -->
+      <g class="z" data-days="6 7">
+        <ellipse cx="596" cy="252" rx="86" ry="40" fill="#F5AC5F" fill-opacity=".16" stroke="#F5AC5F" stroke-width="1.8"/>
+        <text x="596" y="248" fill="#F5AC5F" font-size="13" font-weight="700" text-anchor="middle" font-family="sans-serif">Haeundae</text>
+        <text x="596" y="266" fill="#9FB3C4" font-size="10.5" text-anchor="middle" font-family="sans-serif">beach · Blueline Park</text>
+      </g>
+      <!-- D6 Gwangalli -->
+      <g class="z" data-days="6">
+        <ellipse cx="470" cy="306" rx="70" ry="32" fill="#F5AC5F" fill-opacity=".16" stroke="#F5AC5F" stroke-width="1.8"/>
+        <text x="470" y="304" fill="#F5AC5F" font-size="12.5" font-weight="700" text-anchor="middle" font-family="sans-serif">Gwangalli</text>
+        <text x="470" y="320" fill="#9FB3C4" font-size="10" text-anchor="middle" font-family="sans-serif">bridge · drones</text>
+      </g>
+
+      <!-- D7 Centum -->
+      <g class="z" data-days="7">
+        <ellipse cx="512" cy="192" rx="76" ry="34" fill="#5FC9E8" fill-opacity=".15" stroke="#5FC9E8" stroke-width="1.7"/>
+        <text x="512" y="190" fill="#5FC9E8" font-size="12.5" font-weight="700" text-anchor="middle" font-family="sans-serif">Centum City</text>
+        <text x="512" y="206" fill="#9FB3C4" font-size="10" text-anchor="middle" font-family="sans-serif">Shinsegae · Lotte</text>
+      </g>
+      <!-- D7 Cheongsapo / far east -->
+      <g class="z" data-days="7">
+        <ellipse cx="694" cy="176" rx="72" ry="34" fill="#5FC9E8" fill-opacity=".15" stroke="#5FC9E8" stroke-width="1.7"/>
+        <text x="694" y="174" fill="#5FC9E8" font-size="12" font-weight="700" text-anchor="middle" font-family="sans-serif">Cheongsapo</text>
+        <text x="694" y="190" fill="#9FB3C4" font-size="10" text-anchor="middle" font-family="sans-serif">skywalk</text>
+      </g>
+      <!-- D7 Yonggungsa -->
+      <g class="z" data-days="7">
+        <ellipse cx="742" cy="86" rx="70" ry="34" fill="#5FC9E8" fill-opacity=".15" stroke="#5FC9E8" stroke-width="1.7"/>
+        <text x="742" y="84" fill="#5FC9E8" font-size="12" font-weight="700" text-anchor="middle" font-family="sans-serif">Yonggungsa</text>
+        <text x="742" y="100" fill="#9FB3C4" font-size="10" text-anchor="middle" font-family="sans-serif">Gijang · furthest</text>
+      </g>
+
+      <!-- D8 Gamcheon -->
+      <g class="z" data-days="8">
+        <ellipse cx="176" cy="272" rx="74" ry="36" fill="#63D2A0" fill-opacity=".15" stroke="#63D2A0" stroke-width="1.7"/>
+        <text x="176" y="270" fill="#63D2A0" font-size="12.5" font-weight="700" text-anchor="middle" font-family="sans-serif">Gamcheon</text>
+        <text x="176" y="286" fill="#9FB3C4" font-size="10" text-anchor="middle" font-family="sans-serif">hillside village</text>
+      </g>
+      <!-- D8 Songdo -->
+      <g class="z" data-days="8">
+        <ellipse cx="182" cy="368" rx="70" ry="34" fill="#63D2A0" fill-opacity=".15" stroke="#63D2A0" stroke-width="1.7"/>
+        <text x="182" y="366" fill="#63D2A0" font-size="12.5" font-weight="700" text-anchor="middle" font-family="sans-serif">Songdo</text>
+        <text x="182" y="382" fill="#9FB3C4" font-size="10" text-anchor="middle" font-family="sans-serif">beach · skywalk</text>
+      </g>
+      <!-- D8 Nampo -->
+      <g class="z" data-days="8">
+        <ellipse cx="316" cy="352" rx="80" ry="36" fill="#63D2A0" fill-opacity=".15" stroke="#63D2A0" stroke-width="1.7"/>
+        <text x="316" y="350" fill="#63D2A0" font-size="12.5" font-weight="700" text-anchor="middle" font-family="sans-serif">Nampo · Jung-gu</text>
+        <text x="316" y="366" fill="#9FB3C4" font-size="10" text-anchor="middle" font-family="sans-serif">Busan Tower · BIFF</text>
+      </g>
+      <!-- D8 Yeongdo -->
+      <g class="z" data-days="8">
+        <ellipse cx="348" cy="428" rx="66" ry="30" fill="#63D2A0" fill-opacity=".15" stroke="#63D2A0" stroke-width="1.7"/>
+        <text x="348" y="426" fill="#63D2A0" font-size="12" font-weight="700" text-anchor="middle" font-family="sans-serif">Yeongdo</text>
+        <text x="348" y="441" fill="#9FB3C4" font-size="10" text-anchor="middle" font-family="sans-serif">Huinnyeoul</text>
+      </g>
+
+      <!-- flow arrows -->
+      <g class="flow" opacity=".55">
+        <path d="M286 276 C340 250 420 236 512 250" stroke="#F5AC5F" stroke-width="1.6" fill="none" stroke-dasharray="5 5"/>
+        <path d="M596 214 C660 190 700 150 720 118" stroke="#5FC9E8" stroke-width="1.6" fill="none" stroke-dasharray="5 5"/>
+        <path d="M250 300 C230 330 240 350 250 356" stroke="#63D2A0" stroke-width="1.6" fill="none" stroke-dasharray="5 5"/>
+        <path d="M240 250 C180 200 130 150 130 130" stroke="#F0728A" stroke-width="1.6" fill="none" stroke-dasharray="5 5"/>
+      </g>
+    </svg>
+    </div>
+    <div style="padding:13px 18px;border-top:1px solid var(--edge);font-size:13px;color:var(--mut)">
+      <b style="color:var(--tx)">The shape:</b> you arrive centre-west at Busan Station, go straight out east for Days 6–7, then sweep back west on Day 8 — which lands you near Gimhae for the 10:00 flight. Haeundae is ~60–70 min from the airport; Nampo, Songdo and Gamcheon are ~40; Seomyeon ~33.
+    </div>
+  </div>
+
+  <div class="note" style="margin-top:16px"><div class="lb">What the maps tell you</div>
+    <p><b>Seoul is a hub-and-spoke.</b> Every day starts and ends at Myeong-dong, and no spoke is long. That's the argument for one hotel.</p>
+    <p><b>Busan is a line.</b> West at arrival, far east for two days, back west at the end. That's the argument for either splitting your nights or basing centrally in Seomyeon — the one zone that touches everything.</p></div>
 </section>
 
 <!-- ══ VIEW: BUDGET ══ -->
@@ -832,7 +1091,7 @@ ul.arr li b{color:var(--tx)}
     <div class="r"><span class="l"><b>Return flights</b> KUL–ICN or open-jaw, booked early</span><span class="v">1,300,000–2,200,000</span></div>
     <div class="r"><span class="l"><b>K-ETA</b> official site only</span><span class="v">10,000</span></div>
     <div class="r"><span class="l"><b>eSIM</b> 10-day unlimited</span><span class="v">35,000–42,000</span></div>
-    <div class="r"><span class="l"><b>AREX</b> Incheon → Hongdae</span><span class="v">4,500</span></div>
+    <div class="r"><span class="l"><b>Airport transfer</b> 6015 bus, or AREX + Line 4</span><span class="v">11,000–17,000</span></div>
     <div class="r"><span class="l"><b>KTX</b> Seoul → Busan, standard</span><span class="v">60,000</span></div>
     <div class="r"><span class="l"><b>Accommodation</b> 8 nights, guesthouse private room</span><span class="v">400,000–680,000</span></div>
     <div class="tot"><span>Subtotal</span><span class="v">1,810,000–2,996,500</span></div>
@@ -842,7 +1101,7 @@ ul.arr li b{color:var(--tx)}
     <div class="lh"><span>Your itinerary · spending</span><span>KRW</span></div>
     <div class="r"><span class="l"><b>Three chef dinners</b> Doryang, Tian Mi Mi, Nuwa</span><span class="v">150,000–280,000</span></div>
     <div class="r"><span class="l"><b>Everyday meals</b> ~25,000/day × 9</span><span class="v">225,000</span></div>
-    <div class="r"><span class="l"><b>Attractions</b> palace, hanbok, X the SKY, Sky Capsule, Songdo</span><span class="v">110,000–140,000</span></div>
+    <div class="r"><span class="l"><b>Attractions</b> palace pass, hanbok, Sky Capsule, Busan Tower, Songdo cable car</span><span class="v">115,000–150,000</span></div>
     <div class="r"><span class="l"><b>Local transport</b> subway, buses, T-money</span><span class="v">30,000–45,000</span></div>
     <div class="r"><span class="l"><b>Cafés and snacks</b> a Seongsu-heavy plan</span><span class="v">60,000–90,000</span></div>
     <div class="r"><span class="l"><b>Winter kit bought there</b> hand warmers, skincare, socks</span><span class="v">30,000–60,000</span></div>
@@ -851,7 +1110,7 @@ ul.arr li b{color:var(--tx)}
   <p class="fine">Ringgit figures are rough and move with the exchange rate. Shopping is excluded on purpose — it's the one line only you can size, and with three Olive Young flagships, Doota, Dongdaemun and Cheongdam on your route it can rival everything else combined.</p>
 
   <div class="grid g2" style="margin-top:20px">
-    <div class="card"><h4 style="font-size:15px;margin-bottom:7px">Paying — near-cashless</h4><p style="font-size:13.5px;color:var(--mut)">Cards work at nearly every shop, café and most street stalls in tourist areas. Bring a low-foreign-fee card as primary and carry some won as backup — market stalls at Jagalchi and Gukje are often cash-only.</p></div>
+    <div class="card"><h4 style="font-size:15px;margin-bottom:7px">Paying — near-cashless</h4><p style="font-size:13.5px;color:var(--mut)">Cards work at nearly every shop, café and most street stalls in tourist areas. Bring a low-foreign-fee card as primary and carry some won as backup — market stalls at Gukje and BIFF Square are often cash-only.</p></div>
     <div class="card"><h4 style="font-size:15px;margin-bottom:7px">Cash — look for "Global ATM"</h4><p style="font-size:13.5px;color:var(--mut)">Standard Korean ATMs frequently reject foreign cards. Machines marked <b style="color:var(--tx)">Global ATM</b> are common in convenience stores and stations. <b style="color:var(--tx)">WOWPASS</b> is a prepaid tourist card that doubles as T-money.</p></div>
     <div class="card"><h4 style="font-size:15px;margin-bottom:7px">T-money — buy on arrival</h4><p style="font-size:13.5px;color:var(--mut)">Any convenience store or airport booth. A subway ride is about ₩1,400, and it works on buses in both cities plus most convenience stores. The most useful small purchase you'll make.</p></div>
     <div class="card"><h4 style="font-size:15px;margin-bottom:7px">Tipping and tax</h4><p style="font-size:13.5px;color:var(--mut)">Tipping isn't practised and can confuse people — service is in the price. Going the other way, foreign visitors can claim <b style="color:var(--tx)">tax refunds</b>: keep receipts, look for Tax Free signage, process at the airport.</p></div>
@@ -912,7 +1171,7 @@ ul.arr li b{color:var(--tx)}
     <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">ESSENTIAL · MAPS</div><h4 style="font-size:15.5px">Naver Map</h4><div style="font-size:12px;color:var(--dim);margin:3px 0 8px">네이버 지도</div><p style="font-size:13px;color:var(--mut)">The default for getting around Korea. Accurate walking directions, subway routing with exit numbers, bus arrivals, business hours. English mode available. Learning the exit numbers saves cold minutes on the wrong side of a road.</p></div>
     <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">ESSENTIAL · MAPS</div><h4 style="font-size:15.5px">KakaoMap</h4><div style="font-size:12px;color:var(--dim);margin:3px 0 8px">카카오맵</div><p style="font-size:13px;color:var(--mut)">The main alternative. Many prefer its interface, and it occasionally has better data for a given place. Have both — when one gives a strange route, check the other.</p></div>
     <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">ESSENTIAL · MESSAGING</div><h4 style="font-size:15.5px">KakaoTalk</h4><div style="font-size:12px;color:var(--dim);margin:3px 0 8px">카카오톡</div><p style="font-size:13px;color:var(--mut)">Korea's universal messenger. Guesthouses and booking services often communicate through it rather than email, so having it makes you contactable the way Koreans expect.</p></div>
-    <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">ESSENTIAL · LANGUAGE</div><h4 style="font-size:15.5px">Papago</h4><div style="font-size:12px;color:var(--dim);margin:3px 0 8px">파파고</div><p style="font-size:13px;color:var(--mut)">Naver's translator, distinctly better than Google Translate for Korean. Camera mode reads menus and signs live — invaluable at Jagalchi and Gukje. Download offline Korean before you fly.</p></div>
+    <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">ESSENTIAL · LANGUAGE</div><h4 style="font-size:15.5px">Papago</h4><div style="font-size:12px;color:var(--dim);margin:3px 0 8px">파파고</div><p style="font-size:13px;color:var(--mut)">Naver's translator, distinctly better than Google Translate for Korean. Camera mode reads menus and signs live — invaluable at Gukje Market and the BIFF Square food stalls. Download offline Korean before you fly.</p></div>
     <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">ESSENTIAL · BOOKINGS</div><h4 style="font-size:15.5px">CatchTable</h4><div style="font-size:12px;color:var(--dim);margin:3px 0 8px">캐치테이블</div><p style="font-size:13px;color:var(--mut)">The platform your chef restaurants use — Doryang, Tian Mi Mi, Nuwa and Bistro Notre all book through it. Set up and test early; see the phone-number issue in Connectivity.</p></div>
     <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">TRANSPORT</div><h4 style="font-size:15.5px">Kakao T</h4><div style="font-size:12px;color:var(--dim);margin:3px 0 8px">카카오 T</div><p style="font-size:13px;color:var(--mut)">Korea's dominant taxi app. Easier than flagging one down and explaining a destination, and it protects you from the unmetered "call van" scam. Useful for Haedong Yonggungsa.</p></div>
     <div class="card"><div class="k" style="font-size:9px;color:var(--amber);letter-spacing:.12em;margin-bottom:7px">TRANSPORT</div><h4 style="font-size:15.5px">Korail Talk</h4><div style="font-size:12px;color:var(--dim);margin:3px 0 8px">코레일톡</div><p style="font-size:13px;color:var(--mut)">Official Korail app for booking your KTX seat on Day 6 — and Day 9 if you take the Incheon fallback. Book ahead rather than turning up.</p></div>
@@ -944,14 +1203,17 @@ ul.arr li b{color:var(--tx)}
 
   <h3 class="subh"><span class="k">ONCE DATES ARE LOCKED</span>Book immediately</h3>
   <label class="chk"><input type="checkbox"><span class="t"><b>Flights</b><span>Price with baggage included, not the headline fare. Confirm your exact fare's allowance on the airline's own site.</span></span></label>
-  <label class="chk"><input type="checkbox"><span class="t"><b>Accommodation — Hongdae and Busan</b><span>Lock the Friday and Saturday Busan nights (15–16 Jan) first; weekend rates climb and good rooms go early.</span></span></label>
+  <label class="chk"><input type="checkbox"><span class="t"><b>Accommodation — Myeong-dong and Busan</b><span>For Busan, decide split (2 Haeundae + 1 Seomyeon/Nampo) vs all-Seomyeon before booking — it changes your 17 Jan airport run by ~30 minutes. Lock the Friday and Saturday Busan nights (15–16 Jan) first; weekend rates climb and good rooms go early.</span></span></label>
+  <label class="chk"><input type="checkbox"><span class="t"><b>Secret Garden tour — 10:00 KST on 3 January</b><span>Hardest deadline of the trip. Booking opens exactly 6 days before your 9 Jan visit, on the official Royal Palaces site. Only 50 online slots per session. Set an alarm — 09:00 Malaysia time.</span></span></label>
+  <label class="chk"><input type="checkbox"><span class="t"><b>Decide: Royal Palace Pass or separate tickets</b><span>₩10,000 pass covers Changdeokgung + Secret Garden + Gyeongbokgung and three more sites, versus ₩11,000 buying just the two you need.</span></span></label>
   <label class="chk"><input type="checkbox"><span class="t"><b>Sky Capsule, Day 7</b><span>Sells out weeks ahead even midweek. If Mipo→Cheongsapo is full, try the reverse direction.</span></span></label>
-  <label class="chk"><input type="checkbox"><span class="t"><b>KTX seat, Day 6 morning</b><span>Book on Korail Talk. Add the Day 9 return leg too if you're flying from Incheon.</span></span></label>
+  <label class="chk"><input type="checkbox"><span class="t"><b>KTX seat — early train, 14 Jan</b><span>Book on Korail Talk. Aim for the 05:58 or 06:03 (in Busan before 09:00). For the 05:15 or 05:28 you also need a taxi to Seoul Station — the metro doesn't start until ~05:30.</span></span></label>
   <label class="chk"><input type="checkbox"><span class="t"><b>Chef restaurants on CatchTable</b><span>Doryang (Day 2), Tian Mi Mi (Day 3), Nuwa (Day 4). Test the account first — see the phone-number issue.</span></span></label>
 
   <h3 class="subh"><span class="k">2–3 MONTHS OUT</span>Verify and prepare</h3>
   <label class="chk"><input type="checkbox"><span class="t"><b>Re-check K-ETA rules at k-eta.go.kr</b><span>The fastest-moving item in the plan. Confirm the requirement still stands and nothing has changed for Malaysia.</span></span></label>
-  <label class="chk"><input type="checkbox"><span class="t"><b>Confirm the Busan departure still runs your date</b><span>AirAsia X flies PUS–KUL four times weekly. Verify 17 January is still scheduled.</span></span></label>
+  <label class="chk"><input type="checkbox"><span class="t"><b>Confirm the Busan departure still runs your date</b><span>AirAsia X flies PUS–KUL four times weekly. Verify 17 January is still scheduled — and note a morning Incheon flight would force you out of Busan on Day 8 evening.</span></span></label>
+  <label class="chk"><input type="checkbox"><span class="t"><b>Pre-book the airport ride for the 10:00 flight</b><span>Leaving around 07:00 on a Sunday. Book a Kakao T taxi the night before, or check your station's first train — the metro starts about 05:00 but times vary by station.</span></span></label>
   <label class="chk"><input type="checkbox"><span class="t"><b>Buy base layers and boots</b><span>The two things you need the moment you land. Break the boots in — most days here run past 15,000 steps.</span></span></label>
 
   <h3 class="subh"><span class="k">FINAL MONTH</span>Last steps</h3>
@@ -971,6 +1233,7 @@ ul.arr li b{color:var(--tx)}
   <button data-v="pack">PACKING</button>
   <button data-v="stay">STAY</button>
   <button data-v="plan">ITINERARY</button>
+  <button data-v="zones">ZONES</button>
   <button data-v="cost">BUDGET</button>
   <button data-v="sim">DATA</button>
   <button data-v="apps">APPS</button>
@@ -979,7 +1242,7 @@ ul.arr li b{color:var(--tx)}
 
 <script>
 (function(){
-  var TITLES={entry:'Entry & visa',fly:'Flights',pack:'Packing',stay:'Accommodation',plan:'Itinerary',cost:'Budget',sim:'Connectivity',apps:'Apps',todo:'Checklist'};
+  var TITLES={entry:'Entry & visa',fly:'Flights',pack:'Packing',stay:'Accommodation',plan:'Itinerary',zones:'Zone maps',cost:'Budget',sim:'Connectivity',apps:'Apps',todo:'Checklist'};
   var crumb=document.getElementById('crumb');
 
   // ── view router
@@ -1056,6 +1319,22 @@ ul.arr li b{color:var(--tx)}
   filt('[data-f]','#routes > .card','f');
   filt('[data-h]','#hotelgrid > .card','h');
   filt('[data-p]','#packgrid > .card','p');
+
+  // ── zone map filter
+  var zchips=document.querySelectorAll('#zonechips .chip');
+  zchips.forEach(function(c){
+    c.addEventListener('click',function(){
+      zchips.forEach(function(x){ x.setAttribute('aria-pressed', x===c?'true':'false'); });
+      var want=c.dataset.z;
+      document.querySelectorAll('#v-zones .z').forEach(function(g){
+        var days=(g.getAttribute('data-days')||'').split(/\s+/);
+        g.classList.toggle('dim', want!=='all' && days.indexOf(want)===-1);
+      });
+      document.querySelectorAll('#v-zones .flow').forEach(function(f){
+        f.classList.toggle('dim', want!=='all');
+      });
+    });
+  });
 
   // ── checklist progress
   var boxes=document.querySelectorAll('#v-todo input[type=checkbox]');
